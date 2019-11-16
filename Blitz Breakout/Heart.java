@@ -14,6 +14,25 @@ public class Heart extends SimulationActor
      */
     public void act() 
     {
-        // Add your action code here.
-    }    
+        handleLives();
+    }  
+
+    public static int lives = 3;
+    public void handleLives()
+    {
+        if (lives == 2) 
+        {
+            getWorld().removeObjects(getWorld().getObjectsAt(125, 52, Heart.class));
+        }
+        
+        if (lives == 1)
+        {
+            getWorld().removeObjects(getWorld().getObjectsAt(93, 52,Heart.class));
+        }
+        
+        if (lives == 0) 
+        {
+            getWorld().removeObjects(getWorld().getObjectsAt(61, 52,Heart.class));
+        }
+    }
 }
