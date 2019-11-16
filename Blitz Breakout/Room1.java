@@ -14,7 +14,7 @@ public class Room1 extends SimulationWorld
      */
     public Room1()
     {
-        super("gameplay.wav", 800, 600, new Point2D(0.0, 0.0), 20);
+        super(1024, 768, new Point2D(8.0, 6.0), 16.0); 
     }
     
     public void act()

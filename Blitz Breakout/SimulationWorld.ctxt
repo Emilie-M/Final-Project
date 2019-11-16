@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=SimulationWorld
-comment1.params=musicFile\ windowWidth\ windowHeight\ cameraCenter\ cameraWidth
-comment1.target=SimulationWorld(java.lang.String,\ int,\ int,\ Point2D,\ double)
+comment1.params=windowWidth\ windowHeight\ cameraCenter\ cameraWidth
+comment1.target=SimulationWorld(int,\ int,\ Point2D,\ double)
 comment10.params=worldCoord
 comment10.target=Point2D\ worldToWindow(Point2D)
 comment11.params=worldCoord
