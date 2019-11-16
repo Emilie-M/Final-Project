@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Point2D
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Point2D\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=x\ y
+comment1.target=Point2D(double,\ double)
+comment2.params=other
+comment2.target=Point2D(Point2D)
+comment3.params=
+comment3.target=double\ getX()
+comment4.params=
+comment4.target=double\ getY()
+comment5.params=value
+comment5.target=void\ setX(double)
+comment6.params=value
+comment6.target=void\ setY(double)
+numComments=7
