@@ -35,7 +35,7 @@ public class Flynn extends SimulationActor
     {
         super.act();
         
-        moveOnPlatform();
+        //moveOnPlatform();
         updateFrame();
     }    
     
