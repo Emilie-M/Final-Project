@@ -36,7 +36,7 @@ public class Flynn extends SimulationActor
         super.act();
         
         //moveOnPlatform();
-        updateFrame();
+        //updateFrame();
     }    
     
     //public void moveOnPlatform()
@@ -88,15 +88,15 @@ public class Flynn extends SimulationActor
         }
     }
     
-    public void updateFrame()
-    {
-        currentFrameTime += getSimulationWorld().getTimeStepDuration();
-        if (currentFrameTime > SPRITE_FRAMES_DURATION)
-        {
-            currentColumn = (currentColumn + 1) % spriteSheet.getColumns();
-            currentFrameTime -= SPRITE_FRAMES_DURATION;
-        }
+    //public void updateFrame()
+    //{
+       // currentFrameTime += getSimulationWorld().getTimeStepDuration();
+        //if (currentFrameTime > SPRITE_FRAMES_DURATION)
+       // {
+       //     currentColumn = (currentColumn + 1) % spriteSheet.getColumns();
+       //     currentFrameTime -= SPRITE_FRAMES_DURATION;
+       // }
         
-        setImage(spriteSheet.getSprite(currentRow, currentColumn));
-    }
+       // setImage(spriteSheet.getSprite(currentRow, currentColumn));
+    //}
 }
