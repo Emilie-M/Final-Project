@@ -7,10 +7,6 @@ comment2.params=
 comment2.target=void\ act()
 comment3.params=
 comment3.target=void\ moveFromKeyboard()
-<<<<<<< HEAD
 comment4.params=
 comment4.target=void\ updateFrame()
 numComments=5
-=======
-numComments=4
->>>>>>> b3a8c075ab7cf8ea39d3f3aaa4a2cce560e6dc83
