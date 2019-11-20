@@ -12,7 +12,7 @@ public class Flynn extends PlatformActor
     //protected static final SpriteSheet standRight = new SpriteSheet
     private GreenfootImage standRight = new GreenfootImage("DemoStandingRight3.png");
     //protected static final SpriteSheet runRight = new SpriteSheet
-    //("spritesheet20.png", 1, 6);
+    //("spritesheet20.png", 1, 6); aytt
     //protected static final SpriteSheet runLeft = new SpriteSheet
     //("SpriteJumpSequenceLeft.png", 1, 6);
     private GreenfootImage runRight1 = new GreenfootImage("Run2.png");
