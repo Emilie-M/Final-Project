@@ -14,6 +14,6 @@ public class Key extends SimulationActor
      */
     public void act() 
     {
-        // Add your action code here.
+        super.act();
     }    
 }
