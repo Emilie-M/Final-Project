@@ -85,10 +85,13 @@ public class Flynn extends PlatformActor
             jumpRight();
         }
         
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 >>>>>>> Stashed changes
 =======
 >>>>>>> d8983389fd5008e226e68cd8eeeb4c36c535ebf2
+=======
+>>>>>>> Stashed changes
         //else 
         //{
             //setImage(standRight);
