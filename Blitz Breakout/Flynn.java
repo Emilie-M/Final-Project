@@ -16,7 +16,7 @@ public class Flynn extends PlatformActor
     //("SpriteJumpSequenceLeft.png", 1, 6);
     private GreenfootImage runRight1 = new GreenfootImage("Run2.png");
     private GreenfootImage runRight2 = new GreenfootImage("Run3.png");
-    private GreenfootImage runRight3 = new GreenfootImage("Run4.png");
+    //private GreenfootImage runRight3 = new GreenfootImage("Run4.png");
     private GreenfootImage runRight4 = new GreenfootImage("Run5.png");
     private GreenfootImage runRight5 = new GreenfootImage("Run6.png");
     private int frame = 1;
@@ -50,7 +50,7 @@ public class Flynn extends PlatformActor
     public void moveRight() 
     {
         setLocation(getX() + 70,getY());
-        if (animationCounter % 4 == 0) {
+        if (animationCounter % 7 == 0) {
             animateRight();
         }
     }
@@ -64,13 +64,15 @@ public class Flynn extends PlatformActor
         {
             setImage(runRight2);
         }
+        //else if (frame == 3)
+        //{
+            //setImage(runRight3);
+        //}
         else if (frame == 3)
         {
-            setImage(runRight3);
-        }
-        else if (frame == 4)
-        {
             setImage(runRight4);
+            //frame = 1;
+            //return;
         }
         else if (frame == 5)
         {
