@@ -1,4 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.util.*;
 
 /**
  * Write a description of class Flynn here.
@@ -181,6 +182,18 @@ public class Flynn extends PlatformActor
             //currentRow = 0;
         //}
     }
+    
+   public void hitDetection()
+   {
+        SimulationWorld world = (SimulationWorld) getWorld();
+        List<Heart> hearts = world.getObjects(Heart.class);
+       
+        Actor spider = getOneIntersectingObject(Spider.class);
+        if(spider != null)  
+        {  
+            
+        } 
+   }
     
     //public void updateFrame()
     //{
