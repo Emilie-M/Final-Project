@@ -1,19 +1,37 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MovingPlatform here.
+ * Write a description of class MovingBrickPlatform here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
 public class MovingPlatform extends Platform
 {
-    /**
-     * Act - do whatever the MovingPlatform wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    protected final static double PLATORM_SPEED = 2.0;
+    protected double minHeight;
+    protected double maxHeight;
+    
+    public MovingPlatform(double minHeight,double maxHeight)
+    {
+        super();
+        this.minHeight = minHeight;
+        this.maxHeight = maxHeight;
+        
+        velocity = new Vector2D(0.0, PLATORM_SPEED);
+    }
     public void act() 
     {
-        // Add your action code here.
+        super.act();
+        
+        if (position.getY() > maxHeight)
+        {
+            velocity = new Vector2D(0.0, -PLATORM_SPEED);
+        }
+        
+        if (position.getY() < minHeight)
+        {
+            velocity = new Vector2D(0.0, PLATORM_SPEED);
+        }
     }    
 }
