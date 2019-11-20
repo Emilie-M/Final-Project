@@ -1,7 +1,7 @@
 #Greenfoot project file
 class.Flynn.image=DemoStandingRight3.png
 class.Heart.image=heart1.png
-class.Key.image=blueKey.png
+class.Key.image=yellowKey\ -\ Copy.png
 class.Platform.image=Platform1v2.png
 class.Room1.image=BaseWallV4.png
 class.Spider.image=redSpider123.png
@@ -65,10 +65,10 @@ dependency8.type=UsesDependency
 dependency9.from=SimulationActor
 dependency9.to=SimulationWorld
 dependency9.type=UsesDependency
-editor.fx.0.height=1047
-editor.fx.0.width=1570
-editor.fx.0.x=357
-editor.fx.0.y=0
+editor.fx.0.height=739
+editor.fx.0.width=816
+editor.fx.0.x=552
+editor.fx.0.y=100
 height=1047
 package.numDependencies=20
 package.numTargets=14
