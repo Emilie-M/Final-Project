@@ -33,6 +33,8 @@ public class Flynn extends PlatformActor
     //protected int currentColumn;
     //protected double currentFrameTime;
     //private GreenfootImage runRight3 = new GreenfootImage("Run4.png");
+    public static int lives = 3;
+    
     public Flynn()
     {
         super(null, new Vector2D(0,0), new Vector2D(0, GRAVITY));
@@ -43,6 +45,7 @@ public class Flynn extends PlatformActor
         //GreenfootImage sprite = runRight.getSprite(0, 0);
         //setImage(sprite);
         setImage(standRight);
+        hitDetection();
     }
     
     public void act() 
@@ -183,17 +186,21 @@ public class Flynn extends PlatformActor
         //}
     }
     
-   public void hitDetection()
-   {
-        SimulationWorld world = (SimulationWorld) getWorld();
-        List<Heart> hearts = world.getObjects(Heart.class);
-       
+    public void hitDetection()
+    {
+        //SimulationWorld world = (SimulationWorld) getWorld();
         Actor spider = getOneIntersectingObject(Spider.class);
+        
         if(spider != null)  
         {  
-            
+            lives--;
         } 
-   }
+    }
+    
+    public static int getLives()
+    {
+        return lives;
+    }
     
     //public void updateFrame()
     //{

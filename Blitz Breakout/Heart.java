@@ -8,32 +8,32 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Heart extends SimulationActor
 {
-    
-    /**
-     * Act - do whatever the Heart wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    public static int hearts = 3;
+
     public void act() 
     {
-        handleLives();
+         hearts = Flynn.getLives();
+         handleHearts();
     }  
 
-    public static int lives = 3;
-    public void handleLives()
+    public void handleHearts()
     {
-        if (lives == 2) 
+        if (hearts == 2) 
         {
             getWorld().removeObjects(getWorld().getObjectsAt(125, 52, Heart.class));
+            setImage("heartLost2.png");
         }
         
-        if (lives == 1)
+        if (hearts == 1)
         {
             getWorld().removeObjects(getWorld().getObjectsAt(93, 52,Heart.class));
+            setImage("heartLost2.png");
         }
         
-        if (lives == 0) 
+        if (hearts == 0) 
         {
             getWorld().removeObjects(getWorld().getObjectsAt(61, 52,Heart.class));
+            setImage("heartLost2.png");
         }
     }
 }

@@ -17,4 +17,6 @@ comment7.params=
 comment7.target=void\ moveFromKeyboard()
 comment8.params=
 comment8.target=void\ hitDetection()
-numComments=9
+comment9.params=
+comment9.target=int\ getLives()
+numComments=10
