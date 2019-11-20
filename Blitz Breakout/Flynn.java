@@ -76,22 +76,11 @@ public class Flynn extends PlatformActor
         if (Greenfoot.isKeyDown("a")) { 
             moveLeft();
         }
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> d8983389fd5008e226e68cd8eeeb4c36c535ebf2
+
         if (Greenfoot.isKeyDown("space")) {
             jumpRight();
         }
         
-<<<<<<< Updated upstream
-<<<<<<< HEAD
->>>>>>> Stashed changes
-=======
->>>>>>> d8983389fd5008e226e68cd8eeeb4c36c535ebf2
-=======
->>>>>>> Stashed changes
         //else 
         //{
             //setImage(standRight);
