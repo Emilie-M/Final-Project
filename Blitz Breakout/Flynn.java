@@ -45,7 +45,6 @@ public class Flynn extends PlatformActor
         //GreenfootImage sprite = runRight.getSprite(0, 0);
         //setImage(sprite);
         setImage(standRight);
-        hitDetection();
     }
     
     public void act() 
@@ -65,6 +64,7 @@ public class Flynn extends PlatformActor
         //moveOnPlatform();
         //updateFrame();
         animationCounter++;
+        hitDetection();
     }    
     public void moveRight() 
     {
@@ -188,7 +188,6 @@ public class Flynn extends PlatformActor
     
     public void hitDetection()
     {
-        //SimulationWorld world = (SimulationWorld) getWorld();
         Actor spider = getOneIntersectingObject(Spider.class);
         
         if(spider != null)  
