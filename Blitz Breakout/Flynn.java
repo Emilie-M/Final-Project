@@ -32,6 +32,12 @@ public class Flynn extends PlatformActor
     private GreenfootImage jumpRight5 = new GreenfootImage("Jump7.png");
     private GreenfootImage jumpRight6 = new GreenfootImage("Jump8.png");
     
+    private GreenfootImage jumpLeft1 = new GreenfootImage("Jump3Flipped.png");
+    private GreenfootImage jumpLeft2 = new GreenfootImage("Jump4Flipped.png");
+    private GreenfootImage jumpLeft3 = new GreenfootImage("Jump5Flipped.png");
+    private GreenfootImage jumpLeft4 = new GreenfootImage("Jump6Flipped.png");
+    private GreenfootImage jumpLeft5 = new GreenfootImage("Jump7Flipped.png");
+    private GreenfootImage jumpLeft6 = new GreenfootImage("Jump8Flipped.png");
     
     private int frame = 1;
     private int animationCounter = 0;
@@ -70,6 +76,9 @@ public class Flynn extends PlatformActor
         if (Greenfoot.isKeyDown("space")) {
             jumpRight();
         }
+        if (Greenfoot.isKeyDown("space") && Greenfoot.isKeyDown("left")) {
+            jumpLeft();
+        }
         //else 
         //{
             //setImage(standRight);
@@ -78,7 +87,8 @@ public class Flynn extends PlatformActor
         //updateFrame();
         animationCounter++;
         hitDetection();
-    }    
+    }  
+    
     public void moveRight() 
     {
         setLocation(getX(),getY());
@@ -115,6 +125,7 @@ public class Flynn extends PlatformActor
         
         frame++;
     }
+    
     public void moveLeft() 
     {
         setLocation(getX(),getY());
@@ -150,6 +161,7 @@ public class Flynn extends PlatformActor
         }
         frame++;
     }
+    
     public void jumpRight() 
     {
         setLocation(getX(),getY());
@@ -170,6 +182,28 @@ public class Flynn extends PlatformActor
         setImage(jumpRight5);
         Greenfoot.delay(4);
         setImage(jumpRight6);
+    }
+    
+    public void jumpLeft() 
+    {
+        setLocation(getX(),getY());
+        if (animationCounter % 7 == 0) {
+            animateJumpLeft();
+        }
+    }
+    public void animateJumpLeft() 
+    {
+        setImage(jumpLeft1);
+        Greenfoot.delay(4);
+        setImage(jumpLeft2);
+        Greenfoot.delay(4);
+        setImage(jumpLeft3);
+        Greenfoot.delay(4);
+        setImage(jumpLeft4);
+        Greenfoot.delay(4);
+        setImage(jumpLeft5);
+        Greenfoot.delay(4);
+        setImage(jumpLeft6);
     }
     //public void moveOnPlatform()
     //{
