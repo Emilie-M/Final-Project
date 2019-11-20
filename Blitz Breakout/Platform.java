@@ -21,7 +21,7 @@ public class Platform extends SimulationActor
     {
         if (getImage() != null)
         {
-            return getImage().getHeight();
+            return getImage().getHeight() - 81;
         }
         else
         {
