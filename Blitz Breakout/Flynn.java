@@ -12,7 +12,7 @@ public class Flynn extends PlatformActor
     //protected static final SpriteSheet standRight = new SpriteSheet
     private GreenfootImage standRight = new GreenfootImage("DemoStandingRight3.png");
     //protected static final SpriteSheet runRight = new SpriteSheet
-    //("spritesheet20.png", 1, 6); aytt
+    //("spritesheet20.png", 1, 6);
     //protected static final SpriteSheet runLeft = new SpriteSheet
     //("SpriteJumpSequenceLeft.png", 1, 6);
     private GreenfootImage runRight1 = new GreenfootImage("Run2.png");
@@ -24,6 +24,15 @@ public class Flynn extends PlatformActor
     private GreenfootImage runLeft2 = new GreenfootImage("Run3Flipped.png");
     private GreenfootImage runLeft4 = new GreenfootImage("Run5Flipped.png");
     private GreenfootImage runLeft5 = new GreenfootImage("Run6Flipped.png");
+    
+    private GreenfootImage jumpRight1 = new GreenfootImage("Jump3.png");
+    private GreenfootImage jumpRight2 = new GreenfootImage("Jump4.png");
+    private GreenfootImage jumpRight3 = new GreenfootImage("Jump5.png");
+    private GreenfootImage jumpRight4 = new GreenfootImage("Jump6.png");
+    private GreenfootImage jumpRight5 = new GreenfootImage("Jump7.png");
+    private GreenfootImage jumpRight6 = new GreenfootImage("Jump8.png");
+    
+    
     private int frame = 1;
     private int animationCounter = 0;
     //private GreenfootImage runRight4 = new GreenfootImage("");
@@ -45,7 +54,7 @@ public class Flynn extends PlatformActor
         //GreenfootImage sprite = runRight.getSprite(0, 0);
         //setImage(sprite);
         setImage(standRight);
-        hitDetection();
+        
     }
     
     public void act() 
@@ -58,6 +67,9 @@ public class Flynn extends PlatformActor
         if (Greenfoot.isKeyDown("a")) { 
             moveLeft();
         }
+        if (Greenfoot.isKeyDown("space")) {
+            jumpRight();
+        }
         //else 
         //{
             //setImage(standRight);
@@ -65,6 +77,7 @@ public class Flynn extends PlatformActor
         //moveOnPlatform();
         //updateFrame();
         animationCounter++;
+        hitDetection();
     }    
     public void moveRight() 
     {
@@ -136,6 +149,27 @@ public class Flynn extends PlatformActor
             return;
         }
         frame++;
+    }
+    public void jumpRight() 
+    {
+        setLocation(getX(),getY());
+        if (animationCounter % 7 == 0) {
+            animateJumpRight();
+        }
+    }
+    public void animateJumpRight() 
+    {
+        setImage(jumpRight1);
+        Greenfoot.delay(4);
+        setImage(jumpRight2);
+        Greenfoot.delay(4);
+        setImage(jumpRight3);
+        Greenfoot.delay(4);
+        setImage(jumpRight4);
+        Greenfoot.delay(4);
+        setImage(jumpRight5);
+        Greenfoot.delay(4);
+        setImage(jumpRight6);
     }
     //public void moveOnPlatform()
     //{
