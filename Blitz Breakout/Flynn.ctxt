@@ -10,16 +10,11 @@ comment3.target=void\ moveRight()
 comment4.params=
 comment4.target=void\ animateRight()
 comment5.params=
-<<<<<<< HEAD
 comment5.target=void\ moveLeft()
 comment6.params=
 comment6.target=void\ animateLeft()
 comment7.params=
 comment7.target=void\ moveFromKeyboard()
-numComments=8
-=======
-comment5.target=void\ moveFromKeyboard()
-comment6.params=
-comment6.target=void\ hitDetection()
-numComments=7
->>>>>>> 3acf829b96b88075bee01af667aa91007eed51f6
+comment8.params=
+comment8.target=void\ hitDetection()
+numComments=9
