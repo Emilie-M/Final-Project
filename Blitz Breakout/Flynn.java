@@ -59,7 +59,7 @@ public class Flynn extends PlatformActor
         
         //GreenfootImage sprite = runRight.getSprite(0, 0);
         //setImage(sprite);
-        setImage(standRight);
+        //setImage(standRight);
         
     }
     
@@ -76,20 +76,19 @@ public class Flynn extends PlatformActor
         if (Greenfoot.isKeyDown("a")) { 
             moveLeft();
         }
-<<<<<<< HEAD
+
         if (Greenfoot.isKeyDown("space")) {
             jumpRight();
         }
         if (Greenfoot.isKeyDown("space") && Greenfoot.isKeyDown("left")) {
             jumpLeft();
         }
-=======
+
 
         if (Greenfoot.isKeyDown("space")) {
             jumpRight();
         }
         
->>>>>>> master
         //else 
         //{
             //setImage(standRight);
@@ -152,7 +151,7 @@ public class Flynn extends PlatformActor
         }
         else if (frame == 2)
         {
-            setImage(runLeft1);
+            setImage(runLeft2);
         }
         //else if (frame == 3)
         //{
