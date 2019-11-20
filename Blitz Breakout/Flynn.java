@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Flynn extends SimulationActor
+public class Flynn extends PlatformActor
 {
     //protected static final SpriteSheet standRight = new SpriteSheet
     //("JumpInitial.png", 1, 6);
