@@ -45,11 +45,14 @@ public class Flynn extends SimulationActor
         moveRight();
         //moveOnPlatform();
         //updateFrame();
+        animationCounter++;
     }    
     public void moveRight() 
     {
         setLocation(getX() + 70,getY());
-        animateRight();
+        if (animationCounter % 4 == 0) {
+            animateRight();
+        }
     }
     public void animateRight() 
     {
