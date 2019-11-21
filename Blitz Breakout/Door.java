@@ -14,6 +14,16 @@ public class Door extends SimulationActor
      */
     public void act() 
     {
-        // Add your action code here.
-    }    
+        detectCollision();
+    }
+    public void detectCollision()
+    {
+        Actor flynn = getOneObjectAtOffset(0, 0, Flynn.class);
+        if (isTouching(Flynn.class)) {
+            removeTouching(Flynn.class);
+            SimulationWorld room2 = new Room2();
+            Greenfoot.setWorld(room2);
+        }
+        
+    }
 }
