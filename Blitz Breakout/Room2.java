@@ -16,9 +16,20 @@ public class Room2 extends SimulationWorld
     public Room2()
     {
         super(900, 768, new Point2D(8.0, 6.0), 16.0); 
+        prepare();
     }
     public void act()
     {
         super.act();
+    }
+    
+    public void prepare()
+    {
+        Heart heart = new Heart();
+        addObject(heart,61,52);
+        Heart heart2 = new Heart();
+        addObject(heart2,93,52);
+        Heart heart3 = new Heart();
+        addObject(heart3,125,52);
     }
 }

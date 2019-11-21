@@ -84,7 +84,6 @@ public class Flynn extends PlatformActor
             jumpLeft();
         }
 
-
         if (Greenfoot.isKeyDown("space")) {
             jumpRight();
         }
