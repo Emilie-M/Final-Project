@@ -15,5 +15,9 @@ public class Key extends Actor
     public void act() 
     {
         
-    }    
+    }  
+    protected SimulationWorld getSimulationWorld()
+    {
+        return (SimulationWorld) getWorld();
+    }
 }

@@ -174,4 +174,5 @@ public class SimulationWorld extends World
             sa.setPosition(windowToWorld(new Point2D(x, y)));
         }            
     }
+    
 }

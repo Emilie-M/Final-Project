@@ -24,6 +24,5 @@ public class Door extends SimulationActor
             SimulationWorld room2 = new Room2();
             Greenfoot.setWorld(room2);
         }
-        
     }
 }

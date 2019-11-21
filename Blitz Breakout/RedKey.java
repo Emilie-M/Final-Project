@@ -8,12 +8,19 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class RedKey extends Key
 {
-    /**
-     * Act - do whatever the RedKey wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
     public void act() 
     {
-        // Add your action code here.
+        detectCollision();
+    }    
+    
+     public void detectCollision()
+    {
+        Actor flynn = getOneObjectAtOffset(0, 0, Flynn.class);
+        if (isTouching(Flynn.class)) {
+            SimulationWorld room1 = (SimulationWorld) getWorld();
+            
+            room1.removeObject(this);
+            room1.addObject(new RedKey(), 308, 735);
+        }
     }    
 }
