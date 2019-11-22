@@ -70,22 +70,14 @@ public class Flynn extends PlatformActor
         if (Greenfoot.isKeyDown("space") && Greenfoot.isKeyDown("a")) {
             jumpLeft();
         }
+        if (Greenfoot.isKeyDown("space") && Greenfoot.isKeyDown("d")) {
+            jumpRight();
+        }
         if (Greenfoot.isKeyDown("d")) {
             moveRight();
         }
         if (Greenfoot.isKeyDown("a")) { 
             moveLeft();
-        }
-
-        if (Greenfoot.isKeyDown("space")) {
-            jumpRight();
-        }
-        if (Greenfoot.isKeyDown("space") && Greenfoot.isKeyDown("left")) {
-            jumpLeft();
-        }
-
-        if (Greenfoot.isKeyDown("space")) {
-            jumpRight();
         }
         
         //else 
@@ -100,7 +92,8 @@ public class Flynn extends PlatformActor
     
     public void moveRight() 
     {
-        setLocation(getX(),getY());
+        //setLocation(getX(),getY());
+        move(4);
         if (animationCounter % 7 == 0) {
             animateRight();
         }
