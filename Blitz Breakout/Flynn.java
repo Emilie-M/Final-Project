@@ -93,7 +93,8 @@ public class Flynn extends PlatformActor
     public void moveRight() 
     {
         //setLocation(getX(),getY());
-        move(4);
+        position.setX(position.getX() + 0.10);
+        //System.out.println(position.getX());
         if (animationCounter % 7 == 0) {
             animateRight();
         }
@@ -130,7 +131,7 @@ public class Flynn extends PlatformActor
     
     public void moveLeft() 
     {
-        setLocation(getX(),getY());
+        position.setX(position.getX() - 0.10);
         if (animationCounter % 7 == 0) {
             animateLeft();
         }
@@ -166,7 +167,8 @@ public class Flynn extends PlatformActor
     
     public void jumpRight() 
     {
-        setLocation(getX(),getY());
+        position.setX(position.getX() + 0.10);
+        position.setY(position.getY() + 0.10);
         if (animationCounter % 7 == 0) {
             animateJumpRight();
         }
@@ -188,7 +190,8 @@ public class Flynn extends PlatformActor
     
     public void jumpLeft() 
     {
-        setLocation(getX(),getY());
+        position.setX(position.getX() + 0.10);
+        position.setY(position.getY() + 0.10);
         if (animationCounter % 7 == 0) {
             animateJumpLeft();
         }
