@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.*;
 /**
  * Write a description of class RedDoor here.
  * 
@@ -14,6 +14,32 @@ public class RedDoor extends Door
      */
     public void act() 
     {
-        // Add your action code here.
-    }    
+        super.act();
+        if (isDoorTouchingFlynn()) 
+        {
+            if (getRedKey() == true)
+            {
+                //SimulationWorld world = (SimulationWorld) getWorld();
+                //Greenfoot.setWorld(new Room2());
+                return;
+            }
+        }
+    }
+    public boolean getRedKey()
+    {
+        List <RedKey> redKeyList = getWorld().getObjects(RedKey.class);
+        
+        if (redKeyList.size() > 0)
+        {
+            RedKey redKey = redKeyList.get(0);
+            double y = (double) (redKey.getY());
+            
+            if (y > 705)
+            {
+                return true;
+            }   
+        }
+
+        return false;
+    }
 }

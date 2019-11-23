@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.*;
 /**
  * Write a description of class OrangeDoor here.
  * 
@@ -14,6 +14,32 @@ public class OrangeDoor extends Door
      */
     public void act() 
     {
-        // Add your action code here.
-    }    
+        super.act();
+        if (isDoorTouchingFlynn()) 
+        {
+            if (getOrangeKey() == true)
+            {
+                //SimulationWorld world = (SimulationWorld) getWorld();
+                //Greenfoot.setWorld(new Room2());
+                return;
+            }
+        }
+    }
+    public boolean getOrangeKey()
+    {
+        List <OrangeKey> orangeKeyList = getWorld().getObjects(OrangeKey.class);
+        
+        if (orangeKeyList.size() > 0)
+        {
+            OrangeKey orangeKey = orangeKeyList.get(0);
+            double y = (double) (orangeKey.getY());
+            
+            if (y > 705)
+            {
+                return true;
+            }   
+        }
+
+        return false;
+    }
 }

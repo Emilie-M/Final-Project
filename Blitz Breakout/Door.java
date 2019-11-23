@@ -8,21 +8,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Door extends SimulationActor
 {
-    /**
-     * Act - do whatever the Door wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    //public void act() 
-    //{
-        //detectCollision();
-    //}
-    //public void detectCollision()
-    //{
-        //Actor flynn = getOneObjectAtOffset(0, 0, Flynn.class);
-        //if (isTouching(Flynn.class)) {
-            //removeTouching(Flynn.class);
-            // room2 = new Room2();
-            //Greenfoot.setWorld(room2);
-        //}
+    public boolean isDoorTouchingFlynn() 
+    {
+        Actor flynn = getOneObjectAtOffset(0, 0, Flynn.class);
+        return (isTouching(Flynn.class));
+    }
 }
 

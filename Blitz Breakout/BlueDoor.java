@@ -16,9 +16,7 @@ public class BlueDoor extends Door
     public void act() 
     {
         super.act();
-        
-        Actor flynn = getOneObjectAtOffset(0, 0, Flynn.class);
-        if (isTouching(Flynn.class)) 
+        if (isDoorTouchingFlynn()) 
         {
             if (getBlueKey() == true)
             {
@@ -26,7 +24,7 @@ public class BlueDoor extends Door
                 Greenfoot.setWorld(new Room2());
             }
         }
-    }   
+    }
     
     public boolean getBlueKey()
     {

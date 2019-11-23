@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.*;
 /**
  * Write a description of class SilverDoor here.
  * 
@@ -14,6 +14,32 @@ public class SilverDoor extends Door
      */
     public void act() 
     {
-        // Add your action code here.
-    }    
+        super.act();
+        if (isDoorTouchingFlynn()) 
+        {
+            if (getSilverKey() == true)
+            {
+                //SimulationWorld world = (SimulationWorld) getWorld();
+                //Greenfoot.setWorld(new Room2());
+                return;
+            }
+        }
+    }
+    public boolean getSilverKey()
+    {
+        List <SilverKey> silverKeyList = getWorld().getObjects(SilverKey.class);
+        
+        if (silverKeyList.size() > 0)
+        {
+            SilverKey silverKey = silverKeyList.get(0);
+            double y = (double) (silverKey.getY());
+            
+            if (y > 705)
+            {
+                return true;
+            }   
+        }
+
+        return false;
+    }
 }

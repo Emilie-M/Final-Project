@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.*;
 /**
  * Write a description of class GoldDoor here.
  * 
@@ -14,6 +14,32 @@ public class GoldDoor extends Door
      */
     public void act() 
     {
-        // Add your action code here.
-    }    
+        super.act();
+        if (isDoorTouchingFlynn()) 
+        {
+            if (getGoldKey() == true)
+            {
+                //SimulationWorld world = (SimulationWorld) getWorld();
+                //Greenfoot.setWorld(new Room2());
+                return;
+            }
+        }
+    }
+    public boolean getGoldKey()
+    {
+        List <GoldKey> goldKeyList = getWorld().getObjects(GoldKey.class);
+        
+        if (goldKeyList.size() > 0)
+        {
+            GoldKey goldKey = goldKeyList.get(0);
+            double y = (double) (goldKey.getY());
+            
+            if (y > 705)
+            {
+                return true;
+            }   
+        }
+
+        return false;
+    }
 }

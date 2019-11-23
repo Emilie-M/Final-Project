@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.*;
 /**
  * Write a description of class PinkDoor here.
  * 
@@ -14,6 +14,32 @@ public class PinkDoor extends Door
      */
     public void act() 
     {
-        // Add your action code here.
-    }    
+        super.act();
+        if (isDoorTouchingFlynn()) 
+        {
+            if (getPinkKey() == true)
+            {
+                //SimulationWorld world = (SimulationWorld) getWorld();
+                //Greenfoot.setWorld(new Room2());
+                return;
+            }
+        }
+    }
+    public boolean getPinkKey()
+    {
+        List <PinkKey> pinkKeyList = getWorld().getObjects(PinkKey.class);
+        
+        if (pinkKeyList.size() > 0)
+        {
+            PinkKey pinkKey = pinkKeyList.get(0);
+            double y = (double) (pinkKey.getY());
+            
+            if (y > 705)
+            {
+                return true;
+            }   
+        }
+
+        return false;
+    }
 }
