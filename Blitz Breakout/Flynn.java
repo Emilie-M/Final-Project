@@ -12,6 +12,7 @@ public class Flynn extends PlatformActor
     final static double JUMP_VELOCITY = 5.5;
     final static double WALK_TARGET_VELOCITY = 3.0;
     final static double MOVE_ACCELERATION = 3.0;
+    //public static boolean isBlueKeyAcquired;
     //protected static final SpriteSheet standRight = new SpriteSheet
     private GreenfootImage standRight = new GreenfootImage("DemoStandingRight3.png");
     //protected static final SpriteSheet runRight = new SpriteSheet
@@ -345,6 +346,13 @@ public class Flynn extends PlatformActor
         //}
         
         //setImage(runRight.getSprite(0, currentColumn));
+    //}
+    //public static boolean isBlueKeyAcquired()
+    //{
+        //Actor blueKey= getOneObjectAtOffset(0, 0, BlueKey.class);
+       // if (isTouching(Flynn.class)) 
+        //{
+        //}
     //}
 }
 

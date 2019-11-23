@@ -17,11 +17,10 @@ public class BlueDoor extends Door
     {
         super.act();
         
-        Actor blueKey = getOneObjectAtOffset(0, 0, BlueKey.class);
         Actor flynn = getOneObjectAtOffset(0, 0, Flynn.class);
         if (isTouching(Flynn.class)) 
         {
-            if (getBlueKey())
+            if (getBlueKey() == true)
             {
                 SimulationWorld world = (SimulationWorld) getWorld();
                 Greenfoot.setWorld(new Room2());
@@ -38,7 +37,7 @@ public class BlueDoor extends Door
             BlueKey blueKey = blueKeyList.get(0);
             double y = (double) (blueKey.getY());
             
-            if (y == 735)
+            if (y > 705)
             {
                 return true;
             }   
