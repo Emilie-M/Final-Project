@@ -69,6 +69,7 @@ public class Flynn extends PlatformActor
     public void act() 
     {
         super.act();
+        fallen();
         
         //if (Greenfoot.isKeyDown("space") && Greenfoot.isKeyDown("a")) {
             //jumpLeft();
@@ -297,6 +298,23 @@ public class Flynn extends PlatformActor
     public static int getLives()
     {
         return lives;
+    }
+    
+    public void fallen()
+    {
+        List <Flynn> flynnList = getWorld().getObjects(Flynn.class);
+        
+        if (flynnList.size() > 0)
+        {
+            Flynn flynn = flynnList.get(0);
+            double y = (double) (flynn.getPosition().getY());
+            
+            if (y < -6.0)
+            {
+                SimulationWorld world = (SimulationWorld) getWorld();
+                Greenfoot.setWorld(new EndWorldPit());
+            }   
+        }
     }
     
     //public void updateFrame()
