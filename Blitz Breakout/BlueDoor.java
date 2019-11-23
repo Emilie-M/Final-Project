@@ -1,4 +1,6 @@
+
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.util.*;
 
 /**
  * Write a description of class BlueDoor here.
@@ -18,10 +20,31 @@ public class BlueDoor extends Door
         
         Actor blueKey = getOneObjectAtOffset(0, 0, BlueKey.class);
         Actor flynn = getOneObjectAtOffset(0, 0, Flynn.class);
-        if (blueKey.getY() == 735 && isTouching(Flynn.class))
+        if (isTouching(Flynn.class)) 
         {
-            SimulationWorld world = (SimulationWorld) getWorld();
-            Greenfoot.setWorld(new Room2());
+            if (getBlueKey())
+            {
+                SimulationWorld world = (SimulationWorld) getWorld();
+                Greenfoot.setWorld(new Room2());
+            }
         }
-    }    
+    }   
+    
+    public boolean getBlueKey()
+    {
+        List <BlueKey> blueKeyList = getWorld().getObjects(BlueKey.class);
+        
+        if (blueKeyList.size() > 0)
+        {
+            BlueKey blueKey = blueKeyList.get(0);
+            double y = (double) (blueKey.getY());
+            
+            if (y == 735)
+            {
+                return true;
+            }   
+        }
+
+        return false;
+    }
 }

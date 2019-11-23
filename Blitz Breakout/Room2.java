@@ -31,5 +31,7 @@ public class Room2 extends SimulationWorld
         addObject(heart2,93,52);
         Heart heart3 = new Heart();
         addObject(heart3,125,52);
+        Heart heart4 = new Heart();
+        addObject(heart4,697,249);
     }
 }
