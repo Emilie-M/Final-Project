@@ -27,15 +27,15 @@ public class SimulationWorld extends World
     protected GreenfootSound music;
 
     
-    public SimulationWorld(int windowWidth, int windowHeight, Point2D cameraCenter, double cameraWidth) //String musicFile, 
+    public SimulationWorld(String musicFile,int windowWidth, int windowHeight, Point2D cameraCenter, double cameraWidth) 
     {    
         super(windowWidth, windowHeight, 1, false); 
         
         // Setup music
-        //if (musicFile != null && musicFile.isEmpty() == false)
-        //{
-        //    music = new GreenfootSound(musicFile);
-        //}
+        if (musicFile != null && musicFile.isEmpty() == false)
+        {
+            music = new GreenfootSound(musicFile);
+        }
         
         // Save the initial width to compute the zooming ratio
         DEFAULT_CAMERA_WIDTH = cameraWidth;

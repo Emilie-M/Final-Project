@@ -15,6 +15,6 @@ public class EndWorldPit extends SimulationWorld
      */
     public EndWorldPit()
     {
-        super(900, 768, new Point2D(8.0, 6.0), 16.0); 
+        super("", 900, 768, new Point2D(8.0, 6.0), 16.0); 
     }
 }

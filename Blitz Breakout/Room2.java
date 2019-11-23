@@ -15,7 +15,7 @@ public class Room2 extends SimulationWorld
      */
     public Room2()
     {
-        super(900, 768, new Point2D(8.0, 6.0), 16.0); 
+        super("", 900, 768, new Point2D(8.0, 6.0), 16.0); 
         prepare();
     }
     public void act()

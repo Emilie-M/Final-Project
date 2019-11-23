@@ -14,7 +14,7 @@ public class SplashScreen extends SimulationWorld
      */
     public SplashScreen()
     {
-        super(900, 768, new Point2D(8.0, 6.0), 16.0);
+        super("SplashScreen.wav", 900, 768, new Point2D(8.0, 6.0), 16.0);
         prepare();
     }
 
