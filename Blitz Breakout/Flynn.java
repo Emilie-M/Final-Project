@@ -9,6 +9,9 @@ import java.util.*;
  */
 public class Flynn extends PlatformActor
 {
+    final static double JUMP_VELOCITY = 6.5;
+    final static double WALK_TARGET_VELOCITY = 5.0;
+    final static double MOVE_ACCELERATION = 6.0;
     //protected static final SpriteSheet standRight = new SpriteSheet
     private GreenfootImage standRight = new GreenfootImage("DemoStandingRight3.png");
     //protected static final SpriteSheet runRight = new SpriteSheet
@@ -67,19 +70,20 @@ public class Flynn extends PlatformActor
     {
         super.act();
         
-        if (Greenfoot.isKeyDown("space") && Greenfoot.isKeyDown("a")) {
-            jumpLeft();
-        }
-        if (Greenfoot.isKeyDown("space") && Greenfoot.isKeyDown("d")) {
-            jumpRight();
-        }
-        if (Greenfoot.isKeyDown("d")) {
-            moveRight();
-        }
-        if (Greenfoot.isKeyDown("a")) { 
-            moveLeft();
-        }
+        //if (Greenfoot.isKeyDown("space") && Greenfoot.isKeyDown("a")) {
+            //jumpLeft();
+        //}
+        //if (Greenfoot.isKeyDown("space") && Greenfoot.isKeyDown("d")) {
+            //jumpRight();
+        //}
+        //if (Greenfoot.isKeyDown("d")) {
+            //moveRight();
+        //}
+        //if (Greenfoot.isKeyDown("a")) { 
+            //moveLeft();
+        //}
         
+        controlAvatar();
         //else 
         //{
             //setImage(standRight);
@@ -89,7 +93,29 @@ public class Flynn extends PlatformActor
         animationCounter++;
         hitDetection();
     }  
-    
+    public void controlAvatar()
+    {
+        double dt = getSimulationWorld().getTimeStepDuration();
+        
+        if (Greenfoot.isKeyDown("a"))
+        {
+            velocity.setX(Math.min(velocity.getX() + MOVE_ACCELERATION * dt, WALK_TARGET_VELOCITY));
+            moveLeft();
+        }
+        
+        if (Greenfoot.isKeyDown("d"))
+        {
+            velocity.setX(Math.max(velocity.getX() - MOVE_ACCELERATION * dt, - WALK_TARGET_VELOCITY));
+            moveRight();
+        }
+
+        if (Greenfoot.isKeyDown("space") && onPlatform == true)
+        {
+            velocity.setY(JUMP_VELOCITY);
+            jumpLeft();
+        }
+        
+    }
     public void moveRight() 
     {
         //setLocation(getX(),getY());
@@ -116,8 +142,6 @@ public class Flynn extends PlatformActor
         else if (frame == 3)
         {
             setImage(runRight4);
-            //frame = 1;
-            //return;
         }
         else if (frame == 4)
         {
