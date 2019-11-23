@@ -109,22 +109,27 @@ public class Flynn extends PlatformActor
         if (Greenfoot.isKeyDown("d"))
         {
             velocity.setX(Math.min(velocity.getX() + MOVE_ACCELERATION * dt, WALK_TARGET_VELOCITY));
+            moveRight();
         }
         
         if (Greenfoot.isKeyDown("a"))
         {
             velocity.setX(Math.max(velocity.getX() - MOVE_ACCELERATION * dt, - WALK_TARGET_VELOCITY));
+            moveLeft();
         }
 
         if (Greenfoot.isKeyDown("space") && Greenfoot.isKeyDown("d") && onPlatform == true)
         {
             velocity.setX(Math.min(velocity.getX() + MOVE_ACCELERATION * dt, WALK_TARGET_VELOCITY));
             velocity.setY(JUMP_VELOCITY);
+            jumpRight();
         }
+        
         if (Greenfoot.isKeyDown("space") && Greenfoot.isKeyDown("a") && onPlatform == true)
         {
             velocity.setX(Math.max(velocity.getX() - MOVE_ACCELERATION * dt, - WALK_TARGET_VELOCITY));
             velocity.setY(JUMP_VELOCITY);
+            jumpLeft();
         }
     }
     public void moveRight() 
@@ -165,7 +170,7 @@ public class Flynn extends PlatformActor
     
     public void moveLeft() 
     {
-        setLocation(getX(),getY());
+        //setLocation(getX(),getY());
         if (animationCounter % 7 == 0) {
             animateLeft();
         }
@@ -201,7 +206,7 @@ public class Flynn extends PlatformActor
     
     public void jumpRight() 
     {
-        setLocation(getX(),getY());
+        //setLocation(getX(),getY());
         if (animationCounter % 7 == 0) {
             animateJumpRight();
         }
@@ -223,7 +228,7 @@ public class Flynn extends PlatformActor
     
     public void jumpLeft() 
     {
-        setLocation(getX(),getY());
+        //setLocation(getX(),getY());
         if (animationCounter % 7 == 0) {
             animateJumpLeft();
         }
