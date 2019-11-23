@@ -14,6 +14,6 @@ public class SilverKey extends Key
      */
     public void act() 
     {
-        // Add your action code here.
+        // Add your action code 
     }    
 }
