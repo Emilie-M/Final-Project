@@ -9,7 +9,7 @@ import java.util.*;
  */
 public class Flynn extends PlatformActor
 {
-    final static double JUMP_VELOCITY = 3.5;
+    final static double JUMP_VELOCITY = 5.5;
     final static double WALK_TARGET_VELOCITY = 3.0;
     final static double MOVE_ACCELERATION = 3.0;
     //protected static final SpriteSheet standRight = new SpriteSheet
@@ -22,26 +22,26 @@ public class Flynn extends PlatformActor
     private GreenfootImage runRight2 = new GreenfootImage("Run3.png");
     private GreenfootImage runRight4 = new GreenfootImage("Run5.png");
     private GreenfootImage runRight5 = new GreenfootImage("Run6.png");
-    
+
     private GreenfootImage runLeft1 = new GreenfootImage("Run2Flipped.png");
     private GreenfootImage runLeft2 = new GreenfootImage("Run3Flipped.png");
     private GreenfootImage runLeft4 = new GreenfootImage("Run5Flipped.png");
     private GreenfootImage runLeft5 = new GreenfootImage("Run6Flipped.png");
-    
+
     private GreenfootImage jumpRight1 = new GreenfootImage("Jump3.png");
     private GreenfootImage jumpRight2 = new GreenfootImage("Jump4.png");
     private GreenfootImage jumpRight3 = new GreenfootImage("Jump5.png");
     private GreenfootImage jumpRight4 = new GreenfootImage("Jump6.png");
     private GreenfootImage jumpRight5 = new GreenfootImage("Jump7.png");
     private GreenfootImage jumpRight6 = new GreenfootImage("Jump8.png");
-    
+
     private GreenfootImage jumpLeft1 = new GreenfootImage("Jump3Flipped.png");
     private GreenfootImage jumpLeft2 = new GreenfootImage("Jump4Flipped.png");
     private GreenfootImage jumpLeft3 = new GreenfootImage("Jump5Flipped.png");
     private GreenfootImage jumpLeft4 = new GreenfootImage("Jump6Flipped.png");
     private GreenfootImage jumpLeft5 = new GreenfootImage("Jump7Flipped.png");
     private GreenfootImage jumpLeft6 = new GreenfootImage("Jump8Flipped.png");
-    
+
     private int frame = 1;
     private int animationCounter = 0;
     //private GreenfootImage runRight4 = new GreenfootImage("");
@@ -52,7 +52,7 @@ public class Flynn extends PlatformActor
     //protected double currentFrameTime;
     //private GreenfootImage runRight3 = new GreenfootImage("Run4.png");
     public static int lives = 3;
-    
+
     public Flynn()
     {
         super(null, new Vector2D(0,0), new Vector2D(0, GRAVITY));
@@ -65,7 +65,7 @@ public class Flynn extends PlatformActor
         //setImage(standRight);
         
     }
-    
+
     public void act() 
     {
         super.act();
@@ -101,17 +101,18 @@ public class Flynn extends PlatformActor
         animationCounter++;
         hitDetection();
         fallen();
-    }  
+    }
+
     public void controlAvatar()
     {
         double dt = getSimulationWorld().getTimeStepDuration();
-        
+
         if (Greenfoot.isKeyDown("d"))
         {
             velocity.setX(Math.min(velocity.getX() + MOVE_ACCELERATION * dt, WALK_TARGET_VELOCITY));
             moveRight();
         }
-        
+
         if (Greenfoot.isKeyDown("a"))
         {
             velocity.setX(Math.max(velocity.getX() - MOVE_ACCELERATION * dt, - WALK_TARGET_VELOCITY));
@@ -124,7 +125,7 @@ public class Flynn extends PlatformActor
             velocity.setY(JUMP_VELOCITY);
             jumpRight();
         }
-        
+
         if (Greenfoot.isKeyDown("space") && Greenfoot.isKeyDown("a") && onPlatform == true)
         {
             velocity.setX(Math.max(velocity.getX() - MOVE_ACCELERATION * dt, - WALK_TARGET_VELOCITY));
@@ -132,6 +133,7 @@ public class Flynn extends PlatformActor
             jumpLeft();
         }
     }
+
     public void moveRight() 
     {
         //setLocation(getX(),getY());
@@ -139,6 +141,7 @@ public class Flynn extends PlatformActor
             animateRight();
         }
     }
+
     public void animateRight() 
     {
         if (frame == 1)
@@ -164,10 +167,10 @@ public class Flynn extends PlatformActor
             frame = 1;
             return;
         }
-        
+
         frame++;
     }
-    
+
     public void moveLeft() 
     {
         //setLocation(getX(),getY());
@@ -175,6 +178,7 @@ public class Flynn extends PlatformActor
             animateLeft();
         }
     }
+
     public void animateLeft() 
     {
         if (frame == 1)
@@ -203,7 +207,7 @@ public class Flynn extends PlatformActor
         }
         frame++;
     }
-    
+
     public void jumpRight() 
     {
         //setLocation(getX(),getY());
@@ -211,6 +215,7 @@ public class Flynn extends PlatformActor
             animateJumpRight();
         }
     }
+
     public void animateJumpRight() 
     {
         setImage(jumpRight1);
@@ -233,6 +238,7 @@ public class Flynn extends PlatformActor
             animateJumpLeft();
         }
     }
+
     public void animateJumpLeft() 
     {
         setImage(jumpLeft1);
