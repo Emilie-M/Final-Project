@@ -17,11 +17,20 @@ public class SplashScreen extends SimulationWorld
         super("SplashScreen.wav", 900, 768, new Point2D(8.0, 6.0), 16.0);
         prepare();
     }
+    
+    protected double timeUntilTransition = 3;
+    public void act() 
+    {
+        super.act();
+        
+        timeUntilTransition -= getTimeStepDuration();
+            
+        if (timeUntilTransition < 0)
+        {
+            transitionToWorld(new StartMenu());
+        }
+    } 
 
-    /**
-     * Prepare the world for the start of the program.
-     * That is: create the initial objects and add them to the world.
-     */
     private void prepare()
     {
         PurpleSmoke purpleSmoke = new PurpleSmoke();
