@@ -70,28 +70,28 @@ public class Flynn extends PlatformActor
     {
         super.act();
         
-        if (Greenfoot.isKeyDown("space") && Greenfoot.isKeyDown("a")) {
-            jumpLeft();
-        }
-        if (Greenfoot.isKeyDown("d")) {
-            moveRight();
-        }
-        if (Greenfoot.isKeyDown("a")) { 
-            moveLeft();
-        }
+        //if (Greenfoot.isKeyDown("space") && Greenfoot.isKeyDown("a")) {
+            //jumpLeft();
+        //}
+        //if (Greenfoot.isKeyDown("d")) {
+            //moveRight();
+        //}
+        //if (Greenfoot.isKeyDown("a")) { 
+            //moveLeft();
+        //}
 
-        if (Greenfoot.isKeyDown("space")) {
-            jumpRight();
-        }
-        if (Greenfoot.isKeyDown("space") && Greenfoot.isKeyDown("left")) {
-            jumpLeft();
-        }
+        //if (Greenfoot.isKeyDown("space")) {
+            //jumpRight();
+        //}
+        //if (Greenfoot.isKeyDown("space") && Greenfoot.isKeyDown("left")) {
+            //jumpLeft();
+        //}
 
 
-        if (Greenfoot.isKeyDown("space")) {
-            jumpRight();
-        }
-        
+        //if (Greenfoot.isKeyDown("space")) {
+            //jumpRight();
+        //}
+        controlAvatar();
         //else 
         //{
             //setImage(standRight);
@@ -151,8 +151,7 @@ public class Flynn extends PlatformActor
         else if (frame == 3)
         {
             setImage(runRight4);
-            //frame = 1;
-            //return;
+            
         }
         else if (frame == 4)
         {
