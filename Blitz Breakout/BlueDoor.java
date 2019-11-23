@@ -14,6 +14,14 @@ public class BlueDoor extends Door
      */
     public void act() 
     {
-        // Add your action code here.
+        super.act();
+        
+        Actor blueKey = getOneObjectAtOffset(0, 0, BlueKey.class);
+        Actor flynn = getOneObjectAtOffset(0, 0, Flynn.class);
+        if (blueKey.getY() == 735 && isTouching(Flynn.class))
+        {
+            SimulationWorld world = (SimulationWorld) getWorld();
+            Greenfoot.setWorld(new Room2());
+        }
     }    
 }
