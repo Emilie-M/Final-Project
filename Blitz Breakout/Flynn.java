@@ -9,6 +9,9 @@ import java.util.*;
  */
 public class Flynn extends PlatformActor
 {
+    final static double JUMP_VELOCITY = 3.5;
+    final static double WALK_TARGET_VELOCITY = 2.0;
+    final static double MOVE_ACCELERATION = 3.0;
     //protected static final SpriteSheet standRight = new SpriteSheet
     private GreenfootImage standRight = new GreenfootImage("DemoStandingRight3.png");
     //protected static final SpriteSheet runRight = new SpriteSheet
@@ -99,10 +102,34 @@ public class Flynn extends PlatformActor
         hitDetection();
         fallen();
     }  
-    
+    public void controlAvatar()
+    {
+        double dt = getSimulationWorld().getTimeStepDuration();
+        
+        if (Greenfoot.isKeyDown("d"))
+        {
+            velocity.setX(Math.min(velocity.getX() + MOVE_ACCELERATION * dt, WALK_TARGET_VELOCITY));
+        }
+        
+        if (Greenfoot.isKeyDown("a"))
+        {
+            velocity.setX(Math.max(velocity.getX() - MOVE_ACCELERATION * dt, - WALK_TARGET_VELOCITY));
+        }
+
+        if (Greenfoot.isKeyDown("space") && Greenfoot.isKeyDown("d") && onPlatform == true)
+        {
+            velocity.setX(Math.min(velocity.getX() + MOVE_ACCELERATION * dt, WALK_TARGET_VELOCITY));
+            velocity.setY(JUMP_VELOCITY);
+        }
+        if (Greenfoot.isKeyDown("space") && Greenfoot.isKeyDown("a") && onPlatform == true)
+        {
+            velocity.setX(Math.max(velocity.getX() - MOVE_ACCELERATION * dt, - WALK_TARGET_VELOCITY));
+            velocity.setY(JUMP_VELOCITY);
+        }
+    }
     public void moveRight() 
     {
-        setLocation(getX(),getY());
+        //setLocation(getX(),getY());
         if (animationCounter % 7 == 0) {
             animateRight();
         }
