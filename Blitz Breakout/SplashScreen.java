@@ -15,13 +15,13 @@ public class SplashScreen extends SimulationWorld
     public SplashScreen()
     {
         super("SplashScreen.wav", 900, 768, new Point2D(8.0, 6.0), 16.0);
-        started();
         prepare();
     }
     
     protected double timeUntilTransition = 3;
     public void act() 
     {
+        started();
         super.act();
         
         timeUntilTransition -= getTimeStepDuration();
