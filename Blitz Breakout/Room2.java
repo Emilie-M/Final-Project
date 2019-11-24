@@ -23,6 +23,10 @@ public class Room2 extends SimulationWorld
     public void act()
     {
         super.act();
+        if (isBlueKeyAcquired2) 
+        {
+            addObject(new BlueKey(), 58, 735);
+        }
     }
     
     public void prepare()
@@ -36,9 +40,6 @@ public class Room2 extends SimulationWorld
         addObject(heart3,125,52);
         Heart heart4 = new Heart();
         addObject(heart4,697,249);
-        if (isBlueKeyAcquired2) 
-        {
-            addObject(new BlueKey(), 58, 735);
-        }
+        
     }
 }
