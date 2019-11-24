@@ -43,5 +43,57 @@ public class Room1 extends SimulationWorld
         addObject(heart2,93,52);
         Heart heart3 = new Heart();
         addObject(heart3,125,52);
+        Platform platform = new Platform();
+        addObject(platform,189,463);
+        Platform platform2 = new Platform();
+        addObject(platform2,327,464);
+        Platform platform3 = new Platform();
+        addObject(platform3,514,534);
+        Platform platform4 = new Platform();
+        addObject(platform4,656,615);
+        BlueDoor blueDoor = new BlueDoor();
+        addObject(blueDoor,824,440);
+        Platform platform5 = new Platform();
+        addObject(platform5,819,538);
+        Flynn flynn = new Flynn();
+        addObject(flynn,145,386);
+        Platform platform6 = new Platform();
+        addObject(platform6,68,464);
+        platform.setLocation(194,464);
+        Platform platform7 = new Platform();
+        addObject(platform7,194,464);
+        removeObject(platform3);
+
+        platform4.setLocation(601,597);
+        BlueKey blueKey = new BlueKey();
+        addObject(blueKey,601,597);
+        removeObject(platform4);
+        removeObject(blueKey);
+
+        removeObject(platform4);
+
+        Platform platform8 = new Platform();
+        addObject(platform8,637,618);
+        platform8.setLocation(584,602);
+
+        removeObject(platform8);
+        Platform platform9 = new Platform();
+        addObject(platform9,391,595);
+        Platform platform10 = new Platform();
+        addObject(platform10,625,619);
+        removeObject(platform9);
+        Platform platform14 = new Platform();
+        addObject(platform14,396,542);
+        platform10.setLocation(569,600);
+        BlueKey blueKey2 = new BlueKey();
+        addObject(blueKey2,569,600);
+        removeObject(blueKey2);
+        removeObject(platform10);
+        
+        Platform platform13 = new Platform();
+        addObject(platform13,625,608);
+        
+        BlueKey blueKey3 = new BlueKey();
+        addObject(blueKey3,574,581);
     }
 }
