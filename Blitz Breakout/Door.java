@@ -14,4 +14,3 @@ public class Door extends SimulationActor
         return (isTouching(Flynn.class));
     }
 }
-

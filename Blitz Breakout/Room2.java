@@ -8,15 +8,17 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Room2 extends SimulationWorld
 {
-
+    boolean isBlueKeyAcquired2;
     /**
      * Constructor for objects of class Room2.
      * 
      */
-    public Room2()
+    public Room2(boolean isBlueKeyAcquired)
     {
         super("", 900, 768, new Point2D(8.0, 6.0), 16.0); 
         prepare();
+        isBlueKeyAcquired2 = isBlueKeyAcquired;
+        
     }
     public void act()
     {
@@ -25,6 +27,7 @@ public class Room2 extends SimulationWorld
     
     public void prepare()
     {
+        
         Heart heart = new Heart();
         addObject(heart,61,52);
         Heart heart2 = new Heart();
@@ -33,5 +36,9 @@ public class Room2 extends SimulationWorld
         addObject(heart3,125,52);
         Heart heart4 = new Heart();
         addObject(heart4,697,249);
+        if (isBlueKeyAcquired2) 
+        {
+            addObject(new BlueKey(), 58, 735);
+        }
     }
 }
