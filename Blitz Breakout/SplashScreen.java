@@ -15,17 +15,16 @@ public class SplashScreen extends SimulationWorld
     public SplashScreen()
     {
         super("SplashScreen.wav", 900, 768, new Point2D(8.0, 6.0), 16.0);
-        started();
         prepare();
     }
     
-    protected double timeUntilTransition = 3;
+    protected double timeUntilTransition = 4.5;
     public void act() 
     {
         super.act();
+        started();
         
         timeUntilTransition -= getTimeStepDuration();
-            
         if (timeUntilTransition < 0)
         {
             transitionToWorld(new StartMenu());
