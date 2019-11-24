@@ -31,20 +31,46 @@ public class Room2 extends SimulationWorld
     
     public void prepare()
     {
+        Platform platform = new Platform();
+        addObject(platform,756,599);
+        PinkDoor pinkDoor = new PinkDoor();
+        addObject(pinkDoor,756,502);
 
+        removeObject(platform);
+        removeObject(pinkDoor);
+
+        Platform platform2 = new Platform();
+        addObject(platform2,277,306);
+        Platform platform3 = new Platform();
+        addObject(platform3,451,480);
+        removeObject(platform3);
+
+        Platform platform4 = new Platform();
+        addObject(platform4,535,604);
+        Platform platform5 = new Platform();
+        addObject(platform5,828,595);
+        Platform platform6 = new Platform();
+        addObject(platform6,718,595);
+        Platform platform7 = new Platform();
+        addObject(platform7,651,482);
+        Platform platform8 = new Platform();
+        addObject(platform8,756,380);
+        Platform platform9 = new Platform();
+        addObject(platform9,113,552);
+
+        BlueDoor2 blueDoor2 = new BlueDoor2();
+        addObject(blueDoor2,98,89);
+        Platform platform10 = new Platform();
+        addObject(platform10,97,187);
+        Platform platform11 = new Platform();
+        addObject(platform11,351,480);
+        PinkDoor pinkDoor2 = new PinkDoor();
+        addObject(pinkDoor2,845,499);
         Heart heart = new Heart();
         addObject(heart,61,52);
         Heart heart2 = new Heart();
         addObject(heart2,93,52);
         Heart heart3 = new Heart();
         addObject(heart3,125,52);
-        Heart heart4 = new Heart();
-        addObject(heart4,697,249);
-
-        removeObject(heart4);
-        Platform platform = new Platform();
-        addObject(platform,756,599);
-        PinkDoor pinkDoor = new PinkDoor();
-        addObject(pinkDoor,756,502);
     }
 }
