@@ -15,6 +15,7 @@ public class SplashScreen extends SimulationWorld
     public SplashScreen()
     {
         super("SplashScreen.wav", 900, 768, new Point2D(8.0, 6.0), 16.0);
+        started();
         prepare();
     }
     
@@ -28,6 +29,7 @@ public class SplashScreen extends SimulationWorld
         if (timeUntilTransition < 0)
         {
             transitionToWorld(new StartMenu());
+            stopped();
         }
     } 
 

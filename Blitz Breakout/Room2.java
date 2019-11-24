@@ -31,7 +31,7 @@ public class Room2 extends SimulationWorld
     
     public void prepare()
     {
-        
+
         Heart heart = new Heart();
         addObject(heart,61,52);
         Heart heart2 = new Heart();
@@ -40,6 +40,11 @@ public class Room2 extends SimulationWorld
         addObject(heart3,125,52);
         Heart heart4 = new Heart();
         addObject(heart4,697,249);
-        
+
+        removeObject(heart4);
+        Platform platform = new Platform();
+        addObject(platform,756,599);
+        PinkDoor pinkDoor = new PinkDoor();
+        addObject(pinkDoor,756,502);
     }
 }
