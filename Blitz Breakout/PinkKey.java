@@ -8,9 +8,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class PinkKey extends Key
 {
+    public static boolean isPinkKeyAcquired = false;
     public void act() 
     {
         detectCollision();
+        isGoldKeyAcquired();
     }    
     
      public void detectCollision()
@@ -18,9 +20,13 @@ public class PinkKey extends Key
         Actor flynn = getOneObjectAtOffset(0, 0, Flynn.class);
         if (isTouching(Flynn.class)) {
             SimulationWorld room1 = (SimulationWorld) getWorld();
-            
+            isPinkKeyAcquired = true;
             room1.removeObject(this);
             room1.addObject(new PinkKey(), 258, 735);
         }
     }    
+    public static boolean isGoldKeyAcquired()
+    {
+        return isPinkKeyAcquired;
+    }
 }

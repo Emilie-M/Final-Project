@@ -16,4 +16,9 @@ public class StartMenu extends SimulationWorld
     {
         super("", 900, 768, new Point2D(8.0, 6.0), 16.0);
     }
+    public void act()
+    {
+        // Greenfoot.setWorld(new Room1(false));
+        // Use the code above to transition to room 1 for the first time
+    }
 }
