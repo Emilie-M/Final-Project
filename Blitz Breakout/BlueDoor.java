@@ -18,10 +18,10 @@ public class BlueDoor extends Door
         super.act();
         if (isDoorTouchingFlynn()) 
         {
-            if (getBlueKey() == true)
+            if (getBlueKey())
             {
                 SimulationWorld world = (SimulationWorld) getWorld();
-                Greenfoot.setWorld(new Room2(getBlueKey()));
+                Greenfoot.setWorld(new Room2(true));
             }
         }
     }
