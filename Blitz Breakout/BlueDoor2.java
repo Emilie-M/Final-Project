@@ -1,23 +1,22 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.*;
-
 /**
- * Write a description of class BlueDoor here.
+ * Write a description of class BlueDoor2 here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class BlueDoor extends Door
+public class BlueDoor2 extends Door
 {
     /**
-     * Act - do whatever the BlueDoor wants to do. This method is called whenever
+     * Act - do whatever the BlueDoor2 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
     {
         super.act();
 
-        transitionToRoom2();
+        transitionToRoom1();
     }
     
     public boolean getBlueKey()
@@ -36,15 +35,15 @@ public class BlueDoor extends Door
 
         return false;
     }
-    public void transitionToRoom2()
+    public void transitionToRoom1()
     {
         if (isDoorTouchingFlynn()) 
         {
             if (getBlueKey())
             {
                 SimulationWorld world = (SimulationWorld) getWorld();
-                Greenfoot.setWorld(new Room2(true));
+                Greenfoot.setWorld(new Room1(true));
             }
         }
-    }
+    }    
 }
