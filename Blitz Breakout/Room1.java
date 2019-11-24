@@ -1,3 +1,4 @@
+
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
@@ -8,19 +9,26 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Room1 extends SimulationWorld
 {
+    protected boolean isBlueKeyAcquired2;
     /**
      * Constructor for objects of class Room1.
      * 
      */
-    public Room1()
+    public Room1(boolean isBlueKeyAcquired)
     {
         super("", 900, 768, new Point2D(8.0, 6.0), 16.0); 
         prepare();
+        isBlueKeyAcquired2 = isBlueKeyAcquired;
     }
 
     public void act()
     {
         super.act();
+       
+        if (isBlueKeyAcquired2) 
+        {
+            addObject(new BlueKey(), 58, 735);
+        }
     }
 
     /**

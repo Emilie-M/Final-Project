@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Room2 extends SimulationWorld
 {
-    boolean isBlueKeyAcquired2;
+    protected boolean isBlueKeyAcquired2;
     /**
      * Constructor for objects of class Room2.
      * 
