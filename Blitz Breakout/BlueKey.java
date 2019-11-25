@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class BlueKey extends Key
 {
-    public static boolean isBlueKeyAcquired = false;
+    //public static boolean isBlueKeyAcquired = false;
     public void act() 
     {
         detectCollision();
@@ -20,13 +20,13 @@ public class BlueKey extends Key
         Actor flynn = getOneObjectAtOffset(0, 0, Flynn.class);
         if (isTouching(Flynn.class)) {
             SimulationWorld room1 = (SimulationWorld) getWorld();
-            isBlueKeyAcquired = true;
+            //isBlueKeyAcquired = true;
             room1.removeObject(this);
             room1.addObject(new BlueKey(), 58, 735);
         }
     }
-    public static boolean isBlueKeyAcquired()
-    {
-        return isBlueKeyAcquired;
-    }
+    //public static boolean isBlueKeyAcquired()
+    //{
+      //  return isBlueKeyAcquired;
+    //}
 }
