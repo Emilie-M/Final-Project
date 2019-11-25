@@ -42,9 +42,9 @@ public class Room1 extends SimulationWorld
         Platform platform2 = new Platform();
         addObject(platform2,327,464);
         Platform platform3 = new Platform();
-        addObject(platform3,514,534);
+        addObject(platform3,578,584);
         Platform platform4 = new Platform();
-        addObject(platform4,656,615);
+        addObject(platform4,416,528);
         BlueDoor blueDoor = new BlueDoor();
         addObject(blueDoor,824,440);
         Platform platform5 = new Platform();
@@ -57,7 +57,7 @@ public class Room1 extends SimulationWorld
         Platform platform7 = new Platform();
         addObject(platform7,194,464);
 
-        platform4.setLocation(601,597);
+        
         BlueKey blueKey = new BlueKey();
         addObject(blueKey,601,597);
 
@@ -69,17 +69,7 @@ public class Room1 extends SimulationWorld
         addObject(platform9,391,595);
         Platform platform10 = new Platform();
         addObject(platform10,625,619);
-        Platform platform14 = new Platform();
-        addObject(platform14,396,542);
-        platform10.setLocation(569,600);
-        BlueKey blueKey2 = new BlueKey();
-        addObject(blueKey2,569,600);
 
-        Platform platform13 = new Platform();
-        addObject(platform13,625,608);
-
-        BlueKey blueKey3 = new BlueKey();
-        addObject(blueKey3,574,581);
 
         Heart heart = new Heart();
         addObject(heart,61,52);
@@ -89,14 +79,12 @@ public class Room1 extends SimulationWorld
         addObject(heart3,125,52);
         removeObject(platform9);
 
-        removeObject(blueKey2);
         removeObject(platform10);
         removeObject(platform8);
         removeObject(blueKey);
-        platform3.setLocation(418,533);
-        platform3.setLocation(456,541);
-        platform4.setLocation(581,539);
-        platform3.setLocation(404,532);
-        platform4.setLocation(576,589);
+        
+        
+        BlueKey blueKey2 = new BlueKey();
+        addObject(blueKey2,547,563);
     }
 }
