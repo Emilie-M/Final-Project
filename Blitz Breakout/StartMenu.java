@@ -27,7 +27,7 @@ public class StartMenu extends SimulationWorld
 
         if (Greenfoot.isKeyDown("space"))
         {
-            transitionToWorld(new Room1(false));
+            transitionToWorld(new Room1(3, false));
         }
     }
 }

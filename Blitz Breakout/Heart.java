@@ -21,19 +21,20 @@ public class Heart extends Actor
         if (hearts == 2) 
         {
             getWorld().removeObjects(getWorld().getObjectsAt(125, 52, Heart.class));
-            
         }
         
         if (hearts == 1)
         {
             getWorld().removeObjects(getWorld().getObjectsAt(93, 52,Heart.class));
-            
         }
         
         if (hearts == 0) 
         {
-            getWorld().removeObjects(getWorld().getObjectsAt(61, 52,Heart.class));
-            
+            getWorld().removeObjects(getWorld().getObjectsAt(61, 52,Heart.class)); 
         }
+    }
+    public static int getHearts()
+    {
+        return hearts;
     }
 }
