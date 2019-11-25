@@ -8,16 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Dialogue extends SimulationActor
 {
-    private int duration = -1;
-     
-    public Dialogue(String text, int size, int time)
+    public Dialogue()
     {
-        setImage(new GreenfootImage("Hello......", 20, null, null));
-    }
- 
-    public Dialogue(String text, int size)
-    {
-        this(text, size, -1);
+        setImage(new GreenfootImage("error", 15, Color.WHITE, Color.BLACK));
     }
      
     public void act()
