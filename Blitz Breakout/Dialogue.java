@@ -8,26 +8,32 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Dialogue extends SimulationActor
 {
-    //public Dialogue()
-    //{
-        //super();
-
-    // }
-
-    public void stopDialogue()
+    private int duration = -1;
+     
+    public Dialogue(String text, int size, int time)
     {
-        getSimulationWorld().setGamePaused(false);
-        getSimulationWorld().removeObject(this);
+        setImage(new GreenfootImage("Hello......", 20, null, null));
     }
-    
-    public void act() 
+ 
+    public Dialogue(String text, int size)
+    {
+        this(text, size, -1);
+    }
+     
+    public void act()
     {
         super.act();
         getSimulationWorld().setGamePaused(true);
-
+        
         if (Greenfoot.isKeyDown("enter"))
         {
             stopDialogue();
         }
-    }   
+    }
+    
+    public void stopDialogue()
+    {
+        getSimulationWorld().setGamePaused(false);
+        getSimulationWorld().removeObject(this);
+    } 
 }
