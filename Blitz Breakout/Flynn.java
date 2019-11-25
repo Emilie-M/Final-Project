@@ -14,7 +14,8 @@ public class Flynn extends PlatformActor
     final static double MOVE_ACCELERATION = 3.0;
     //public static boolean isBlueKeyAcquired;
     //protected static final SpriteSheet standRight = new SpriteSheet
-    private GreenfootImage standRight = new GreenfootImage("DemoStandingRight3.png");
+    private GreenfootImage standLeft = new GreenfootImage("DemoStandingLeft1.png");
+    private GreenfootImage standRight = new GreenfootImage("DemoStandingRight3Cropped.png");
     //protected static final SpriteSheet runRight = new SpriteSheet
     //("spritesheet20.png", 1, 6);
     //protected static final SpriteSheet runLeft = new SpriteSheet
@@ -109,7 +110,19 @@ public class Flynn extends PlatformActor
     {
         double dt = getSimulationWorld().getTimeStepDuration();
 
-        if (Greenfoot.isKeyDown("d"))
+        if (Greenfoot.isKeyDown("space") && Greenfoot.isKeyDown("d") && onPlatform == true)
+        {
+            velocity.setX(Math.min(velocity.getX() + MOVE_ACCELERATION * dt, WALK_TARGET_VELOCITY));
+            velocity.setY(JUMP_VELOCITY);
+            jumpRight();
+        }
+        else if (Greenfoot.isKeyDown("space") && Greenfoot.isKeyDown("a") && onPlatform == true)
+        {
+            velocity.setX(Math.max(velocity.getX() - MOVE_ACCELERATION * dt, - WALK_TARGET_VELOCITY));
+            velocity.setY(JUMP_VELOCITY);
+            jumpLeft();
+        }
+        else if (Greenfoot.isKeyDown("d"))
         {
             velocity.setX(WALK_TARGET_VELOCITY);//Math.min(velocity.getX() + MOVE_ACCELERATION * dt, WALK_TARGET_VELOCITY));
             moveRight();
@@ -121,29 +134,15 @@ public class Flynn extends PlatformActor
         }
         else
         {
-            if (velocity.getX()>0)
+            if (velocity.getX() > 0)
             {
-                // right
+                setImage(standRight);
             }
-            else if (velocity.getX()<0)
+            else if (velocity.getX() < 0)
             {
-                // left
+                setImage(standLeft);
             }
             velocity.setX(0);//Math.min(velocity.getX() + MOVE_ACCELERATION * dt, WALK_TARGET_VELOCITY));
-        }
-
-        if (Greenfoot.isKeyDown("space") && Greenfoot.isKeyDown("d") && onPlatform == true)
-        {
-            velocity.setX(Math.min(velocity.getX() + MOVE_ACCELERATION * dt, WALK_TARGET_VELOCITY));
-            velocity.setY(JUMP_VELOCITY);
-            jumpRight();
-        }
-
-        if (Greenfoot.isKeyDown("space") && Greenfoot.isKeyDown("a") && onPlatform == true)
-        {
-            velocity.setX(Math.max(velocity.getX() - MOVE_ACCELERATION * dt, - WALK_TARGET_VELOCITY));
-            velocity.setY(JUMP_VELOCITY);
-            jumpLeft();
         }
     }
 
@@ -214,7 +213,7 @@ public class Flynn extends PlatformActor
         }
         else if (frame == 4)
         {
-            setImage(runRight5);
+            setImage(runLeft5);
             frame = 1;
             return;
         }
