@@ -101,6 +101,7 @@ public class Flynn extends PlatformActor
         //}
         //moveOnPlatform();
         //updateFrame();
+        invincibilityTimeRemaining -= getSimulationWorld().getTimeStepDuration();
         animationCounter++;
         hitDetection();
         fallen();
@@ -171,7 +172,6 @@ public class Flynn extends PlatformActor
         else if (frame == 3)
         {
             setImage(runRight4);
-            
         }
         else if (frame == 4)
         {
@@ -318,7 +318,7 @@ public class Flynn extends PlatformActor
     {
         //SimulationWorld world = (SimulationWorld) getWorld();
         Actor spider = getOneIntersectingObject(Spider.class);
-
+        
         if(spider != null && invincibilityTimeRemaining <= 0.0)
         {
             invincibilityTimeRemaining = 2.0;
