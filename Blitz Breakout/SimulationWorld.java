@@ -25,7 +25,7 @@ public class SimulationWorld extends World
 
     // Looping music
     protected GreenfootSound music;
-
+    protected boolean isGamePaused = false;
     
     public SimulationWorld(String musicFile,int windowWidth, int windowHeight, Point2D cameraCenter, double cameraWidth) 
     {    
@@ -175,4 +175,13 @@ public class SimulationWorld extends World
         }            
     }
     
+    public void setGamePaused(boolean isPaused)
+    {
+        isGamePaused = isPaused;
+    }
+
+    public boolean getGamePaused()
+    {
+        return isGamePaused;
+    }
 }

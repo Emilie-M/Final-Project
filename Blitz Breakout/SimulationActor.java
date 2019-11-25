@@ -30,7 +30,10 @@ public class SimulationActor extends Actor
     
     public void act() 
     {
-        eulerIntegration();
+        if (getSimulationWorld().getGamePaused() == false)
+        {
+            eulerIntegration();
+        }
     }    
     
     protected SimulationWorld getSimulationWorld()

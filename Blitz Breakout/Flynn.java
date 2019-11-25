@@ -42,9 +42,10 @@ public class Flynn extends PlatformActor
     private GreenfootImage jumpLeft4 = new GreenfootImage("Jump6Flipped.png");
     private GreenfootImage jumpLeft5 = new GreenfootImage("Jump7Flipped.png");
     private GreenfootImage jumpLeft6 = new GreenfootImage("Jump8Flipped.png");
-
+    
     private int frame = 1;
     private int animationCounter = 0;
+    private double invincibilityTimeRemaining = 0.0;
     //private GreenfootImage runRight4 = new GreenfootImage("");
     //protected static final double SPRITE_FRAMES_DURATION = 0.4;
     protected static final double FLYNN_VELOCITY = 1.6;
@@ -110,14 +111,25 @@ public class Flynn extends PlatformActor
 
         if (Greenfoot.isKeyDown("d"))
         {
-            velocity.setX(Math.min(velocity.getX() + MOVE_ACCELERATION * dt, WALK_TARGET_VELOCITY));
+            velocity.setX(WALK_TARGET_VELOCITY);//Math.min(velocity.getX() + MOVE_ACCELERATION * dt, WALK_TARGET_VELOCITY));
             moveRight();
         }
-
-        if (Greenfoot.isKeyDown("a"))
+        else if (Greenfoot.isKeyDown("a"))
         {
-            velocity.setX(Math.max(velocity.getX() - MOVE_ACCELERATION * dt, - WALK_TARGET_VELOCITY));
+            velocity.setX(-WALK_TARGET_VELOCITY);//Math.max(velocity.getX() - MOVE_ACCELERATION * dt, - WALK_TARGET_VELOCITY));
             moveLeft();
+        }
+        else
+        {
+            if (velocity.getX()>0)
+            {
+                // right
+            }
+            else if (velocity.getX()<0)
+            {
+                // left
+            }
+            velocity.setX(0);//Math.min(velocity.getX() + MOVE_ACCELERATION * dt, WALK_TARGET_VELOCITY));
         }
 
         if (Greenfoot.isKeyDown("space") && Greenfoot.isKeyDown("d") && onPlatform == true)
@@ -307,10 +319,12 @@ public class Flynn extends PlatformActor
     {
         //SimulationWorld world = (SimulationWorld) getWorld();
         Actor spider = getOneIntersectingObject(Spider.class);
-        
-        if(spider != null)  
-        {  
-            lives--;
+
+        if(spider != null && invincibilityTimeRemaining <= 0.0)
+        {
+
+            invincibilityTimeRemaining = 2.0;
+             lives--;
         } 
     }
     
