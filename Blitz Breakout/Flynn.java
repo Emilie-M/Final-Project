@@ -10,7 +10,7 @@ import java.util.*;
 public class Flynn extends PlatformActor
 {
     final static double JUMP_VELOCITY = 5.5;
-    final static double WALK_TARGET_VELOCITY = 3.0;
+    final static double WALK_TARGET_VELOCITY = 3.8;
     final static double MOVE_ACCELERATION = 3.0;
     //public static boolean isBlueKeyAcquired;
     //protected static final SpriteSheet standRight = new SpriteSheet
