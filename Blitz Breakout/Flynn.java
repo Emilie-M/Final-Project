@@ -142,7 +142,7 @@ public class Flynn extends PlatformActor
             {
                 setImage(standLeft);
             }
-            velocity.setX(0);//Math.min(velocity.getX() + MOVE_ACCELERATION * dt, WALK_TARGET_VELOCITY));
+            velocity.setX(0);
         }
     }
 
@@ -321,9 +321,8 @@ public class Flynn extends PlatformActor
 
         if(spider != null && invincibilityTimeRemaining <= 0.0)
         {
-
             invincibilityTimeRemaining = 2.0;
-             lives--;
+            lives--;
         } 
     }
     
@@ -348,7 +347,6 @@ public class Flynn extends PlatformActor
             }   
         }
     }
-    
     //public void updateFrame()
     //{
         //currentFrameTime += getSimulationWorld().getTimeStepDuration();
@@ -368,4 +366,3 @@ public class Flynn extends PlatformActor
         //}
     //}
 }
-
