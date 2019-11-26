@@ -8,19 +8,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Dialogue extends SimulationActor
 {
-    //public Dialogue()
-    //{
-        //super();
-
-    // }
-
-    public void stopDialogue()
+    public Dialogue()
     {
-        getSimulationWorld().setGamePaused(false);
-        getSimulationWorld().removeObject(this);
+        setImage(new GreenfootImage("error", 15, Color.WHITE, Color.BLACK));
     }
-    
-    public void act() 
+
+    public void act()
     {
         super.act();
         getSimulationWorld().setGamePaused(true);
@@ -29,5 +22,11 @@ public class Dialogue extends SimulationActor
         {
             stopDialogue();
         }
-    }   
+    }
+
+    public void stopDialogue()
+    {
+        getSimulationWorld().setGamePaused(false);
+        getSimulationWorld().removeObject(this);
+    } 
 }

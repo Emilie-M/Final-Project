@@ -79,7 +79,7 @@ public class Flynn extends PlatformActor
         //if (Greenfoot.isKeyDown("d")) {
             //moveRight();
         //}
-        //if (Greenfoot.isKeyDown("a")) { 
+        //if (Greenfoot.isKeyDown("a")) {   
             //moveLeft();
         //}
 
