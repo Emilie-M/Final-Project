@@ -24,6 +24,7 @@ public class Room2 extends SimulationWorld
         isBlueKeyAcquired2 = isBlueKeyAcquired;
         positionNumber = positionNumber;
     }
+    private int i = 0;
     public void act()
     {
         super.act();
@@ -45,13 +46,15 @@ public class Room2 extends SimulationWorld
         {
             addObject(new Heart(), 61, 52);
         }
-        if (positionNumber == 0)
+        if (positionNumber == 0 && i < 1)
         {
             addObject(new Flynn(), 93, 42);
+            i++;
         }
-        else if(positionNumber == 1)
+        if(positionNumber == 1 && i < 1)
         {
             addObject(new Flynn(), 83, 42);
+            i++;
         }
     }
     

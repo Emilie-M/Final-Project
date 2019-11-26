@@ -24,7 +24,7 @@ public class Room1 extends SimulationWorld
         isBlueKeyAcquired2 = isBlueKeyAcquired;
         positionNumber = positionNumber;
     }
-
+    private int i = 0;
     public void act()
     {
         super.act();
@@ -49,14 +49,16 @@ public class Room1 extends SimulationWorld
             addObject(new Heart(), 61, 52);
         }
 
-        if (positionNumber == 0)
+        if (positionNumber == 0 && i < 1)
         {
             addObject(new Flynn(), 93, 42);
+            i++;
         }
 
-        if(positionNumber == 1)
+        if(positionNumber == 1 && i < 1)
         {
             addObject(new Flynn(), 83, 42);
+            i++;
         }
     }
    
@@ -78,8 +80,6 @@ public class Room1 extends SimulationWorld
         addObject(blueDoor,824,440);
         Platform platform5 = new Platform();
         addObject(platform5,819,538);
-        Flynn flynn = new Flynn();
-        addObject(flynn,145,386);
         Platform platform6 = new Platform();
         addObject(platform6,68,464);
         platform.setLocation(194,464);
