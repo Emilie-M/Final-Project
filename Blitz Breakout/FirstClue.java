@@ -14,11 +14,18 @@ public class FirstClue extends SimulationActor
      */
     public void act() 
     {
-        //Actor flynn = getOneIntersectingObject(Flynn.class);
+        Actor flynn = getOneIntersectingObject(Flynn.class);
         
-        //if (flynn != null)
-        //{
-          //  getWorld().removeObject(this);
-        //}
+        if (flynn != null)
+        {
+            GreenfootImage image = new GreenfootImage("NewspaperUSEthisONE.png");
+            image.scale(image.getWidth()/2, image.getHeight()/2);
+            setImage(image);
+            
+            if (Greenfoot.isKeyDown("f"))
+            {
+                getWorld().removeObject(this);
+            }
+        }
     }    
 }

@@ -105,7 +105,6 @@ public class Flynn extends PlatformActor
         animationCounter++;
         hitDetection();
         fallen();
-        firstClue();
     }
 
     public void controlAvatar()
@@ -348,17 +347,6 @@ public class Flynn extends PlatformActor
                 Greenfoot.setWorld(new EndWorldPit());
             }   
         }
-    }
-    
-    public void firstClue()
-    {
-        Actor firstClue = getOneIntersectingObject(FirstClue.class);
-        
-        if (firstClue != null)
-        {
-            SimulationWorld world = (SimulationWorld) getWorld();
-            Greenfoot.setWorld(new FirstNewspaper());
-        } 
     }
     
     //public void updateFrame()
