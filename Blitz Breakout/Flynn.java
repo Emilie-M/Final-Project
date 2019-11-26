@@ -10,7 +10,7 @@ import java.util.*;
 public class Flynn extends PlatformActor
 {
     final static double JUMP_VELOCITY = 5.5;
-    final static double WALK_TARGET_VELOCITY = 3.8;
+    final static double WALK_TARGET_VELOCITY = 3.0;
     final static double MOVE_ACCELERATION = 3.0;
     //public static boolean isBlueKeyAcquired;
     //protected static final SpriteSheet standRight = new SpriteSheet
@@ -79,7 +79,7 @@ public class Flynn extends PlatformActor
         //if (Greenfoot.isKeyDown("d")) {
             //moveRight();
         //}
-        //if (Greenfoot.isKeyDown("a")) { 
+        //if (Greenfoot.isKeyDown("a")) {   
             //moveLeft();
         //}
 
@@ -143,7 +143,7 @@ public class Flynn extends PlatformActor
             {
                 setImage(standLeft);
             }
-            velocity.setX(0);//Math.min(velocity.getX() + MOVE_ACCELERATION * dt, WALK_TARGET_VELOCITY));
+            velocity.setX(0);
         }
     }
 
@@ -172,7 +172,6 @@ public class Flynn extends PlatformActor
         else if (frame == 3)
         {
             setImage(runRight4);
-            
         }
         else if (frame == 4)
         {
@@ -319,11 +318,11 @@ public class Flynn extends PlatformActor
     {
         //SimulationWorld world = (SimulationWorld) getWorld();
         Actor spider = getOneIntersectingObject(Spider.class);
-
+        
         if(spider != null && invincibilityTimeRemaining <= 0.0)
         {
             invincibilityTimeRemaining = 2.0;
-             lives--;
+            lives--;
         } 
     }
     
@@ -348,7 +347,6 @@ public class Flynn extends PlatformActor
             }   
         }
     }
-    
     //public void updateFrame()
     //{
         //currentFrameTime += getSimulationWorld().getTimeStepDuration();
@@ -368,4 +366,3 @@ public class Flynn extends PlatformActor
         //}
     //}
 }
-

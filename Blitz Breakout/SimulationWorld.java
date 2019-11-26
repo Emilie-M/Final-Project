@@ -107,8 +107,8 @@ public class SimulationWorld extends World
         {
             newWorld.setMusic(music);
         }
-        
-        newWorld.started();
+        // Im about to comment the code below (I = AKASH)
+        //newWorld.started();
     }
 
     

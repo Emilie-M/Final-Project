@@ -12,18 +12,18 @@ public class Dialogue extends SimulationActor
     {
         setImage(new GreenfootImage("error", 15, Color.WHITE, Color.BLACK));
     }
-     
+
     public void act()
     {
         super.act();
         getSimulationWorld().setGamePaused(true);
-        
+
         if (Greenfoot.isKeyDown("enter"))
         {
             stopDialogue();
         }
     }
-    
+
     public void stopDialogue()
     {
         getSimulationWorld().setGamePaused(false);

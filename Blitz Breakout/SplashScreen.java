@@ -17,21 +17,23 @@ public class SplashScreen extends SimulationWorld
         super("SplashScreen.wav", 900, 768, new Point2D(8.0, 6.0), 16.0);
         prepare();
     }
-    
+
     protected double timeUntilTransition = 3.9;
-    public void act() 
+    public void act()
     {
         super.act();
-        started();
-        
+        super.started();
         timeUntilTransition -= getTimeStepDuration();
+        start(timeUntilTransition);
+    }
+    public void start(double timeUntilTransition)
+    {
         if (timeUntilTransition < 0)
         {
+            super.stopped();
             transitionToWorld(new StartMenu());
-            stopped();
         }
-    } 
-
+    }
     private void prepare()
     {
         PurpleSmoke purpleSmoke = new PurpleSmoke();
