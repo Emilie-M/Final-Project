@@ -21,7 +21,6 @@ public class Room2 extends SimulationWorld
         prepare();
         isBlueKeyAcquired2 = isBlueKeyAcquired;
         int hearts = heart;
-        isBlueKeyAcquired2 = isBlueKeyAcquired;
         positionNumber = positionNumber;
     }
     private int i = 0;
@@ -36,70 +35,69 @@ public class Room2 extends SimulationWorld
         {
             addObject(new Heart(), 125, 52);
         }
-        
         if (hearts == 1)
         {
             addObject(new Heart(), 93, 52);
         }
-        
         if (hearts == 0) 
         {
             addObject(new Heart(), 61, 52);
         }
+
         if (positionNumber == 0 && i < 1)
         {
-            addObject(new Flynn(), 93, 42);
+            addObject(new Flynn(), 297, 286);
             i++;
         }
         if(positionNumber == 1 && i < 1)
         {
-            addObject(new Flynn(), 83, 42);
+            addObject(new Flynn(), 297, 286);
             i++;
         }
     }
-    
+
     public void prepare()
     {
         Platform platform = new Platform();
-        addObject(platform,756,599);
+        addObject(platform, 756, 599);
         PinkDoor pinkDoor = new PinkDoor();
-        addObject(pinkDoor,756,502);
+        addObject(pinkDoor, 756, 502);
 
         removeObject(platform);
         removeObject(pinkDoor);
 
         Platform platform2 = new Platform();
-        addObject(platform2,277,306);
+        addObject(platform2, 277, 306);
         Platform platform3 = new Platform();
-        addObject(platform3,451,480);
+        addObject(platform3, 451, 480);
         removeObject(platform3);
 
         Platform platform4 = new Platform();
-        addObject(platform4,535,604);
+        addObject(platform4, 535, 604);
         Platform platform5 = new Platform();
-        addObject(platform5,828,595);
+        addObject(platform5, 828, 595);
         Platform platform6 = new Platform();
-        addObject(platform6,718,595);
+        addObject(platform6, 718, 595);
         Platform platform7 = new Platform();
-        addObject(platform7,651,482);
+        addObject(platform7, 651, 482);
         Platform platform8 = new Platform();
-        addObject(platform8,756,380);
+        addObject(platform8, 756, 380);
         Platform platform9 = new Platform();
-        addObject(platform9,113,552);
+        addObject(platform9, 113, 552);
 
         BlueDoor2 blueDoor2 = new BlueDoor2();
-        addObject(blueDoor2,98,89);
+        addObject(blueDoor2, 98, 89);
         Platform platform10 = new Platform();
-        addObject(platform10,97,187);
+        addObject(platform10, 97, 187);
         Platform platform11 = new Platform();
-        addObject(platform11,351,480);
+        addObject(platform11, 351, 480);
         PinkDoor pinkDoor2 = new PinkDoor();
-        addObject(pinkDoor2,845,499);
+        addObject(pinkDoor2, 845, 499);
         Heart heart = new Heart();
-        addObject(heart,61,52);
+        addObject(heart, 61, 52);
         Heart heart2 = new Heart();
-        addObject(heart2,93,52);
+        addObject(heart2, 93, 52);
         Heart heart3 = new Heart();
-        addObject(heart3,125,52);
+        addObject(heart3, 125, 52);
     }
 }
