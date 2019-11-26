@@ -11,7 +11,6 @@ public class Spider extends SimulationActor
     protected final static double SPIDER_SPEED = 2.0;
     protected double minHeight;
     protected double maxHeight;
-    
     public Spider(double minHeight,double maxHeight)
     {
         super();
@@ -20,7 +19,7 @@ public class Spider extends SimulationActor
         
         velocity = new Vector2D(0.0, SPIDER_SPEED);
     }
-    
+
     public void act() 
     {
         super.act();
@@ -35,7 +34,7 @@ public class Spider extends SimulationActor
             velocity = new Vector2D(0.0, SPIDER_SPEED);
         }
     }
-    
+
     public int getWidth()
     {
         if (getImage() != null)
