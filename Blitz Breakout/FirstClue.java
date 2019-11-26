@@ -14,6 +14,11 @@ public class FirstClue extends SimulationActor
      */
     public void act() 
     {
-        // Add your action code here.
+        //Actor flynn = getOneIntersectingObject(Flynn.class);
+        
+        //if (flynn != null)
+        //{
+          //  getWorld().removeObject(this);
+        //}
     }    
 }

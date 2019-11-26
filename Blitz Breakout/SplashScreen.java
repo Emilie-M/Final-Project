@@ -18,7 +18,7 @@ public class SplashScreen extends SimulationWorld
         prepare();
     }
     
-    protected double timeUntilTransition = 4.5;
+    protected double timeUntilTransition = 3.9;
     public void act() 
     {
         super.act();
