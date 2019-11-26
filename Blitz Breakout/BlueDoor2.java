@@ -42,7 +42,7 @@ public class BlueDoor2 extends Door
             if (getBlueKey())
             {
                 SimulationWorld world = (SimulationWorld) getWorld();
-                Greenfoot.setWorld(new Room1(Heart.getHearts(),true, 2));
+                Greenfoot.setWorld(new Room1(Heart.getHearts(),true, 1));
             }
         }
     }    
