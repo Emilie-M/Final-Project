@@ -22,15 +22,20 @@ public class SplashScreen extends SimulationWorld
     public void act() 
     {
         super.act();
-        started();
+        super.started();
         
         timeUntilTransition -= getTimeStepDuration();
+        start(timeUntilTransition);
+    } 
+    
+    public void start(double timeUntilTransition)
+    {
         if (timeUntilTransition < 0)
         {
+            super.stopped();
             transitionToWorld(new StartMenu());
-            stopped();
         }
-    } 
+    }
 
     private void prepare()
     {
