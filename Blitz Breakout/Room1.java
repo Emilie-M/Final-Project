@@ -21,6 +21,17 @@ public class Room1 extends SimulationWorld
         prepare();
         int hearts = heart;
         isBlueKeyAcquired2 = isBlueKeyAcquired;
+        
+    }
+
+    public void act()
+    {
+        super.act();
+       
+        if (isBlueKeyAcquired2) 
+        {
+            addObject(new BlueKey(), 58, 735);
+        }
         if (hearts == 2) 
         {
             addObject(new Heart(), 125, 52);
@@ -34,16 +45,6 @@ public class Room1 extends SimulationWorld
         if (hearts == 0) 
         {
             addObject(new Heart(), 61, 52);
-        }
-    }
-
-    public void act()
-    {
-        super.act();
-       
-        if (isBlueKeyAcquired2) 
-        {
-            addObject(new BlueKey(), 58, 735);
         }
     }
 
