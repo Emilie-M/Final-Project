@@ -11,43 +11,55 @@ public class Room1 extends SimulationWorld
 {
     protected boolean isBlueKeyAcquired2;
     protected int hearts;
+    protected int positionNumber;
     /**
      * Constructor for objects of class Room1.
      * 
      */
-    public Room1(int heart, boolean isBlueKeyAcquired)
+    public Room1(int heart, boolean isBlueKeyAcquired, int positionNum)
     {
         super("", 900, 768, new Point2D(8.0, 6.0), 16.0); 
         prepare();
         int hearts = heart;
         isBlueKeyAcquired2 = isBlueKeyAcquired;
-        
+        positionNumber = positionNumber;
     }
 
     public void act()
     {
         super.act();
-       
+        
         if (isBlueKeyAcquired2) 
         {
             addObject(new BlueKey(), 58, 735);
         }
+
         if (hearts == 2) 
         {
             addObject(new Heart(), 125, 52);
         }
-        
+
         if (hearts == 1)
         {
             addObject(new Heart(), 93, 52);
         }
-        
+
         if (hearts == 0) 
         {
             addObject(new Heart(), 61, 52);
         }
-    }
 
+        if (positionNumber == 0)
+        {
+            addObject(new Flynn(), 93, 42);
+        }
+
+        if(positionNumber == 1)
+        {
+            addObject(new Flynn(), 83, 42);
+        }
+    }
+   
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.

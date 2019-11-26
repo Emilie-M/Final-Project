@@ -10,18 +10,19 @@ public class Room2 extends SimulationWorld
 {
     protected boolean isBlueKeyAcquired2;
     protected int hearts;
+    protected int positionNumber;
     /**
      * Constructor for objects of class Room2.
      * 
      */
-    public Room2(int heart, boolean isBlueKeyAcquired)
+    public Room2(int heart, boolean isBlueKeyAcquired, int positionNum)
     {
-        super("", 900, 768, new Point2D(8.0, 6.0), 16.0); 
+        super("", 900, 768, new Point2D(8.0, 6.0), 16.0);
         prepare();
         isBlueKeyAcquired2 = isBlueKeyAcquired;
         int hearts = heart;
         isBlueKeyAcquired2 = isBlueKeyAcquired;
-        
+        positionNumber = positionNumber;
     }
     public void act()
     {
@@ -43,6 +44,14 @@ public class Room2 extends SimulationWorld
         if (hearts == 0) 
         {
             addObject(new Heart(), 61, 52);
+        }
+        if (positionNumber == 0)
+        {
+            addObject(new Flynn(), 93, 42);
+        }
+        else if(positionNumber == 1)
+        {
+            addObject(new Flynn(), 83, 42);
         }
     }
     
