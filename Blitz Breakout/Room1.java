@@ -18,7 +18,9 @@ public class Room1 extends SimulationWorld
      */
     public Room1(int heart, boolean isBlueKeyAcquired, int positionNum)
     {
-        super("", 900, 768, new Point2D(8.0, 6.0), 16.0); 
+        super("", 900, 768, new Point2D(8.0, 6.0), 16.0);
+        super.stopped();
+        stopped();
         prepare();
         int hearts = heart;
         isBlueKeyAcquired2 = isBlueKeyAcquired;
