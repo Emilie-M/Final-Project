@@ -24,7 +24,7 @@ public class Room1 extends SimulationWorld
         prepare();
         int hearts = heart;
         isBlueKeyAcquired2 = isBlueKeyAcquired;
-        positionNumber = positionNumber;
+        positionNumber = positionNum;
     }
     private int i = 0;
     public void act()
