@@ -26,6 +26,17 @@ public class Platform extends SimulationActor
         else
         {
             return 0;
+        }      
+    }
+    public int getWidth()
+    {
+        if (getImage() != null)
+        {
+            return getImage().getWidth();
+        }
+        else
+        {
+            return 0;
         }            
     }
 }

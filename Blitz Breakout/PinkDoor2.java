@@ -6,7 +6,7 @@ import java.util.*;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class PinkDoor extends Door
+public class PinkDoor2 extends Door
 {
     /**
      * Act - do whatever the PinkDoor wants to do. This method is called whenever
@@ -20,7 +20,7 @@ public class PinkDoor extends Door
             if (getPinkKey() == true)
             {
                 SimulationWorld world = (SimulationWorld) getWorld();
-                Greenfoot.setWorld(new Room3(Heart.getHearts(), getPinkKey(), 0));
+                Greenfoot.setWorld(new Room2(Heart.getHearts(), true, getPinkKey(), 1));
                 return;
             }
         }
@@ -39,7 +39,6 @@ public class PinkDoor extends Door
                 return true;
             }   
         }
-
         return false;
     }
 }

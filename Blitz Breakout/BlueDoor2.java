@@ -18,11 +18,11 @@ public class BlueDoor2 extends Door
 
         transitionToRoom1();
     }
-    
+
     public boolean getBlueKey()
     {
         List <BlueKey> blueKeyList = getWorld().getObjects(BlueKey.class);
-        
+
         if (blueKeyList.size() > 0)
         {
             BlueKey blueKey = blueKeyList.get(0);
@@ -32,9 +32,9 @@ public class BlueDoor2 extends Door
                 return true;
             }   
         }
-
         return false;
     }
+
     public void transitionToRoom1()
     {
         if (isDoorTouchingFlynn()) 
@@ -42,7 +42,7 @@ public class BlueDoor2 extends Door
             if (getBlueKey())
             {
                 SimulationWorld world = (SimulationWorld) getWorld();
-                Greenfoot.setWorld(new Room1(Heart.getHearts(),true, 1));
+                Greenfoot.setWorld(new Room1(Heart.getHearts(), getBlueKey(), 1));
             }
         }
     }    
