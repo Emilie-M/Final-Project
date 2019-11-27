@@ -44,7 +44,7 @@ public class Room2 extends SimulationWorld
         }
         if (isPinkKeyAcquired2 && j < 2) 
         {
-            addObject(new PinkKey(), 62 , 735);
+            addObject(new PinkKey(), 65 , 735);
             l++;
         }
         if (hearts == 1 && j < 1) 
