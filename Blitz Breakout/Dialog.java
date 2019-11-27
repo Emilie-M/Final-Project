@@ -9,13 +9,17 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Dialog extends SimulationActor
 {
     private String dialog;
-    private final int width = 200, height = 50;
+    private String dialog2;
+    private String dialog3;
+    private String dialog4;
     
-    public Dialog(String dialog)
+    public Dialog(String dialog, String dialog2, String dialog3, String dialog4)
     {
         this.dialog = dialog;
-        makeFrame();
-        //setImage("DialogBox1.png");
+        this.dialog2 = dialog2;
+        this.dialog3 = dialog3;
+        this.dialog4 = dialog4;
+        makeDialog();
     }
 
     public void act()
@@ -29,21 +33,30 @@ public class Dialog extends SimulationActor
         }
     }
     
-    public void makeFrame()
+    public void makeDialog()
     {
-        GreenfootImage frame = new GreenfootImage(width, height);
-        GreenfootImage body = new GreenfootImage(width, height);
+        int fontsize = 30;
+        Color fontColor = Color.WHITE;
+        Color bgColor = new Color(0, 0, 0, 200);
         
-        body.setColor(new Color(255, 230, 153));
-        body.fill();
+        GreenfootImage txtImg = new GreenfootImage(dialog, fontsize, fontColor, bgColor);
+        GreenfootImage img = new GreenfootImage(830, 200);
+        GreenfootImage txtImg2 = new GreenfootImage(dialog2, fontsize, fontColor, bgColor);
+
+        GreenfootImage txtImg3 = new GreenfootImage(dialog3, fontsize, fontColor, bgColor);
+
+        GreenfootImage txtImg4 = new GreenfootImage(dialog4, fontsize, fontColor, bgColor);
+
+        bgColor = new Color(0, 0, 0, 200);
         
-        //Now write the text onto the frame
-        body.setColor(Color.BLACK);
-        body.drawString(dialog, 10, body.getHeight()/2);
+        img.setColor(bgColor);
+        img.fill();
         
-        frame.drawImage(body, 0, 0);
-        
-        setImage(frame);
+        img.drawImage(txtImg, 60, 50);
+        img.drawImage(txtImg2, 60, 90);
+        img.drawImage(txtImg3, 60, 130);
+        img.drawImage(txtImg4, 60, 170);
+        setImage(img);
     }
 
     public void stopDialog()

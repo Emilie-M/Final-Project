@@ -12,6 +12,7 @@ public class Room1 extends SimulationWorld
     protected boolean isBlueKeyAcquired2;
     protected int hearts;
     protected int positionNumber;
+    double popUp;
     /**
      * Constructor for objects of class Room1.
      * 
@@ -29,10 +30,18 @@ public class Room1 extends SimulationWorld
     private int i = 0;
     private int j = 0;
     private int k = 0;
+    private int l = 0;
 
     public void act()
     {
         super.act();
+        
+        popUp += getTimeStepDuration();
+        if (popUp >= 3 && l < 1)
+        {
+            addObject(new Dialog("Hello, my name is Flynn and I like anime. What do you like?", "My ass", "Man", "Flynn"), 449, 666);
+            l++;
+        }
         
         if (isBlueKeyAcquired2 && j < 1) 
         {
