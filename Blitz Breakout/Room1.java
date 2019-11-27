@@ -22,13 +22,14 @@ public class Room1 extends SimulationWorld
         super.stopped();
         stopped();
         prepare();
-        int hearts = heart;
+        hearts = heart;
         isBlueKeyAcquired2 = isBlueKeyAcquired;
         positionNumber = positionNum;
     }
     private int i = 0;
     private int j = 0;
-    
+    private int k = 0;
+
     public void act()
     {
         super.act();
@@ -48,22 +49,33 @@ public class Room1 extends SimulationWorld
         if (isBlueKeyAcquired2) 
         {
             addObject(new BlueKey(), 58, 735);
+            j++;
         }
-
-        if (hearts == 2) 
+        if (!(isBlueKeyAcquired2) && j < 1) 
         {
-            addObject(new Heart(), 125, 52);
+            addObject(new BlueKey(),547,563);
+            j++;
         }
 
-        if (hearts == 1)
-        {
-            addObject(new Heart(), 93, 52);
-        }
-
-        if (hearts == 0) 
+        if (hearts == 1 && k < 1) 
         {
             addObject(new Heart(), 61, 52);
+            k++;
         }
+        if (hearts == 2 && k < 2)
+        {
+            addObject(new Heart(), 61, 52);
+            addObject(new Heart(), 93, 52);
+            k++;
+        }
+        if (hearts == 3 && k < 3) 
+        {
+            addObject(new Heart(), 61, 52);
+            addObject(new Heart(), 93, 52);
+            addObject(new Heart(), 125, 52);
+            k++;
+        }
+
 
         if (positionNumber == 0 && i < 1)
         {
@@ -112,7 +124,6 @@ public class Room1 extends SimulationWorld
 
         BlueKey blueKey2 = new BlueKey();
         addObject(blueKey2,547,563);
-        
 
         Platform platform12 = new Platform();
         addObject(platform12,749,538);
