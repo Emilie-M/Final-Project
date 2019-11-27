@@ -27,9 +27,23 @@ public class Room1 extends SimulationWorld
         positionNumber = positionNum;
     }
     private int i = 0;
+    private int j = 0;
+    
     public void act()
     {
         super.act();
+        
+        if (isBlueKeyAcquired2 && j < 1) 
+        {
+            addObject(new BlueKey(), 58, 735);
+            j++;
+        }
+        
+        if (!(isBlueKeyAcquired2) && j < 1) 
+        {
+            addObject(new BlueKey(),547,563);
+            j++;
+        }
         
         if (isBlueKeyAcquired2) 
         {
@@ -87,18 +101,6 @@ public class Room1 extends SimulationWorld
         platform.setLocation(194,464);
         Platform platform7 = new Platform();
         addObject(platform7,194,464);
-
-        BlueKey blueKey = new BlueKey();
-        addObject(blueKey,601,597);
-
-        Platform platform8 = new Platform();
-        addObject(platform8,637,618);
-        platform8.setLocation(584,602);
-
-        Platform platform9 = new Platform();
-        addObject(platform9,391,595);
-        Platform platform10 = new Platform();
-        addObject(platform10,625,619);
 
         Heart heart = new Heart();
         addObject(heart,61,52);
