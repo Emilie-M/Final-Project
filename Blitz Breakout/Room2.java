@@ -20,29 +20,40 @@ public class Room2 extends SimulationWorld
         super("", 900, 768, new Point2D(8.0, 6.0), 16.0);
         prepare();
         isBlueKeyAcquired2 = isBlueKeyAcquired;
-        int hearts = heart;
-        positionNumber = positionNumber;
+        hearts = heart;
+        positionNumber = positionNum;
     }
     private int i = 0;
+    private int j = 0;
+    private int k = 0;
     public void act()
     {
         super.act();
-        if (isBlueKeyAcquired2) 
+        if (isBlueKeyAcquired2 && k < 1) 
         {
             addObject(new BlueKey(), 58, 735);
+            k++;
         }
-        if (hearts == 2) 
-        {
-            addObject(new Heart(), 125, 52);
-        }
-        if (hearts == 1)
-        {
-            addObject(new Heart(), 93, 52);
-        }
-        if (hearts == 0) 
+        if (hearts == 1 && j < 1) 
         {
             addObject(new Heart(), 61, 52);
+            j++;
         }
+        if (hearts == 2 && j < 2)
+        {
+            addObject(new Heart(), 61, 52);
+            addObject(new Heart(), 93, 52);
+            j++;
+        }
+        if (hearts == 3 && j < 3) 
+        {
+            addObject(new Heart(), 61, 52);
+            addObject(new Heart(), 93, 52);
+            addObject(new Heart(), 125, 52);
+            j++;
+        }
+        
+        
 
         if (positionNumber == 0 && i < 1)
         {
@@ -51,7 +62,7 @@ public class Room2 extends SimulationWorld
         }
         if(positionNumber == 1 && i < 1)
         {
-            addObject(new Flynn(), 297, 286);
+            addObject(new Flynn(), 733, 521);
             i++;
         }
     }
@@ -93,11 +104,6 @@ public class Room2 extends SimulationWorld
         addObject(platform11, 351, 480);
         PinkDoor pinkDoor2 = new PinkDoor();
         addObject(pinkDoor2, 845, 499);
-        Heart heart = new Heart();
-        addObject(heart, 61, 52);
-        Heart heart2 = new Heart();
-        addObject(heart2, 93, 52);
-        Heart heart3 = new Heart();
-        addObject(heart3, 125, 52);
+        
     }
 }
