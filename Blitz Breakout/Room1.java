@@ -13,7 +13,7 @@ public class Room1 extends SimulationWorld
     protected int hearts;
     protected int positionNumber;
     boolean dialogPop2;
-    double popUp;
+    double popUp = 100;
     /**
      * Constructor for objects of class Room1.
      * 
@@ -38,15 +38,16 @@ public class Room1 extends SimulationWorld
     public void act()
     {
         super.act();
+
+        popUp -= getTimeStepDuration();
         
-        popUp += getTimeStepDuration();
-        if (popUp >= 2 && popUp <= 7 && l < 1 && dialogPop2)
+        if (popUp >= 10 && l < 1 && dialogPop2)
         {
             addObject(new Dialog("Where am I? All I remember is the storm and my car breaking down..", "", "", ""), 449, 666);
             l++;
         }
         
-        if (popUp >= 8 && m < 1 && dialogPop2)
+        if (popUp >= 0 && m < 1 && dialogPop2)
         {
             addObject(new Dialog("I did enter this manor though, maybe I'm under it?", "", "\"Press enter to close.\"", ""), 449, 666);
             m++;
