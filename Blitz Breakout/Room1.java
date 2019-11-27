@@ -22,34 +22,50 @@ public class Room1 extends SimulationWorld
         super.stopped();
         stopped();
         prepare();
-        int hearts = heart;
+        hearts = heart;
         isBlueKeyAcquired2 = isBlueKeyAcquired;
         positionNumber = positionNum;
     }
     private int i = 0;
+    private int j = 0;
+    private int k = 0;
     public void act()
     {
         super.act();
         
-        if (isBlueKeyAcquired2) 
+        if (isBlueKeyAcquired2 && j < 1) 
         {
             addObject(new BlueKey(), 58, 735);
+            j++;
         }
-
-        if (hearts == 2) 
+        if (!(isBlueKeyAcquired2) && j < 1) 
         {
-            addObject(new Heart(), 125, 52);
+            addObject(new BlueKey(),547,563);
+            j++;
         }
 
-        if (hearts == 1)
-        {
-            addObject(new Heart(), 93, 52);
-        }
-
-        if (hearts == 0) 
+        if (hearts == 1 && k < 1) 
         {
             addObject(new Heart(), 61, 52);
+            k++;
         }
+        if (hearts == 2 && k < 2)
+        {
+            addObject(new Heart(), 61, 52);
+            addObject(new Heart(), 93, 52);
+            k++;
+        }
+        if (hearts == 3 && k < 3) 
+        {
+            addObject(new Heart(), 61, 52);
+            addObject(new Heart(), 93, 52);
+            addObject(new Heart(), 125, 52);
+            k++;
+        }
+
+        
+
+        
 
         if (positionNumber == 0 && i < 1)
         {
@@ -88,28 +104,7 @@ public class Room1 extends SimulationWorld
         Platform platform7 = new Platform();
         addObject(platform7,194,464);
 
-        BlueKey blueKey = new BlueKey();
-        addObject(blueKey,601,597);
-
-        Platform platform8 = new Platform();
-        addObject(platform8,637,618);
-        platform8.setLocation(584,602);
-
-        Platform platform9 = new Platform();
-        addObject(platform9,391,595);
-        Platform platform10 = new Platform();
-        addObject(platform10,625,619);
-
-        Heart heart = new Heart();
-        addObject(heart,61,52);
-        Heart heart2 = new Heart();
-        addObject(heart2,93,52);
-        Heart heart3 = new Heart();
-        addObject(heart3,125,52);
-       
-
-        BlueKey blueKey2 = new BlueKey();
-        addObject(blueKey2,547,563);
+        
         
 
         Platform platform12 = new Platform();
