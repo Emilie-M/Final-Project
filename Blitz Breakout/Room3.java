@@ -92,5 +92,13 @@ public class Room3 extends SimulationWorld
         addObject(orangeDoor,838,255);
         Spider spider = new Spider(2, 6);
         addObject(spider,459,372);
+        Platform platform9 = new Platform();
+        addObject(platform9,295,284);
+        Platform platform10 = new Platform();
+        addObject(platform10,182,180);
+        Platform platform11 = new Platform();
+        addObject(platform11,71,180);
+        GreenDoor greenDoor = new GreenDoor();
+        addObject(greenDoor,54,83);
     }
 }
