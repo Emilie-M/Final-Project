@@ -38,7 +38,7 @@ public class Room3 extends SimulationWorld
         super.act();
         if (o < 1) 
         {
-            addObject(new Spider(2.0, 6.0), 65, 600);
+            addObject(new Spider(2.0, 6.0), 459, 372);
             o++;
         }
         if (isPinkKeyAcquired2 && k < 1) 

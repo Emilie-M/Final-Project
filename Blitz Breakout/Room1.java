@@ -89,7 +89,6 @@ public class Room1 extends SimulationWorld
             addObject(new Flynn(), 68, 444);
             i++;
         }
-
         if(positionNumber == 1 && i < 1)
         {
             addObject(new Flynn(), 716, 463);
