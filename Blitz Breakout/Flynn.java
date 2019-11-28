@@ -317,13 +317,14 @@ public class Flynn extends PlatformActor
     
     public void hitDetection()
     {
-        //SimulationWorld world = (SimulationWorld) getWorld();
+        SimulationWorld world = (SimulationWorld) getWorld();
         Actor spider = getOneIntersectingObject(Spider.class);
         
         if(spider != null && invincibilityTimeRemaining <= 0.0)
         {
             invincibilityTimeRemaining = 2.0;
             lives--;
+            getWorld().addObject(new Dialog("OUCH", "These spiders sure as hell sting hard!", "", ""), 449, 666);
         } 
     }
     

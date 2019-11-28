@@ -12,16 +12,19 @@ public class Room1 extends SimulationWorld
     protected boolean isBlueKeyAcquired2;
     protected int hearts;
     protected int positionNumber;
+    boolean dialogPop2;
+    double popUp = 100;
     /**
      * Constructor for objects of class Room1.
      * 
      */
-    public Room1(int heart, boolean isBlueKeyAcquired, int positionNum)
+    public Room1(boolean dialogPop, int heart, boolean isBlueKeyAcquired, int positionNum)
     {
         super("", 900, 768, new Point2D(8.0, 6.0), 16.0);
         super.stopped();
         stopped();
         prepare();
+        dialogPop2 = dialogPop;
         hearts = heart;
         isBlueKeyAcquired2 = isBlueKeyAcquired;
         positionNumber = positionNum;
@@ -29,11 +32,40 @@ public class Room1 extends SimulationWorld
     private int i = 0;
     private int j = 0;
     private int k = 0;
+    private int l = 0;
+    private int m = 0;
+
     public void act()
     {
         super.act();
+
+        popUp -= getTimeStepDuration();
         
+        if (popUp >= 10 && l < 1 && dialogPop2)
+        {
+            addObject(new Dialog("Where am I? All I remember is the storm and my car breaking down..", "", "", ""), 449, 666);
+            l++;
+        }
+        
+        if (popUp >= 0 && m < 1 && dialogPop2)
+        {
+            addObject(new Dialog("I did enter this manor though, maybe I'm under it?", "", "\"Press enter to close.\"", ""), 449, 666);
+            m++;
+        }
+            
         if (isBlueKeyAcquired2 && j < 1) 
+        {
+            addObject(new BlueKey(), 58, 735);
+            j++;
+        }
+        
+        if (!(isBlueKeyAcquired2) && j < 1) 
+        {
+            addObject(new BlueKey(),547,563);
+            j++;
+        }
+        
+        if (isBlueKeyAcquired2) 
         {
             addObject(new BlueKey(), 58, 735);
             j++;
@@ -62,10 +94,6 @@ public class Room1 extends SimulationWorld
             addObject(new Heart(), 125, 52);
             k++;
         }
-
-        
-
-        
 
         if (positionNumber == 0 && i < 1)
         {
@@ -104,8 +132,16 @@ public class Room1 extends SimulationWorld
         Platform platform7 = new Platform();
         addObject(platform7,194,464);
 
-        
-        
+        Heart heart = new Heart();
+        addObject(heart,61,52);
+        Heart heart2 = new Heart();
+        addObject(heart2,93,52);
+        Heart heart3 = new Heart();
+        addObject(heart3,125,52);
+       
+
+        BlueKey blueKey2 = new BlueKey();
+        addObject(blueKey2,547,563);
 
         Platform platform12 = new Platform();
         addObject(platform12,749,538);
