@@ -32,9 +32,15 @@ public class Room3 extends SimulationWorld
     private int k = 0;
     private int l = 0;
     private int m = 0;
+    private int o = 0;
     public void act()
     {
         super.act();
+        if (o < 1) 
+        {
+            addObject(new Spider(2.0, 6.0), 65, 600);
+            o++;
+        }
         if (isPinkKeyAcquired2 && k < 1) 
         {
             addObject(new PinkKey(), 62, 735);
@@ -68,9 +74,7 @@ public class Room3 extends SimulationWorld
             addObject(new Heart(), 125, 52);
             j++;
         }
-        
-        
-
+    
         if (positionNumber == 0 && i < 1)
         {
             addObject(new Flynn(), 178, 570);
@@ -81,6 +85,7 @@ public class Room3 extends SimulationWorld
             addObject(new Flynn(), 693, 278);
             i++;
         }
+        
     }
 
     public void prepare()

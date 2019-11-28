@@ -53,28 +53,17 @@ public class Room1 extends SimulationWorld
             m++;
         }
             
+        if ((!(isBlueKeyAcquired2)) && j < 1) 
+        {
+            addObject(new BlueKey(),547,563);
+            j++;
+        }
         if (isBlueKeyAcquired2 && j < 1) 
         {
             addObject(new BlueKey(), 58, 735);
             j++;
         }
         
-        if (!(isBlueKeyAcquired2) && j < 1) 
-        {
-            addObject(new BlueKey(),547,563);
-            j++;
-        }
-        
-        if (isBlueKeyAcquired2) 
-        {
-            addObject(new BlueKey(), 58, 735);
-            j++;
-        }
-        if (!(isBlueKeyAcquired2) && j < 1) 
-        {
-            addObject(new BlueKey(),547,563);
-            j++;
-        }
 
         if (hearts == 1 && k < 1) 
         {
@@ -139,9 +128,6 @@ public class Room1 extends SimulationWorld
         Heart heart3 = new Heart();
         addObject(heart3,125,52);
        
-
-        BlueKey blueKey2 = new BlueKey();
-        addObject(blueKey2,547,563);
 
         Platform platform12 = new Platform();
         addObject(platform12,749,538);
