@@ -52,8 +52,6 @@ public class Room3 extends SimulationWorld
             addObject(new Heart(), 125, 52);
             j++;
         }
-        
-        
 
         if (positionNumber == 0 && i < 1)
         {
