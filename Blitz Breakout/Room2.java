@@ -29,6 +29,7 @@ public class Room2 extends SimulationWorld
     private int j = 0;
     private int k = 0;
     private int l = 0;
+    private int m = 0;
     public void act()
     {
         super.act();
@@ -47,6 +48,9 @@ public class Room2 extends SimulationWorld
             addObject(new PinkKey(), 65 , 735);
             l++;
         }
+        
+        
+        
         if (hearts == 1 && j < 1) 
         {
             addObject(new Heart(), 61, 52);
@@ -65,8 +69,6 @@ public class Room2 extends SimulationWorld
             addObject(new Heart(), 125, 52);
             j++;
         }
-        
-        
 
         if (positionNumber == 0 && i < 1)
         {

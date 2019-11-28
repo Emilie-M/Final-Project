@@ -33,6 +33,7 @@ public class Room3 extends SimulationWorld
     private int l = 0;
     private int m = 0;
     private int o = 0;
+    private int p = 0;
     public void act()
     {
         super.act();
@@ -46,11 +47,18 @@ public class Room3 extends SimulationWorld
             addObject(new PinkKey(), 62, 735);
             k++;
         }
-        if (isGreenKeyAcquired2 && l < 1) 
+        if (!(isGreenKeyAcquired2) && p < 1)
+        {
+            addObject(new GreenKey(), 90,534);
+            p++;
+        }
+        if (isGreenKeyAcquired2 && p < 1) 
         {
             addObject(new GreenKey(), 62, 735);
-            l++;
+            p++;
         }
+        
+        
         if (isOrangeKeyAcquired2 && m < 1) 
         {
             addObject(new OrangeKey(), 62, 735);

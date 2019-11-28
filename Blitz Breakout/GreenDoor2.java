@@ -6,7 +6,7 @@ import java.util.*;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class GreenDoor extends Door
+public class GreenDoor2 extends Door
 {
     /**
      * Act - do whatever the GreenDoor wants to do. This method is called whenever
@@ -17,10 +17,10 @@ public class GreenDoor extends Door
         super.act();
         if (isDoorTouchingFlynn()) 
         {
-            if (getGreenKey() == true)
+            if (getGreenKey())
             {
                 SimulationWorld world = (SimulationWorld) getWorld();
-                Greenfoot.setWorld(new Room4(Heart.getHearts(), true, getGreenKey(), getOrangeKey(), 0));
+                Greenfoot.setWorld(new Room3(Heart.getHearts(), true, getOrangeKey(), true, 1));
             }
         }
     }
