@@ -12,8 +12,9 @@ public class Room1 extends SimulationWorld
     protected boolean isBlueKeyAcquired2;
     protected int hearts;
     protected int positionNumber;
-    boolean dialogPop2;
-    double popUp = 100;
+    protected boolean dialogPop2;
+    protected boolean isItPoping = true;
+    protected double popUp;
     /**
      * Constructor for objects of class Room1.
      * 
@@ -22,7 +23,6 @@ public class Room1 extends SimulationWorld
     {
         super("", 900, 768, new Point2D(8.0, 6.0), 16.0);
         super.stopped();
-        stopped();
         prepare();
         dialogPop2 = dialogPop;
         hearts = heart;
@@ -39,16 +39,17 @@ public class Room1 extends SimulationWorld
     {
         super.act();
 
-        popUp -= getTimeStepDuration();
-        
-        if (popUp >= 10 && l < 1 && dialogPop2)
+        popUp += getTimeStepDuration();
+        if (popUp >= 2 && l < 1 && isItPoping && dialogPop2)
         {
             addObject(new Dialog("Where am I? All I remember is the storm and my car breaking down..", "", "", ""), 449, 666);
             l++;
+            isItPoping = false;
         }
         
-        if (popUp >= 0 && m < 1 && dialogPop2)
+        if (popUp >= 7 && m < 1 && !(isItPoping) && dialogPop2)
         {
+            Greenfoot.delay(260);
             addObject(new Dialog("I did enter this manor though, maybe I'm under it?", "", "\"Press enter to close.\"", ""), 449, 666);
             m++;
         }
@@ -63,7 +64,7 @@ public class Room1 extends SimulationWorld
             addObject(new BlueKey(), 58, 735);
             j++;
         }
-        
+
 
         if (hearts == 1 && k < 1) 
         {
@@ -126,7 +127,7 @@ public class Room1 extends SimulationWorld
         addObject(heart2,93,52);
         Heart heart3 = new Heart();
         addObject(heart3,125,52);
-       
+
 
         Platform platform12 = new Platform();
         addObject(platform12,749,538);
