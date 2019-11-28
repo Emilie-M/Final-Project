@@ -345,7 +345,7 @@ public class Flynn extends PlatformActor
             if (y < -6.0)
             {
                 SimulationWorld world = (SimulationWorld) getWorld();
-                Greenfoot.setWorld(new EndWorldPit());
+                Greenfoot.setWorld(new GameOverScreen());
             }   
         }
     }

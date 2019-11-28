@@ -32,7 +32,7 @@ public class Heart extends Actor
         {
             getWorld().removeObjects(getWorld().getObjectsAt(61, 52,Heart.class)); 
             SimulationWorld world = (SimulationWorld) getWorld();
-            Greenfoot.setWorld(new EndWorldHearts());
+            Greenfoot.setWorld(new GameOverScreen());
         }
     }
     public static int getHearts()
