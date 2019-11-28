@@ -17,29 +17,15 @@ public class PinkDoor extends Door
         super.act();
         if (isDoorTouchingFlynn()) 
         {
-            if (getPinkKey() == true)
+            SimulationWorld w1 = (SimulationWorld) getWorld();
+            if (w1.getPinkKey() == true)
             {
                 SimulationWorld world = (SimulationWorld) getWorld();
-                Greenfoot.setWorld(new Room3(Heart.getHearts(), getPinkKey(), 0));
+                Greenfoot.setWorld(new Room3(Heart.getHearts(), w1.getPinkKey(), w1.getOrangeKey(), w1.getGreenKey(), 0));
                 return;
+                //int heart, boolean isPinkKeyAcquired, boolean isOrangeKeyAcquired,boolean isGreenKeyAcquired,int positionNum
             }
         }
     }
-    public boolean getPinkKey()
-    {
-        List <PinkKey> pinkKeyList = getWorld().getObjects(PinkKey.class);
-        
-        if (pinkKeyList.size() > 0)
-        {
-            PinkKey pinkKey = pinkKeyList.get(0);
-            double y = (double) (pinkKey.getY());
-            
-            if (y > 705)
-            {
-                return true;
-            }   
-        }
-
-        return false;
-    }
+   
 }
