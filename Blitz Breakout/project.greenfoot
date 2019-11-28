@@ -324,6 +324,7 @@ dependency95.type=UsesDependency
 dependency96.from=SilverKey
 dependency96.to=Flynn
 dependency96.type=UsesDependency
+<<<<<<< HEAD
 dependency97.from=Matrix2D
 dependency97.to=Vector2D
 dependency97.type=UsesDependency
@@ -337,6 +338,12 @@ editor.fx.0.height=739
 editor.fx.0.width=1125
 editor.fx.0.x=126
 editor.fx.0.y=266
+=======
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
+>>>>>>> bc773bb1d6a98c1f2a517199d4e2bc004881a6b4
 height=1056
 package.numDependencies=100
 package.numTargets=45
@@ -530,14 +537,22 @@ target31.width=80
 target31.x=0
 target31.y=0
 target32.height=50
+<<<<<<< HEAD
 target32.name=Room3
+=======
+target32.name=GameOverScreen
+>>>>>>> bc773bb1d6a98c1f2a517199d4e2bc004881a6b4
 target32.showInterface=false
 target32.type=ClassTarget
-target32.width=80
+target32.width=120
 target32.x=0
 target32.y=0
 target33.height=50
+<<<<<<< HEAD
 target33.name=GifImage
+=======
+target33.name=SpriteSheet
+>>>>>>> bc773bb1d6a98c1f2a517199d4e2bc004881a6b4
 target33.showInterface=false
 target33.type=ClassTarget
 target33.width=80
