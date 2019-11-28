@@ -9,23 +9,26 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Room2 extends SimulationWorld
 {
     protected boolean isBlueKeyAcquired2;
+    protected boolean isPinkKeyAcquired2;
     protected int hearts;
     protected int positionNumber;
     /**
      * Constructor for objects of class Room2.
      * 
      */
-    public Room2(int heart, boolean isBlueKeyAcquired, int positionNum)
+    public Room2(int heart, boolean isBlueKeyAcquired, boolean isPinkKeyAcquired, int positionNum)
     {
         super("", 900, 768, new Point2D(8.0, 6.0), 16.0);
         prepare();
         isBlueKeyAcquired2 = isBlueKeyAcquired;
+        isPinkKeyAcquired2 = isPinkKeyAcquired;
         hearts = heart;
         positionNumber = positionNum;
     }
     private int i = 0;
     private int j = 0;
     private int k = 0;
+    private int l = 0;
     public void act()
     {
         super.act();
@@ -33,6 +36,16 @@ public class Room2 extends SimulationWorld
         {
             addObject(new BlueKey(), 58, 735);
             k++;
+        }
+        if (!(isPinkKeyAcquired2) && j < 1) 
+        {
+            addObject(new PinkKey(), 87,534);
+            l++;
+        }
+        if (isPinkKeyAcquired2 && j < 2) 
+        {
+            addObject(new PinkKey(), 65 , 735);
+            l++;
         }
         if (hearts == 1 && j < 1) 
         {
@@ -104,6 +117,5 @@ public class Room2 extends SimulationWorld
         addObject(platform11, 351, 480);
         PinkDoor pinkDoor2 = new PinkDoor();
         addObject(pinkDoor2, 845, 499);
-        
     }
 }

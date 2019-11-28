@@ -55,7 +55,8 @@ public class Flynn extends PlatformActor
     //protected double currentFrameTime;
     //private GreenfootImage runRight3 = new GreenfootImage("Run4.png");
     public static int lives = 3;
-
+    
+    
     public Flynn()
     {
         super(null, new Vector2D(0,0), new Vector2D(0, GRAVITY));
@@ -366,4 +367,5 @@ public class Flynn extends PlatformActor
         //{
         //}
     //}
+    
 }

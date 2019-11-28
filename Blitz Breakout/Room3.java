@@ -8,20 +8,20 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Room3 extends SimulationWorld
 {
-    protected boolean isBlueKeyAcquired2;
+    protected boolean isPinkKeyAcquired2;
     protected int hearts;
     protected int positionNumber;
     /**
      * Constructor for objects of class Room2.
      * 
      */
-    public Room3(int heart, boolean isBlueKeyAcquired, int positionNum)
+    public Room3(int heart, boolean isPinkKeyAcquired, int positionNum)
     {
         super("", 900, 768, new Point2D(8.0, 6.0), 16.0);
         prepare();
-        isBlueKeyAcquired2 = isBlueKeyAcquired;
+        isPinkKeyAcquired2 = isPinkKeyAcquired;
         hearts = heart;
-        positionNumber = positionNumber;
+        positionNumber = positionNum;
     }
     private int i = 0;
     private int j = 0;
@@ -29,11 +29,11 @@ public class Room3 extends SimulationWorld
     public void act()
     {
         super.act();
-        //if (isBlueKeyAcquired2 && k < 1) 
-        //{
-            //addObject(new BlueKey(), 58, 735);
-            //k++;
-        //}
+        if (isPinkKeyAcquired2 && k < 1) 
+        {
+            addObject(new PinkKey(), 62, 735);
+            k++;
+        }
         if (hearts == 1 && j < 1) 
         {
             addObject(new Heart(), 61, 52);
@@ -57,19 +57,48 @@ public class Room3 extends SimulationWorld
 
         if (positionNumber == 0 && i < 1)
         {
-            addObject(new Flynn(), 297, 286);
+            addObject(new Flynn(), 178, 570);
             i++;
         }
         if(positionNumber == 1 && i < 1)
         {
-            addObject(new Flynn(), 297, 286);
+            addObject(new Flynn(), 693, 278);
             i++;
         }
     }
 
     public void prepare()
     {
-        
-        
+
+        Platform platform = new Platform();
+        addObject(platform,71,645);
+        Platform platform2 = new Platform();
+        addObject(platform2,204,645);
+        Platform platform3 = new Platform();
+        addObject(platform3,328,537);
+        Platform platform4 = new Platform();
+        addObject(platform4,502,438);
+        Platform platform5 = new Platform();
+        addObject(platform5,507,650);
+        Platform platform6 = new Platform();
+        addObject(platform6,145,413);
+        Platform platform7 = new Platform();
+        addObject(platform7,702,352);
+        Platform platform8 = new Platform();
+        addObject(platform8,823,352);
+        PinkDoor2 pinkDoor2 = new PinkDoor2();
+        addObject(pinkDoor2,56,548);
+        OrangeDoor orangeDoor = new OrangeDoor();
+        addObject(orangeDoor,838,255);
+        Spider spider = new Spider(2, 6);
+        addObject(spider,459,372);
+        Platform platform9 = new Platform();
+        addObject(platform9,295,284);
+        Platform platform10 = new Platform();
+        addObject(platform10,182,180);
+        Platform platform11 = new Platform();
+        addObject(platform11,71,180);
+        GreenDoor greenDoor = new GreenDoor();
+        addObject(greenDoor,54,83);
     }
 }
