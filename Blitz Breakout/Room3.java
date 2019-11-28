@@ -67,7 +67,6 @@ public class Room3 extends SimulationWorld
 
     public void prepare()
     {
-
         Platform platform = new Platform();
         addObject(platform,71,645);
         Platform platform2 = new Platform();

@@ -22,7 +22,7 @@ public class FirstClue extends SimulationActor
             image.scale(image.getWidth()/2, image.getHeight()/2);
             setImage(image);
             
-            if (Greenfoot.isKeyDown("f"))
+            if (Greenfoot.isKeyDown("enter"))
             {
                 getWorld().removeObject(this);
             }
