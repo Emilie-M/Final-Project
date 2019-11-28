@@ -133,5 +133,16 @@ public class Room1 extends SimulationWorld
         addObject(platform12,749,538);
         Platform platform13 = new Platform();
         addObject(platform13,828,538);
+        Torch torch = new Torch();
+        addObject(torch,727,456);
+        Flame flame = new Flame();
+        addObject(flame,686,270);
+        flame.setLocation(723,385);
+        Aura aura = new Aura();
+        addObject(aura,580,317);
+        removeObject(flame);
+        aura.setLocation(730,450);
+        Flame flame2 = new Flame();
+        addObject(flame2,729,446);
     }
 }

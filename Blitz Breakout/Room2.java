@@ -66,8 +66,6 @@ public class Room2 extends SimulationWorld
             j++;
         }
         
-        
-
         if (positionNumber == 0 && i < 1)
         {
             addObject(new Flynn(), 297, 286);

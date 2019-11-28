@@ -19,7 +19,8 @@ public class FirstClue extends SimulationActor
         if (flynn != null)
         {
             GreenfootImage image = new GreenfootImage("NewspaperUSEthisONE.png");
-            image.scale(image.getWidth()/2, image.getHeight()/2);
+            double scalingFactor = 1.3;
+            image.scale((int)(image.getWidth()/scalingFactor), (int)(image.getHeight()/scalingFactor));
             setImage(image);
             
             if (Greenfoot.isKeyDown("enter"))
