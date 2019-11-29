@@ -46,12 +46,11 @@ public class PlatformActor extends SimulationActor
     
     public void landOnPlatform()
     {
-<<<<<<< HEAD
+
         //Platform p1 = (Platform) getOneObjectAtOffset(-getRadius(), getRadius() + 1, Platform.class);
         //Platform p2 = (Platform) ge;AtOffset( getRadius(), getRadius() + 1, Platform.class);
         //Platform p = (p1 == null) ? p2 : p1;
-=======
->>>>>>> master
+
         Platform p = (Platform) getOneObjectAtOffset(0, getRadius() + 1, Platform.class);
         if (p != null  && velocity.getY() < 0.0)
         {

@@ -69,11 +69,8 @@ public class Room2 extends SimulationWorld
             addObject(new Heart(), 125, 52);
             j++;
         }
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> master
+
         if (positionNumber == 0 && i < 1)
         {
             addObject(new Flynn(), 297, 286);
