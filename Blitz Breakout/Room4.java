@@ -83,8 +83,45 @@ public class Room4 extends SimulationWorld
             i++;
         }
     }
+    
     public void prepare() 
     {
-        
+
+        InvisiblePlatform invisiblePlatform = new InvisiblePlatform();
+        addObject(invisiblePlatform,5,53);
+        InvisiblePlatform invisiblePlatform2 = new InvisiblePlatform();
+        addObject(invisiblePlatform2,6,146);
+        InvisiblePlatform invisiblePlatform3 = new InvisiblePlatform();
+        addObject(invisiblePlatform3,7,239);
+        InvisiblePlatform invisiblePlatform4 = new InvisiblePlatform();
+        addObject(invisiblePlatform4,4,337);
+        InvisiblePlatform invisiblePlatform5 = new InvisiblePlatform();
+        addObject(invisiblePlatform5,5,435);
+        InvisiblePlatform invisiblePlatform6 = new InvisiblePlatform();
+        addObject(invisiblePlatform6,5,534);
+        InvisiblePlatform invisiblePlatform7 = new InvisiblePlatform();
+        addObject(invisiblePlatform7,5,628);
+        InvisiblePlatform invisiblePlatform8 = new InvisiblePlatform();
+        addObject(invisiblePlatform8,5,715);
+        InvisiblePlatform invisiblePlatform9 = new InvisiblePlatform();
+        addObject(invisiblePlatform9,890,53);
+        InvisiblePlatform invisiblePlatform10 = new InvisiblePlatform();
+        addObject(invisiblePlatform10,893,151);
+        InvisiblePlatform invisiblePlatform11 = new InvisiblePlatform();
+        addObject(invisiblePlatform11,894,243);
+        InvisiblePlatform invisiblePlatform12 = new InvisiblePlatform();
+        addObject(invisiblePlatform12,896,331);
+        InvisiblePlatform invisiblePlatform13 = new InvisiblePlatform();
+        addObject(invisiblePlatform13,896,412);
+        InvisiblePlatform invisiblePlatform14 = new InvisiblePlatform();
+        addObject(invisiblePlatform14,895,472);
+        InvisiblePlatform invisiblePlatform15 = new InvisiblePlatform();
+        addObject(invisiblePlatform15,898,527);
+        InvisiblePlatform invisiblePlatform16 = new InvisiblePlatform();
+        addObject(invisiblePlatform16,894,570);
+        InvisiblePlatform invisiblePlatform17 = new InvisiblePlatform();
+        addObject(invisiblePlatform17,894,652);
+        InvisiblePlatform invisiblePlatform18 = new InvisiblePlatform();
+        addObject(invisiblePlatform18,894,718);
     }
 }

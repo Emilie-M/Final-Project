@@ -128,5 +128,31 @@ public class Room3 extends SimulationWorld
         addObject(platform11,71,180);
         GreenDoor greenDoor = new GreenDoor();
         addObject(greenDoor,54,83);
+        InvisiblePlatform invisiblePlatform = new InvisiblePlatform();
+        addObject(invisiblePlatform,5,248);
+        InvisiblePlatform invisiblePlatform2 = new InvisiblePlatform();
+        addObject(invisiblePlatform2,3,340);
+        InvisiblePlatform invisiblePlatform3 = new InvisiblePlatform();
+        addObject(invisiblePlatform3,3,410);
+        InvisiblePlatform invisiblePlatform4 = new InvisiblePlatform();
+        addObject(invisiblePlatform4,3,438);
+        InvisiblePlatform invisiblePlatform5 = new InvisiblePlatform();
+        addObject(invisiblePlatform5,4,711);
+        InvisiblePlatform invisiblePlatform6 = new InvisiblePlatform();
+        addObject(invisiblePlatform6,892,51);
+        InvisiblePlatform invisiblePlatform7 = new InvisiblePlatform();
+        addObject(invisiblePlatform7,892,138);
+        InvisiblePlatform invisiblePlatform8 = new InvisiblePlatform();
+        addObject(invisiblePlatform8,889,423);
+        InvisiblePlatform invisiblePlatform9 = new InvisiblePlatform();
+        addObject(invisiblePlatform9,891,521);
+        InvisiblePlatform invisiblePlatform10 = new InvisiblePlatform();
+        addObject(invisiblePlatform10,893,602);
+        InvisiblePlatform invisiblePlatform11 = new InvisiblePlatform();
+        addObject(invisiblePlatform11,892,673);
+        InvisiblePlatform invisiblePlatform12 = new InvisiblePlatform();
+        addObject(invisiblePlatform12,889,719);
+        InvisiblePlatform invisiblePlatform13 = new InvisiblePlatform();
+        addObject(invisiblePlatform13,890,712);
     }
 }

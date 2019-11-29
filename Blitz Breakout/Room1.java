@@ -128,7 +128,6 @@ public class Room1 extends SimulationWorld
         Heart heart3 = new Heart();
         addObject(heart3,125,52);
 
-
         Platform platform12 = new Platform();
         addObject(platform12,749,538);
         Platform platform13 = new Platform();
@@ -144,5 +143,25 @@ public class Room1 extends SimulationWorld
         aura.setLocation(730,450);
         Flame flame2 = new Flame();
         addObject(flame2,729,446);
+        Spider spider = new Spider(1, 9);
+        addObject(spider,398,258);
+        MovingPlatform movingPlatform = new MovingPlatform(1, 9);
+        addObject(movingPlatform,615,208);
+        InvisiblePlatform invisiblePlatform = new InvisiblePlatform();
+        addObject(invisiblePlatform,0,397);
+        InvisiblePlatform invisiblePlatform2 = new InvisiblePlatform();
+        addObject(invisiblePlatform2,1,299);
+        InvisiblePlatform invisiblePlatform3 = new InvisiblePlatform();
+        addObject(invisiblePlatform3,1,200);
+        InvisiblePlatform invisiblePlatform4 = new InvisiblePlatform();
+        addObject(invisiblePlatform4,3,102);
+        InvisiblePlatform invisiblePlatform5 = new InvisiblePlatform();
+        addObject(invisiblePlatform5,898,470);
+        InvisiblePlatform invisiblePlatform6 = new InvisiblePlatform();
+        addObject(invisiblePlatform6,899,354);
+        InvisiblePlatform invisiblePlatform7 = new InvisiblePlatform();
+        addObject(invisiblePlatform7,898,255);
+        InvisiblePlatform invisiblePlatform8 = new InvisiblePlatform();
+        addObject(invisiblePlatform8,896,152);
     }
 }

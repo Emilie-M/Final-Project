@@ -31,17 +31,25 @@ public class PlatformActor extends SimulationActor
     public int getWidth()
     {
         if (getImage() != null)
+        {
             return getImage().getWidth();
+        }
         else
+        {
             return 0;
+        }
     }
     
     public int getHeight()
     {
         if (getImage() != null)
+        {
             return getImage().getHeight();
+        }
         else
+        {
             return 0;
+        }
     }
     
     public void landOnPlatform()
