@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class PlatformActor extends SimulationActor
 {
     protected boolean onPlatform;    
-    
+    public static boolean isOnPlatform;
     public PlatformActor()
     {
         super();
@@ -64,10 +64,14 @@ public class PlatformActor extends SimulationActor
             velocity.setY(Math.max(velocity.getY(), 0.0));
 
             onPlatform = true;
+            isOnPlatform = true;
+            isOnPlatform();
         }
         else
         {
             onPlatform = false;
+            isOnPlatform = true;
+            isOnPlatform();
         }        
         
         Platform above = (Platform) getOneObjectAtOffset(0, -getHeight() / 2 - 1, InvisiblePlatform.class);    
@@ -99,4 +103,8 @@ public class PlatformActor extends SimulationActor
         }
 
     } 
+    public static boolean isOnPlatform() 
+    {
+        return isOnPlatform;
+    }
 }   

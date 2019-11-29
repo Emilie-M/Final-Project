@@ -9,6 +9,7 @@ import java.util.*;
  */
 public class BlueDoor extends Door
 {
+    boolean isOnPlatform;
     /**
      * Act - do whatever the BlueDoor wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -16,8 +17,9 @@ public class BlueDoor extends Door
     public void act() 
     {
         super.act();
-
         transitionToRoom2();
+        
+        isOnPlatform = PlatformActor.isOnPlatform();
     }
     
     public boolean getBlueKey()
@@ -38,7 +40,7 @@ public class BlueDoor extends Door
     }
     public void transitionToRoom2()
     {
-        if (isDoorTouchingFlynn()) 
+        if (isDoorTouchingFlynn() && isOnPlatform) 
         {
             if (getBlueKey())
             {

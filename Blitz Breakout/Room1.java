@@ -118,8 +118,6 @@ public class Room1 extends SimulationWorld
         Platform platform6 = new Platform();
         addObject(platform6,68,464);
         platform.setLocation(194,464);
-        Platform platform7 = new Platform();
-        addObject(platform7,194,464);
 
         Heart heart = new Heart();
         addObject(heart,61,52);
@@ -149,19 +147,51 @@ public class Room1 extends SimulationWorld
         addObject(movingPlatform,615,208);
         InvisiblePlatform invisiblePlatform = new InvisiblePlatform();
         addObject(invisiblePlatform,0,397);
-        InvisiblePlatform invisiblePlatform2 = new InvisiblePlatform();
-        addObject(invisiblePlatform2,1,299);
-        InvisiblePlatform invisiblePlatform3 = new InvisiblePlatform();
-        addObject(invisiblePlatform3,1,200);
+
         InvisiblePlatform invisiblePlatform4 = new InvisiblePlatform();
-        addObject(invisiblePlatform4,3,102);
-        InvisiblePlatform invisiblePlatform5 = new InvisiblePlatform();
-        addObject(invisiblePlatform5,898,470);
-        InvisiblePlatform invisiblePlatform6 = new InvisiblePlatform();
-        addObject(invisiblePlatform6,899,354);
-        InvisiblePlatform invisiblePlatform7 = new InvisiblePlatform();
-        addObject(invisiblePlatform7,898,255);
+        addObject(invisiblePlatform4,0,103);
         InvisiblePlatform invisiblePlatform8 = new InvisiblePlatform();
-        addObject(invisiblePlatform8,896,152);
+        addObject(invisiblePlatform8,0,46);
+        InvisiblePlatform invisiblePlatform9 = new InvisiblePlatform();
+        addObject(invisiblePlatform9,0,531);
+        InvisiblePlatform invisiblePlatform10 = new InvisiblePlatform();
+        addObject(invisiblePlatform10,0,633);
+        removeObject(invisiblePlatform10);
+        InvisiblePlatform invisiblePlatform11 = new InvisiblePlatform();
+        addObject(invisiblePlatform11,0,726);
+        InvisiblePlatform invisiblePlatform3 = new InvisiblePlatform();
+        addObject(invisiblePlatform3,0,201);
+
+        InvisiblePlatform invisiblePlatform2 = new InvisiblePlatform();
+        addObject(invisiblePlatform2,0,300);
+
+        InvisiblePlatform invisiblePlatform5 = new InvisiblePlatform();
+        addObject(invisiblePlatform5,899,51);
+        InvisiblePlatform invisiblePlatform6 = new InvisiblePlatform();
+        addObject(invisiblePlatform6,899,152);
+        InvisiblePlatform invisiblePlatform7 = new InvisiblePlatform();
+        addObject(invisiblePlatform7,899,253);
+        InvisiblePlatform invisiblePlatform12 = new InvisiblePlatform();
+        addObject(invisiblePlatform12,899,353);
+        InvisiblePlatform invisiblePlatform13 = new InvisiblePlatform();
+        addObject(invisiblePlatform13,899,454);
+        invisiblePlatform13.setLocation(898,471);
+        invisiblePlatform13.setLocation(899,472);
+        InvisiblePlatform invisiblePlatform14 = new InvisiblePlatform();
+        addObject(invisiblePlatform14,899,472);
+        InvisiblePlatform invisiblePlatform15 = new InvisiblePlatform();
+        addObject(invisiblePlatform15,898,604);
+        InvisiblePlatform invisiblePlatform16 = new InvisiblePlatform();
+        addObject(invisiblePlatform16,899,706);
+        invisiblePlatform16.setLocation(899,679);
+        InvisiblePlatform invisiblePlatform17 = new InvisiblePlatform();
+        addObject(invisiblePlatform17,899,679);
+        InvisiblePlatform invisiblePlatform18 = new InvisiblePlatform();
+        addObject(invisiblePlatform18,899,724);
+        InvisiblePlatform invisiblePlatform19 = new InvisiblePlatform();
+        addObject(invisiblePlatform19,0,631);
+        InvisiblePlatform invisiblePlatform20 = new InvisiblePlatform();
+        addObject(invisiblePlatform20,899,414);
+        removeObject(invisiblePlatform17);
     }
 }
