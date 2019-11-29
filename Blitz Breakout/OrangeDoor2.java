@@ -6,7 +6,7 @@ import java.util.*;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class OrangeDoor extends Door
+public class OrangeDoor2 extends Door
 {
     /**
      * Act - do whatever the OrangeDoor wants to do. This method is called whenever
@@ -20,7 +20,7 @@ public class OrangeDoor extends Door
             if (getOrangeKey() == true)
             {
                 SimulationWorld world = (SimulationWorld) getWorld();
-                Greenfoot.setWorld(new Room4(Heart.getHearts(), true, false, getOrangeKey(), 1));
+                Greenfoot.setWorld(new Room3(Heart.getHearts(), true, getOrangeKey(),getGreenKey(), 1));
                 return;
             }
         }
@@ -33,6 +33,23 @@ public class OrangeDoor extends Door
         {
             OrangeKey orangeKey = orangeKeyList.get(0);
             double y = (double) (orangeKey.getY());
+            
+            if (y > 705)
+            {
+                return true;
+            }   
+        }
+
+        return false;
+    }
+    public boolean getGreenKey()
+    {
+        List <GreenKey> greenKeyList = getWorld().getObjects(GreenKey.class);
+        
+        if (greenKeyList.size() > 0)
+        {
+            GreenKey greenKey = greenKeyList.get(0);
+            double y = (double) (greenKey.getY());
             
             if (y > 705)
             {

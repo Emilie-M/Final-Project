@@ -60,7 +60,125 @@ public class SimulationWorld extends World
         toWindowMatrix = Matrix2D.worldToWindow(cameraCenter, cameraWidth, new Vector2D(getWidth(), getHeight()));
         toWorldMatrix = Matrix2D.windowToWorld(cameraCenter, cameraWidth, new Vector2D(getWidth(), getHeight()));
     }
-    
+    public boolean getBlueKey()
+    {
+        List <BlueKey> blueKeyList = getObjects(BlueKey.class);
+        
+        if (blueKeyList.size() > 0)
+        {
+            BlueKey blueKey = blueKeyList.get(0);
+            double y = (double) (blueKey.getY());
+            
+            if (y > 705)
+            {
+                return true;
+            }   
+        }
+
+        return false;
+    }
+    public boolean getGoldKey()
+    {
+        List <GoldKey> goldKeyList = getObjects(GoldKey.class);
+        
+        if (goldKeyList.size() > 0)
+        {
+            GoldKey goldKey = goldKeyList.get(0);
+            double y = (double) (goldKey.getY());
+            
+            if (y > 705)
+            {
+                return true;
+            }   
+        }
+
+        return false;
+    }
+    public boolean getGreenKey()
+    {
+        List <GreenKey> greenKeyList = getObjects(GreenKey.class);
+        
+        if (greenKeyList.size() > 0)
+        {
+            GreenKey greenKey = greenKeyList.get(0);
+            double y = (double) (greenKey.getY());
+            
+            if (y > 705)
+            {
+                return true;
+            }   
+        }
+
+        return false;
+    }
+    public boolean getOrangeKey()
+    {
+        List <OrangeKey> orangeKeyList = getObjects(OrangeKey.class);
+        
+        if (orangeKeyList.size() > 0)
+        {
+            OrangeKey orangeKey = orangeKeyList.get(0);
+            double y = (double) (orangeKey.getY());
+            
+            if (y > 705)
+            {
+                return true;
+            }   
+        }
+
+        return false;
+    }
+    public boolean getPinkKey()
+    {
+        List <PinkKey> pinkKeyList = getObjects(PinkKey.class);
+        
+        if (pinkKeyList.size() > 0)
+        {
+            PinkKey pinkKey = pinkKeyList.get(0);
+            double y = (double) (pinkKey.getY());
+            
+            if (y > 705)
+            {
+                return true;
+            }   
+        }
+
+        return false;
+    }
+    public boolean getRedKey()
+    {
+        List <RedKey> redKeyList = getObjects(RedKey.class);
+        
+        if (redKeyList.size() > 0)
+        {
+            RedKey redKey = redKeyList.get(0);
+            double y = (double) (redKey.getY());
+            
+            if (y > 705)
+            {
+                return true;
+            }   
+        }
+
+        return false;
+    }
+    public boolean getSilverKey()
+    {
+        List <SilverKey> silverKeyList = getObjects(SilverKey.class);
+        
+        if (silverKeyList.size() > 0)
+        {
+            SilverKey silverKey = silverKeyList.get(0);
+            double y = (double) (silverKey.getY());
+            
+            if (y > 705)
+            {
+                return true;
+            }   
+        }
+
+        return false;
+    }
     public void started()
     {
         if (music != null)
