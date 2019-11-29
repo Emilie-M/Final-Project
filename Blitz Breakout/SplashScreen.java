@@ -22,7 +22,6 @@ public class SplashScreen extends SimulationWorld
     public void act()
     {
         super.act();
-        super.started();
         timeUntilTransition -= getTimeStepDuration();
         start(timeUntilTransition);
     }
@@ -30,7 +29,6 @@ public class SplashScreen extends SimulationWorld
     {
         if (timeUntilTransition < 0)
         {
-            super.stopped();
             transitionToWorld(new StartMenu());
         }
     }

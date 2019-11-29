@@ -12,8 +12,7 @@ public class StartMenu extends SimulationWorld
 
     public StartMenu()
     {
-        super("", 900, 768, new Point2D(8.0, 6.0), 16.0);
-        super.stopped();
+        super("StartMenu.wav", 900, 768, new Point2D(8.0, 6.0), 16.0);
         for (Object obj : startMenu.getImages())
         {
             ((GreenfootImage)obj).scale(getWidth(), getHeight());
