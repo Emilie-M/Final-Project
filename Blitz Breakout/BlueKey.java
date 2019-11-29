@@ -11,6 +11,7 @@ public class BlueKey extends Key
     public static boolean isBlueKeyAcquired = false;
     public void act() 
     {
+        super.act();
         detectCollision();
     }    
 
