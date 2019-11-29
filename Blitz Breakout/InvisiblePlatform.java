@@ -15,6 +15,7 @@ public class InvisiblePlatform extends Platform
     public void act() 
     {
         super.act();
+        
         if (Greenfoot.isKeyDown("F10"))
         {
             getImage().setTransparency(255);

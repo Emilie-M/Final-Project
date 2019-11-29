@@ -106,6 +106,12 @@ public class Flynn extends PlatformActor
         animationCounter++;
         hitDetection();
         fallen();
+        //touchingWall();
+        Actor door = getOneObjectAtOffset(0, 0, Door.class);
+        if (isTouching(Door.class)) 
+        {
+            Greenfoot.playSound("openDoor.wav");
+        }
     }
 
     public void controlAvatar()
