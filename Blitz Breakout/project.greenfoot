@@ -1,9 +1,11 @@
 #Greenfoot project file
+class.Aura.image=aura.png
 class.BlueDoor.image=Door1BlueV1.png
 class.BlueDoor2.image=Door1BlueV1.png
 class.BlueKey.image=blueKey.png
 class.Door.image=Door1.png
 class.FirstClue.image=paper1.png
+class.Flame.image=flame.gif
 class.Flynn.image=DemoStandingRight3.png
 class.GameOverScreen.image=GameOverScreen1.gif
 class.GoldDoor.image=Door1Yellow.png
@@ -31,13 +33,16 @@ class.Room4.image=BaseWallV4.png
 class.SilverDoor.image=Door1Silver.png
 class.SilverKey.image=silverKey.png
 class.Spider.image=redSpider123.png
+class.Spiderweb.image=Spiderweb.png
 class.SplashScreen.image=SplashScreen.jpg
+class.Torch.image=torchV2.png
 dependency1.from=SimulationWorld
 dependency1.to=Point2D
 dependency1.type=UsesDependency
 dependency10.from=SimulationWorld
 dependency10.to=SilverKey
 dependency10.type=UsesDependency
+<<<<<<< HEAD
 dependency100.from=PurpleSmoke
 dependency100.to=GifImage
 dependency100.type=UsesDependency
@@ -70,6 +75,13 @@ dependency109.to=Flynn
 dependency109.type=UsesDependency
 dependency11.from=SimulationWorld
 dependency11.to=SimulationActor
+=======
+dependency100.from=Vector2D
+dependency100.to=Point2D
+dependency100.type=UsesDependency
+dependency11.from=Room2
+dependency11.to=Point2D
+>>>>>>> master
 dependency11.type=UsesDependency
 dependency110.from=GreenKey
 dependency110.to=SimulationWorld
@@ -147,6 +159,7 @@ dependency25.from=Room2
 dependency25.to=BlueDoor2
 dependency25.type=UsesDependency
 dependency26.from=Room1
+<<<<<<< HEAD
 dependency26.to=Point2D
 dependency26.type=UsesDependency
 dependency27.from=Room1
@@ -157,10 +170,23 @@ dependency28.to=BlueKey
 dependency28.type=UsesDependency
 dependency29.from=Room1
 dependency29.to=Heart
+=======
+dependency26.to=Torch
+dependency26.type=UsesDependency
+dependency27.from=Room1
+dependency27.to=Flame
+dependency27.type=UsesDependency
+dependency28.from=Room1
+dependency28.to=Aura
+dependency28.type=UsesDependency
+dependency29.from=Room3
+dependency29.to=Point2D
+>>>>>>> master
 dependency29.type=UsesDependency
 dependency3.from=SimulationWorld
 dependency3.to=Vector2D
 dependency3.type=UsesDependency
+<<<<<<< HEAD
 dependency30.from=Room1
 dependency30.to=Flynn
 dependency30.type=UsesDependency
@@ -189,11 +215,42 @@ dependency38.from=Room4
 dependency38.to=Flynn
 dependency38.type=UsesDependency
 dependency39.from=Room3
+=======
+dependency30.from=Room3
+dependency30.to=PinkKey
+dependency30.type=UsesDependency
+dependency31.from=Room3
+dependency31.to=Heart
+dependency31.type=UsesDependency
+dependency32.from=Room3
+dependency32.to=Flynn
+dependency32.type=UsesDependency
+dependency33.from=Room3
+dependency33.to=Platform
+dependency33.type=UsesDependency
+dependency34.from=Room3
+dependency34.to=PinkDoor2
+dependency34.type=UsesDependency
+dependency35.from=Room3
+dependency35.to=OrangeDoor
+dependency35.type=UsesDependency
+dependency36.from=Room3
+dependency36.to=Spider
+dependency36.type=UsesDependency
+dependency37.from=Room3
+dependency37.to=GreenDoor
+dependency37.type=UsesDependency
+dependency38.from=GameOverScreen
+dependency38.to=GifImage
+dependency38.type=UsesDependency
+dependency39.from=GameOverScreen
+>>>>>>> master
 dependency39.to=Point2D
 dependency39.type=UsesDependency
 dependency4.from=SimulationWorld
 dependency4.to=BlueKey
 dependency4.type=UsesDependency
+<<<<<<< HEAD
 dependency40.from=Room3
 dependency40.to=Spider
 dependency40.type=UsesDependency
@@ -223,10 +280,42 @@ dependency48.to=OrangeDoor
 dependency48.type=UsesDependency
 dependency49.from=Room3
 dependency49.to=GreenDoor
+=======
+dependency40.from=GameOverScreen
+dependency40.to=StartMenu
+dependency40.type=UsesDependency
+dependency41.from=Heart
+dependency41.to=SimulationWorld
+dependency41.type=UsesDependency
+dependency42.from=Heart
+dependency42.to=GameOverScreen
+dependency42.type=UsesDependency
+dependency43.from=Heart
+dependency43.to=Flynn
+dependency43.type=UsesDependency
+dependency44.from=SimulationActor
+dependency44.to=Point2D
+dependency44.type=UsesDependency
+dependency45.from=SimulationActor
+dependency45.to=Vector2D
+dependency45.type=UsesDependency
+dependency46.from=SimulationActor
+dependency46.to=SimulationWorld
+dependency46.type=UsesDependency
+dependency47.from=MovingPlatform
+dependency47.to=Vector2D
+dependency47.type=UsesDependency
+dependency48.from=PlatformActor
+dependency48.to=Point2D
+dependency48.type=UsesDependency
+dependency49.from=PlatformActor
+dependency49.to=Vector2D
+>>>>>>> master
 dependency49.type=UsesDependency
 dependency5.from=SimulationWorld
 dependency5.to=GoldKey
 dependency5.type=UsesDependency
+<<<<<<< HEAD
 dependency50.from=GameOverScreen
 dependency50.to=GifImage
 dependency50.type=UsesDependency
@@ -256,10 +345,42 @@ dependency58.to=SimulationWorld
 dependency58.type=UsesDependency
 dependency59.from=MovingPlatform
 dependency59.to=Vector2D
+=======
+dependency50.from=PlatformActor
+dependency50.to=Platform
+dependency50.type=UsesDependency
+dependency51.from=Flynn
+dependency51.to=Vector2D
+dependency51.type=UsesDependency
+dependency52.from=Flynn
+dependency52.to=SimulationWorld
+dependency52.type=UsesDependency
+dependency53.from=Flynn
+dependency53.to=Dialog
+dependency53.type=UsesDependency
+dependency54.from=Flynn
+dependency54.to=GameOverScreen
+dependency54.type=UsesDependency
+dependency55.from=Flynn
+dependency55.to=Spider
+dependency55.type=UsesDependency
+dependency56.from=Door
+dependency56.to=Flynn
+dependency56.type=UsesDependency
+dependency57.from=BlueDoor2
+dependency57.to=BlueKey
+dependency57.type=UsesDependency
+dependency58.from=BlueDoor2
+dependency58.to=SimulationWorld
+dependency58.type=UsesDependency
+dependency59.from=BlueDoor2
+dependency59.to=Room1
+>>>>>>> master
 dependency59.type=UsesDependency
 dependency6.from=SimulationWorld
 dependency6.to=GreenKey
 dependency6.type=UsesDependency
+<<<<<<< HEAD
 dependency60.from=PlatformActor
 dependency60.to=Point2D
 dependency60.type=UsesDependency
@@ -289,10 +410,42 @@ dependency68.to=Spider
 dependency68.type=UsesDependency
 dependency69.from=Door
 dependency69.to=Flynn
+=======
+dependency60.from=BlueDoor2
+dependency60.to=Heart
+dependency60.type=UsesDependency
+dependency61.from=SilverDoor
+dependency61.to=SilverKey
+dependency61.type=UsesDependency
+dependency62.from=RedDoor
+dependency62.to=RedKey
+dependency62.type=UsesDependency
+dependency63.from=OrangeDoor
+dependency63.to=OrangeKey
+dependency63.type=UsesDependency
+dependency64.from=BlueDoor
+dependency64.to=BlueKey
+dependency64.type=UsesDependency
+dependency65.from=BlueDoor
+dependency65.to=SimulationWorld
+dependency65.type=UsesDependency
+dependency66.from=BlueDoor
+dependency66.to=Room2
+dependency66.type=UsesDependency
+dependency67.from=BlueDoor
+dependency67.to=Heart
+dependency67.type=UsesDependency
+dependency68.from=PinkDoor
+dependency68.to=SimulationWorld
+dependency68.type=UsesDependency
+dependency69.from=PinkDoor
+dependency69.to=Room3
+>>>>>>> master
 dependency69.type=UsesDependency
 dependency7.from=SimulationWorld
 dependency7.to=OrangeKey
 dependency7.type=UsesDependency
+<<<<<<< HEAD
 dependency70.from=BlueDoor2
 dependency70.to=BlueKey
 dependency70.type=UsesDependency
@@ -322,10 +475,42 @@ dependency78.to=OrangeKey
 dependency78.type=UsesDependency
 dependency79.from=OrangeDoor
 dependency79.to=Heart
+=======
+dependency70.from=PinkDoor
+dependency70.to=PinkKey
+dependency70.type=UsesDependency
+dependency71.from=PinkDoor
+dependency71.to=Heart
+dependency71.type=UsesDependency
+dependency72.from=GreenDoor
+dependency72.to=GreenKey
+dependency72.type=UsesDependency
+dependency73.from=GoldDoor
+dependency73.to=GoldKey
+dependency73.type=UsesDependency
+dependency74.from=PinkDoor2
+dependency74.to=SimulationWorld
+dependency74.type=UsesDependency
+dependency75.from=PinkDoor2
+dependency75.to=Room2
+dependency75.type=UsesDependency
+dependency76.from=PinkDoor2
+dependency76.to=PinkKey
+dependency76.type=UsesDependency
+dependency77.from=PinkDoor2
+dependency77.to=Heart
+dependency77.type=UsesDependency
+dependency78.from=FirstClue
+dependency78.to=Flynn
+dependency78.type=UsesDependency
+dependency79.from=Spider
+dependency79.to=Vector2D
+>>>>>>> master
 dependency79.type=UsesDependency
 dependency8.from=SimulationWorld
 dependency8.to=PinkKey
 dependency8.type=UsesDependency
+<<<<<<< HEAD
 dependency80.from=BlueDoor
 dependency80.to=BlueKey
 dependency80.type=UsesDependency
@@ -355,10 +540,42 @@ dependency88.to=SimulationWorld
 dependency88.type=UsesDependency
 dependency89.from=OrangeDoor2
 dependency89.to=Room3
+=======
+dependency80.from=Flame
+dependency80.to=GifImage
+dependency80.type=UsesDependency
+dependency81.from=PurpleSmoke
+dependency81.to=GifImage
+dependency81.type=UsesDependency
+dependency82.from=Key
+dependency82.to=SimulationWorld
+dependency82.type=UsesDependency
+dependency83.from=OrangeKey
+dependency83.to=SimulationWorld
+dependency83.type=UsesDependency
+dependency84.from=OrangeKey
+dependency84.to=Flynn
+dependency84.type=UsesDependency
+dependency85.from=BlueKey
+dependency85.to=SimulationWorld
+dependency85.type=UsesDependency
+dependency86.from=BlueKey
+dependency86.to=Flynn
+dependency86.type=UsesDependency
+dependency87.from=RedKey
+dependency87.to=SimulationWorld
+dependency87.type=UsesDependency
+dependency88.from=RedKey
+dependency88.to=Flynn
+dependency88.type=UsesDependency
+dependency89.from=GoldKey
+dependency89.to=SimulationWorld
+>>>>>>> master
 dependency89.type=UsesDependency
 dependency9.from=SimulationWorld
 dependency9.to=RedKey
 dependency9.type=UsesDependency
+<<<<<<< HEAD
 dependency90.from=OrangeDoor2
 dependency90.to=OrangeKey
 dependency90.type=UsesDependency
@@ -396,6 +613,52 @@ editor.fx.0.y=100
 height=1056
 package.numDependencies=119
 package.numTargets=44
+=======
+dependency90.from=GoldKey
+dependency90.to=Flynn
+dependency90.type=UsesDependency
+dependency91.from=GreenKey
+dependency91.to=SimulationWorld
+dependency91.type=UsesDependency
+dependency92.from=GreenKey
+dependency92.to=Flynn
+dependency92.type=UsesDependency
+dependency93.from=PinkKey
+dependency93.to=SimulationWorld
+dependency93.type=UsesDependency
+dependency94.from=PinkKey
+dependency94.to=Flynn
+dependency94.type=UsesDependency
+dependency95.from=SilverKey
+dependency95.to=SimulationWorld
+dependency95.type=UsesDependency
+dependency96.from=SilverKey
+dependency96.to=Flynn
+dependency96.type=UsesDependency
+<<<<<<< HEAD
+dependency97.from=Matrix2D
+dependency97.to=Vector2D
+dependency97.type=UsesDependency
+dependency98.from=Matrix2D
+dependency98.to=Point2D
+dependency98.type=UsesDependency
+dependency99.from=Point2D
+dependency99.to=Vector2D
+dependency99.type=UsesDependency
+editor.fx.0.height=739
+editor.fx.0.width=1125
+editor.fx.0.x=126
+editor.fx.0.y=266
+=======
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
+>>>>>>> bc773bb1d6a98c1f2a517199d4e2bc004881a6b4
+height=1056
+package.numDependencies=100
+package.numTargets=45
+>>>>>>> master
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -439,7 +702,11 @@ target12.width=90
 target12.x=0
 target12.y=0
 target13.height=50
+<<<<<<< HEAD
 target13.name=BlueDoor
+=======
+target13.name=Torch
+>>>>>>> master
 target13.showInterface=false
 target13.type=ClassTarget
 target13.width=80
@@ -481,7 +748,11 @@ target18.width=80
 target18.x=0
 target18.y=0
 target19.height=50
+<<<<<<< HEAD
 target19.name=Flynn
+=======
+target19.name=Aura
+>>>>>>> master
 target19.showInterface=false
 target19.type=ClassTarget
 target19.width=80
@@ -495,34 +766,51 @@ target2.width=80
 target2.x=0
 target2.y=0
 target20.height=50
+<<<<<<< HEAD
 target20.name=PlatformActor
+=======
+target20.name=Flynn
+>>>>>>> master
 target20.showInterface=false
 target20.type=ClassTarget
 target20.width=100
 target20.x=0
 target20.y=0
 target21.height=50
+<<<<<<< HEAD
 target21.name=Room2
+=======
+target21.name=Flame
+>>>>>>> master
 target21.showInterface=false
 target21.type=ClassTarget
 target21.width=80
 target21.x=0
 target21.y=0
 target22.height=50
+<<<<<<< HEAD
 target22.name=PinkDoor
+=======
+target22.name=PlatformActor
+>>>>>>> master
 target22.showInterface=false
 target22.type=ClassTarget
-target22.width=80
+target22.width=100
 target22.x=0
 target22.y=0
 target23.height=50
+<<<<<<< HEAD
 target23.name=Room1
+=======
+target23.name=Room2
+>>>>>>> master
 target23.showInterface=false
 target23.type=ClassTarget
 target23.width=80
 target23.x=0
 target23.y=0
 target24.height=50
+<<<<<<< HEAD
 target24.name=SimulationWorld
 target24.showInterface=false
 target24.type=ClassTarget
@@ -531,34 +819,60 @@ target24.x=0
 target24.y=0
 target25.height=50
 target25.name=MovingPlatform
+=======
+target24.name=PinkDoor
+target24.showInterface=false
+target24.type=ClassTarget
+target24.width=80
+target24.x=0
+target24.y=0
+target25.height=50
+target25.name=Room1
+>>>>>>> master
 target25.showInterface=false
 target25.type=ClassTarget
 target25.width=130
 target25.x=0
 target25.y=0
 target26.height=50
+<<<<<<< HEAD
 target26.name=GreenKey
+=======
+target26.name=SimulationWorld
+>>>>>>> master
 target26.showInterface=false
 target26.type=ClassTarget
-target26.width=80
+target26.width=110
 target26.x=0
 target26.y=0
 target27.height=50
+<<<<<<< HEAD
 target27.name=Door
+=======
+target27.name=Spiderweb
+>>>>>>> master
 target27.showInterface=false
 target27.type=ClassTarget
 target27.width=80
 target27.x=0
 target27.y=0
 target28.height=50
+<<<<<<< HEAD
 target28.name=Room4
+=======
+target28.name=MovingPlatform
+>>>>>>> master
 target28.showInterface=false
 target28.type=ClassTarget
-target28.width=80
+target28.width=130
 target28.x=0
 target28.y=0
 target29.height=50
+<<<<<<< HEAD
 target29.name=GreenDoor
+=======
+target29.name=GreenKey
+>>>>>>> master
 target29.showInterface=false
 target29.type=ClassTarget
 target29.width=80
@@ -572,34 +886,59 @@ target3.width=80
 target3.x=0
 target3.y=0
 target30.height=50
+<<<<<<< HEAD
 target30.name=Room3
+=======
+target30.name=Door
+>>>>>>> master
 target30.showInterface=false
 target30.type=ClassTarget
 target30.width=80
 target30.x=0
 target30.y=0
 target31.height=50
+<<<<<<< HEAD
 target31.name=GifImage
+=======
+target31.name=GreenDoor
+>>>>>>> master
 target31.showInterface=false
 target31.type=ClassTarget
-target31.width=110
+target31.width=80
 target31.x=0
 target31.y=0
 target32.height=50
+<<<<<<< HEAD
 target32.name=InvisiblePlatform
+=======
+<<<<<<< HEAD
+target32.name=Room3
+=======
+target32.name=GameOverScreen
+>>>>>>> bc773bb1d6a98c1f2a517199d4e2bc004881a6b4
+>>>>>>> master
 target32.showInterface=false
 target32.type=ClassTarget
 target32.width=110
 target32.x=0
 target32.y=0
 target33.height=50
+<<<<<<< HEAD
 target33.name=FirstClue
+=======
+<<<<<<< HEAD
+target33.name=GifImage
+=======
+target33.name=SpriteSheet
+>>>>>>> bc773bb1d6a98c1f2a517199d4e2bc004881a6b4
+>>>>>>> master
 target33.showInterface=false
 target33.type=ClassTarget
 target33.width=80
 target33.x=0
 target33.y=0
 target34.height=50
+<<<<<<< HEAD
 target34.name=GameOverScreen
 target34.showInterface=false
 target34.type=ClassTarget
@@ -608,12 +947,23 @@ target34.x=0
 target34.y=0
 target35.height=50
 target35.name=SpriteSheet
+=======
+target34.name=InvisiblePlatform
+target34.showInterface=false
+target34.type=ClassTarget
+target34.width=110
+target34.x=0
+target34.y=0
+target35.height=50
+target35.name=FirstClue
+>>>>>>> master
 target35.showInterface=false
 target35.type=ClassTarget
 target35.width=110
 target35.x=0
 target35.y=0
 target36.height=50
+<<<<<<< HEAD
 target36.name=OrangeDoor2
 target36.showInterface=false
 target36.type=ClassTarget
@@ -622,20 +972,38 @@ target36.x=0
 target36.y=0
 target37.height=50
 target37.name=Vector2D
+=======
+target36.name=GameOverScreen
+target36.showInterface=false
+target36.type=ClassTarget
+target36.width=120
+target36.x=0
+target36.y=0
+target37.height=50
+target37.name=SpriteSheet
+>>>>>>> master
 target37.showInterface=false
 target37.type=ClassTarget
 target37.width=80
 target37.x=0
 target37.y=0
 target38.height=50
+<<<<<<< HEAD
 target38.name=PinkKey
+=======
+target38.name=Vector2D
+>>>>>>> master
 target38.showInterface=false
 target38.type=ClassTarget
 target38.width=80
 target38.x=0
 target38.y=0
 target39.height=50
+<<<<<<< HEAD
 target39.name=PurpleSmoke
+=======
+target39.name=PinkKey
+>>>>>>> master
 target39.showInterface=false
 target39.type=ClassTarget
 target39.width=100
@@ -649,20 +1017,29 @@ target4.width=80
 target4.x=0
 target4.y=0
 target40.height=50
+<<<<<<< HEAD
 target40.name=Spider
+=======
+target40.name=PurpleSmoke
+>>>>>>> master
 target40.showInterface=false
 target40.type=ClassTarget
-target40.width=80
+target40.width=90
 target40.x=0
 target40.y=0
 target41.height=50
+<<<<<<< HEAD
 target41.name=GoldDoor
+=======
+target41.name=Spider
+>>>>>>> master
 target41.showInterface=false
 target41.type=ClassTarget
-target41.width=80
+target41.width=120
 target41.x=0
 target41.y=0
 target42.height=50
+<<<<<<< HEAD
 target42.name=PinkDoor2
 target42.showInterface=false
 target42.type=ClassTarget
@@ -683,6 +1060,35 @@ target44.type=ClassTarget
 target44.width=120
 target44.x=0
 target44.y=0
+=======
+target42.name=GoldDoor
+target42.showInterface=false
+target42.type=ClassTarget
+target42.width=120
+target42.x=0
+target42.y=0
+target43.height=50
+target43.name=PinkDoor2
+target43.showInterface=false
+target43.type=ClassTarget
+target43.width=80
+target43.x=0
+target43.y=0
+target44.height=50
+target44.name=Key
+target44.showInterface=false
+target44.type=ClassTarget
+target44.width=80
+target44.x=0
+target44.y=0
+target45.height=50
+target45.name=SilverKey
+target45.showInterface=false
+target45.type=ClassTarget
+target45.width=80
+target45.x=0
+target45.y=0
+>>>>>>> master
 target5.height=50
 target5.name=SimulationActor
 target5.showInterface=false
