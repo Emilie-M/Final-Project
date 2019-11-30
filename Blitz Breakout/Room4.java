@@ -92,21 +92,13 @@ public class Room4 extends SimulationWorld
             addObject(new SilverKey(), 70, 735);
             g++;
         }
-        
-<<<<<<< HEAD
-=======
-        
->>>>>>> AkashBranch7
+
         if(i < 1)
         {
             addObject(new Flynn(), 185, 99);
             i++;
         }
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> AkashBranch7
         if (hearts == 1 && j < 1) 
         {
             addObject(new Heart(), 61, 52);
