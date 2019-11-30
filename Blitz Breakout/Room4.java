@@ -55,21 +55,44 @@ public class Room4 extends SimulationWorld
     public void act()
     {
         super.act();
-        if (isPinkKeyAcquired2 && k < 1) 
+        
+        // Copy all 7 below for new Room
+        if (isBlueKeyAcquired2 && a < 1) 
         {
-            addObject(new PinkKey(), 62, 735);
-            k++;
+            addObject(new BlueKey(), 58, 735);
+            j++;
         }
-        if (isGreenKeyAcquired2 && l < 1) 
+        if (isGoldKeyAcquired2 && b < 1) 
+        {
+            addObject(new GoldKey(), 60, 735);
+            b++;
+        }
+        if (isGreenKeyAcquired2 && c < 1) 
         {
             addObject(new GreenKey(), 62, 735);
-            l++;
+            c++;
         }
-        if (isOrangeKeyAcquired2 && m < 1) 
+        if (isOrangeKeyAcquired2 && d < 1) 
         {
-            addObject(new OrangeKey(), 62, 735);
-            m++;
+            addObject(new OrangeKey(), 64, 735);
+            d++;
         }
+        if (isPinkKeyAcquired2 && e < 1) 
+        {
+            addObject(new PinkKey(), 66,735);
+            e++;
+        }
+        if (isRedKeyAcquired2 && f < 1) 
+        {
+            addObject(new RedKey(), 68, 735);
+            f++;
+        }
+        if (isSilverKeyAcquired2 && g < 1) 
+        {
+            addObject(new SilverKey(), 70, 735);
+            g++;
+        }
+        // STAP
         
         if (hearts == 1 && j < 1) 
         {

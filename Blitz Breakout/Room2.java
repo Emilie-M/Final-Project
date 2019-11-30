@@ -55,50 +55,46 @@ public class Room2 extends SimulationWorld
     public void act()
     {
         super.act();
-        if (isBlueKeyAcquired2 && k < 1) 
-        {
-            addObject(new BlueKey(), 58, 735);
-            k++;
-        }
         if (!(isPinkKeyAcquired2) && j < 1) 
         {
             addObject(new PinkKey(), 87,534);
-            l++;
+            isPinkKeyAcquired2 = true;
+            j++;
         }
-        // Copy all 7 below for new Room #2 The Key the room possesses is special and must use the same variable as the (isAcquired)
-        if (isBlueKeyAcquired2 && j < 1) 
+        // Copy all 7 below for new Room
+        if (isBlueKeyAcquired2 && a < 1) 
         {
             addObject(new BlueKey(), 58, 735);
             j++;
         }
         if (isGoldKeyAcquired2 && b < 1) 
         {
-            addObject(new GoldKey(),547,563);
+            addObject(new GoldKey(), 60, 735);
             b++;
         }
         if (isGreenKeyAcquired2 && c < 1) 
         {
-            addObject(new GreenKey(),547,563);
+            addObject(new GreenKey(), 62, 735);
             c++;
         }
         if (isOrangeKeyAcquired2 && d < 1) 
         {
-            addObject(new OrangeKey(),547,563);
+            addObject(new OrangeKey(), 64, 735);
             d++;
         }
         if (isPinkKeyAcquired2 && e < 1) 
         {
-            addObject(new PinkKey(),547,563);
+            addObject(new PinkKey(), 66,735);
             e++;
         }
         if (isRedKeyAcquired2 && f < 1) 
         {
-            addObject(new RedKey(),547,563);
+            addObject(new RedKey(), 68, 735);
             f++;
         }
         if (isSilverKeyAcquired2 && g < 1) 
         {
-            addObject(new SilverKey(),547,563);
+            addObject(new SilverKey(), 70, 735);
             g++;
         }
         // STAP

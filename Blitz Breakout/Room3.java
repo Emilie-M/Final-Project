@@ -62,28 +62,52 @@ public class Room3 extends SimulationWorld
             addObject(new Spider(2.0, 6.0), 459, 372);
             o++;
         }
-        if (isPinkKeyAcquired2 && k < 1) 
-        {
-            addObject(new PinkKey(), 62, 735);
-            k++;
-        }
+        
         if (!(isGreenKeyAcquired2) && p < 1)
         {
             addObject(new GreenKey(), 90,534);
+            isGreenKeyAcquired2 = true;
             p++;
         }
-        if (isGreenKeyAcquired2 && p < 1) 
+        
+        // Copy all 7 below for new Room
+        if (isBlueKeyAcquired2 && a < 1) 
+        {
+            addObject(new BlueKey(), 58, 735);
+            j++;
+        }
+        if (isGoldKeyAcquired2 && b < 1) 
+        {
+            addObject(new GoldKey(), 60, 735);
+            b++;
+        }
+        if (isGreenKeyAcquired2 && c < 1) 
         {
             addObject(new GreenKey(), 62, 735);
-            p++;
+            c++;
         }
-        
-        
-        if (isOrangeKeyAcquired2 && m < 1) 
+        if (isOrangeKeyAcquired2 && d < 1) 
         {
-            addObject(new OrangeKey(), 62, 735);
-            m++;
+            addObject(new OrangeKey(), 64, 735);
+            d++;
         }
+        if (isPinkKeyAcquired2 && e < 1) 
+        {
+            addObject(new PinkKey(), 66,735);
+            e++;
+        }
+        if (isRedKeyAcquired2 && f < 1) 
+        {
+            addObject(new RedKey(), 68, 735);
+            f++;
+        }
+        if (isSilverKeyAcquired2 && g < 1) 
+        {
+            addObject(new SilverKey(), 70, 735);
+            g++;
+        }
+        // STAP
+        
         if (hearts == 1 && j < 1) 
         {
             addObject(new Heart(), 61, 52);
