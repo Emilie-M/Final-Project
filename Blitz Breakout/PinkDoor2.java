@@ -20,7 +20,7 @@ public class PinkDoor2 extends Door
             if (getPinkKey() == true)
             {
                 SimulationWorld world = (SimulationWorld) getWorld();
-                Greenfoot.setWorld(new Room2(Heart.getHearts(), true, getPinkKey(), 1));
+                Greenfoot.setWorld(new Room2(Heart.getHearts(),  1, true, getPinkKey()));
                 return;
             }
         }

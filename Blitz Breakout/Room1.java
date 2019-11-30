@@ -9,7 +9,15 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Room1 extends SimulationWorld
 {
+    // Copy all 7 below for new Room #1 (TOTAL = )
     protected boolean isBlueKeyAcquired2;
+    protected boolean isGoldKeyAcquired2;
+    protected boolean isGreenKeyAcquired2;
+    protected boolean isOrangeKeyAcquired2;
+    protected boolean isPinkKeyAcquired2;
+    protected boolean isRedKeyAcquired2;
+    protected boolean isSilverKeyAcquired2;
+    
     protected int hearts;
     protected int positionNumber;
     protected boolean dialogPop2;
@@ -19,14 +27,24 @@ public class Room1 extends SimulationWorld
      * Constructor for objects of class Room1.
      * 
      */
-    public Room1(boolean dialogPop, int heart, boolean isBlueKeyAcquired, int positionNum)
+    public Room1(boolean dialogPop, int heart, int positionNum, boolean isBlueKeyAcquired, boolean isGoldKeyAcquired, 
+    boolean isGreenKeyAcquired, boolean isOrangeKeyAcquired, boolean isPinkKeyAcquired,boolean isRedKeyAcquired, boolean isSilverKeyAcquired)
     {
         super("", 900, 768, new Point2D(8.0, 6.0), 16.0);
         super.stopped();
         prepare();
         dialogPop2 = dialogPop;
         hearts = heart;
+        
+        // Copy all 7 below for new Room #2
         isBlueKeyAcquired2 = isBlueKeyAcquired;
+        isGoldKeyAcquired2 = isGoldKeyAcquired;
+        isGreenKeyAcquired2 = isGreenKeyAcquired;
+        isOrangeKeyAcquired2 = isOrangeKeyAcquired;
+        isPinkKeyAcquired2 = isPinkKeyAcquired;
+        isRedKeyAcquired2 = isRedKeyAcquired;
+        isSilverKeyAcquired2 = isSilverKeyAcquired;
+        
         positionNumber = positionNum;
     }
     private int i = 0;
@@ -34,7 +52,18 @@ public class Room1 extends SimulationWorld
     private int k = 0;
     private int l = 0;
     private int m = 0;
+    
+    // Copy all 7 below for new Room #3
+    private int a = 0;
+    private int b = 0;
+    private int c = 0;
+    private int d = 0;
+    private int e = 0;
+    private int f = 0;
+    private int g = 0;
+    
 
+    
     public void act()
     {
         super.act();
@@ -54,16 +83,49 @@ public class Room1 extends SimulationWorld
             m++;
         }
             
+        
         if ((!(isBlueKeyAcquired2)) && j < 1) 
         {
             addObject(new BlueKey(),547,563);
             j++;
         }
+        // Copy all 7 below for new Room #2 The Key the room possesses is special and must use the same variable as the (isAcquired)
         if (isBlueKeyAcquired2 && j < 1) 
         {
             addObject(new BlueKey(), 58, 735);
             j++;
         }
+        if (isGoldKeyAcquired2 && b < 1) 
+        {
+            addObject(new GoldKey(),547,563);
+            b++;
+        }
+        if (isGreenKeyAcquired2 && c < 1) 
+        {
+            addObject(new GreenKey(),547,563);
+            c++;
+        }
+        if (isOrangeKeyAcquired2 && d < 1) 
+        {
+            addObject(new OrangeKey(),547,563);
+            d++;
+        }
+        if (isPinkKeyAcquired2 && e < 1) 
+        {
+            addObject(new PinkKey(),547,563);
+            e++;
+        }
+        if (isRedKeyAcquired2 && f < 1) 
+        {
+            addObject(new RedKey(),547,563);
+            f++;
+        }
+        if (isSilverKeyAcquired2 && g < 1) 
+        {
+            addObject(new SilverKey(),547,563);
+            g++;
+        }
+        // STAP
 
 
         if (hearts == 1 && k < 1) 

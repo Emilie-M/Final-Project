@@ -8,22 +8,34 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Room4 extends SimulationWorld
 {
-    protected boolean isPinkKeyAcquired2;
+    protected boolean isBlueKeyAcquired2;
+    protected boolean isGoldKeyAcquired2;
     protected boolean isGreenKeyAcquired2;
     protected boolean isOrangeKeyAcquired2;
+    protected boolean isPinkKeyAcquired2;
+    protected boolean isRedKeyAcquired2;
+    protected boolean isSilverKeyAcquired2;
+    
     protected int hearts;
     protected int positionNumber;
     /**
      * Constructor for objects of class Room2.
      * 
      */
-    public Room4(int heart, boolean isPinkKeyAcquired,boolean isGreenKeyAcquired, boolean isOrangeKeyAcquired, int positionNum)
+    public Room4(int heart, int positionNum, boolean isBlueKeyAcquired, boolean isGoldKeyAcquired, 
+    boolean isGreenKeyAcquired, boolean isOrangeKeyAcquired, boolean isPinkKeyAcquired,boolean isRedKeyAcquired, boolean isSilverKeyAcquired)
     {
         super("", 900, 768, new Point2D(8.0, 6.0), 16.0);
         prepare();
-        isPinkKeyAcquired2 = isPinkKeyAcquired;
+        
+        isBlueKeyAcquired2 = isBlueKeyAcquired;
+        isGoldKeyAcquired2 = isGoldKeyAcquired;
         isGreenKeyAcquired2 = isGreenKeyAcquired;
         isOrangeKeyAcquired2 = isOrangeKeyAcquired;
+        isPinkKeyAcquired2 = isPinkKeyAcquired;
+        isRedKeyAcquired2 = isRedKeyAcquired;
+        isSilverKeyAcquired2 = isSilverKeyAcquired;
+        
         hearts = heart;
         positionNumber = positionNum;
     }
@@ -32,6 +44,14 @@ public class Room4 extends SimulationWorld
     private int k = 0;
     private int l = 0;
     private int m = 0;
+    
+    private int a = 0;
+    private int b = 0;
+    private int c = 0;
+    private int d = 0;
+    private int e = 0;
+    private int f = 0;
+    private int g = 0;
     public void act()
     {
         super.act();
