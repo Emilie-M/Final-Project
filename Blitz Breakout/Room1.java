@@ -30,7 +30,7 @@ public class Room1 extends SimulationWorld
     public Room1(boolean dialogPop, int heart, int positionNum, boolean isBlueKeyAcquired, boolean isGoldKeyAcquired, 
     boolean isGreenKeyAcquired, boolean isOrangeKeyAcquired, boolean isPinkKeyAcquired,boolean isRedKeyAcquired, boolean isSilverKeyAcquired)
     {
-        super("", 900, 768, new Point2D(8.0, 6.0), 16.0);
+        super("ost.wav", 900, 768, new Point2D(8.0, 6.0), 16.0);
         super.stopped();
         prepare();
         dialogPop2 = dialogPop;
