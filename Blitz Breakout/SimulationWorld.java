@@ -228,7 +228,6 @@ public class SimulationWorld extends World
         
         newWorld.started();
     }
-
     
     public double getTimeStepDuration()
     {
