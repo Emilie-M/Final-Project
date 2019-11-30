@@ -61,7 +61,6 @@ public class Room3 extends SimulationWorld
         {
             addObject(new Spider(2.0, 6.0), 459, 372);
             o++;
-            
         }
         
         if (!(isGreenKeyAcquired2) && p < 1)

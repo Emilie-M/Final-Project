@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Room4 extends SimulationWorld
+public class Room5 extends SimulationWorld
 {
     protected boolean isBlueKeyAcquired2;
     protected boolean isGoldKeyAcquired2;
@@ -22,7 +22,7 @@ public class Room4 extends SimulationWorld
      * Constructor for objects of class Room2.
      * 
      */
-    public Room4(int heart, int positionNum, boolean isBlueKeyAcquired, boolean isGoldKeyAcquired, 
+    public Room5(int heart, int positionNum, boolean isBlueKeyAcquired, boolean isGoldKeyAcquired, 
     boolean isGreenKeyAcquired, boolean isOrangeKeyAcquired, boolean isPinkKeyAcquired,boolean isRedKeyAcquired, boolean isSilverKeyAcquired)
     {
         super("", 900, 768, new Point2D(8.0, 6.0), 16.0);
@@ -55,7 +55,12 @@ public class Room4 extends SimulationWorld
     public void act()
     {
         super.act();
-
+        
+        if (!isRedKeyAcquired2 && k < 1) 
+        {
+            addObject(new RedKey(), 266, 628);
+            k++;
+        }
         // Copy all 7 below for new Room
         if (isBlueKeyAcquired2 && a < 1) 
         {
@@ -94,9 +99,14 @@ public class Room4 extends SimulationWorld
         }
         
         
-        if(i < 1)
+        if (positionNumber == 0 && i < 1)
         {
-            addObject(new Flynn(), 185, 99);
+            addObject(new Flynn(), 238, 370);
+            i++;
+        }
+        if(positionNumber == 1 && i < 1)
+        {
+            addObject(new Flynn(), 693, 278);
             i++;
         }
         
@@ -105,13 +115,13 @@ public class Room4 extends SimulationWorld
             addObject(new Heart(), 61, 52);
             j++;
         }
-        if (hearts == 2 && j < 2)
+        if (hearts == 2 && j < 1)
         {
             addObject(new Heart(), 61, 52);
             addObject(new Heart(), 93, 52);
             j++;
         }
-        if (hearts == 3 && j < 3) 
+        if (hearts == 3 && j < 1) 
         {
             addObject(new Heart(), 61, 52);
             addObject(new Heart(), 93, 52);
@@ -122,26 +132,9 @@ public class Room4 extends SimulationWorld
     
     public void prepare() 
     {
-        Platform platform = new Platform();
-        addObject(platform,71,175);
-        Platform platform2 = new Platform();
-        addObject(platform2,190,175);
-        Platform platform3 = new Platform();
-        addObject(platform3,70,597);
-        Platform platform4 = new Platform();
-        addObject(platform4,778,304);
-        Platform platform5 = new Platform();
-        addObject(platform5,307,526);
-        Platform platform6 = new Platform();
-        addObject(platform6,513,418);
-        Platform platform7 = new Platform();
-        addObject(platform7,387,292);
-        Platform platform8 = new Platform();
-        addObject(platform8,511,163);
-        GreenDoor2 greenDoor2 = new GreenDoor2();
-        addObject(greenDoor2,61,79);
-        OrangeKey orangeKey = new OrangeKey();
-        addObject(orangeKey,64,580);
+        RedDoor redDoor = new RedDoor();
+        addObject(redDoor,55,214);
+        
         InvisiblePlatform invisiblePlatform = new InvisiblePlatform();
         addObject(invisiblePlatform,899,719);
         InvisiblePlatform invisiblePlatform2 = new InvisiblePlatform();
@@ -174,5 +167,29 @@ public class Room4 extends SimulationWorld
         addObject(invisiblePlatform15,0,138);
         InvisiblePlatform invisiblePlatform16 = new InvisiblePlatform();
         addObject(invisiblePlatform16,1,41);
+        Platform platform = new Platform();
+        addObject(platform,829,216);
+        Platform platform2 = new Platform();
+        addObject(platform2,705,216);
+        Platform platform3 = new Platform();
+        addObject(platform3,71,310);
+        MovingPlatform movingPlatform = new MovingPlatform(2, 9);
+        addObject(movingPlatform,377,427);
+        Platform platform4 = new Platform();
+        addObject(platform4,653,439);
+        Platform platform5 = new Platform();
+        addObject(platform5,555,624);
+        Platform platform6 = new Platform();
+        addObject(platform6,285,644);
+        Platform platform7 = new Platform();
+        addObject(platform7,190,310);
+        OrangeDoor2 orangeDoor2 = new OrangeDoor2();
+        addObject(orangeDoor2,844,119);
+        Spider spider = new Spider(2, 8);
+        addObject(spider,356,234);
+        Spider spider2 = new Spider(2, 8);
+        addObject(spider2,470,586);
+        Platform platform8 = new Platform();
+        addObject(platform8,779,557);
     }
 }
