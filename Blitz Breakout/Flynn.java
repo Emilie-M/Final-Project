@@ -104,7 +104,8 @@ public class Flynn extends PlatformActor
         //updateFrame();
         invincibilityTimeRemaining -= getSimulationWorld().getTimeStepDuration();
         animationCounter++;
-        hitDetection();
+        hitSpiderDetection();
+        hitRatDetection();
         fallen();
         
         Actor door = getOneObjectAtOffset(0, 0, Door.class);
@@ -321,16 +322,29 @@ public class Flynn extends PlatformActor
         //}
     }
     
-    public void hitDetection()
+    public void hitSpiderDetection()
     {
         SimulationWorld world = (SimulationWorld) getWorld();
         Actor spider = getOneIntersectingObject(Spider.class);
         
         if(spider != null && invincibilityTimeRemaining <= 0.0)
         {
-            invincibilityTimeRemaining = 2.0;
+            invincibilityTimeRemaining = 3.0;
             lives--;
             getWorld().addObject(new Dialog("OUCH", "These spiders sure as hell sting hard!", "", ""), 449, 666);
+        } 
+    }
+    
+    public void hitRatDetection()
+    {
+        SimulationWorld world = (SimulationWorld) getWorld();
+        Actor rat = getOneIntersectingObject(Rat.class);
+        
+        if(rat != null && invincibilityTimeRemaining <= 0.0)
+        {
+            invincibilityTimeRemaining = 3.0;
+            lives--;
+            getWorld().addObject(new Dialog("ARGH", "Those pesky rats!", "", ""), 449, 666);
         } 
     }
     
