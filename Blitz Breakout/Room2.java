@@ -169,6 +169,49 @@ public class Room2 extends SimulationWorld
         addObject(platform11, 351, 480);
         PinkDoor pinkDoor2 = new PinkDoor();
         addObject(pinkDoor2, 845, 499);
+
+        InvisiblePlatform invisiblePlatform = new InvisiblePlatform();
+        addObject(invisiblePlatform,0,719);
+        InvisiblePlatform invisiblePlatform2 = new InvisiblePlatform();
+        addObject(invisiblePlatform2,0,620);
+        InvisiblePlatform invisiblePlatform3 = new InvisiblePlatform();
+        addObject(invisiblePlatform3,0,521);
+        InvisiblePlatform invisiblePlatform4 = new InvisiblePlatform();
+        addObject(invisiblePlatform4,0,423);
+        platform10.setLocation(85,233);
         
+        InvisiblePlatform invisiblePlatform5 = new InvisiblePlatform();
+        addObject(invisiblePlatform5,0,324);
+        InvisiblePlatform invisiblePlatform6 = new InvisiblePlatform();
+        addObject(invisiblePlatform6,0,226);
+        InvisiblePlatform invisiblePlatform7 = new InvisiblePlatform();
+        addObject(invisiblePlatform7,0,126);
+        InvisiblePlatform invisiblePlatform8 = new InvisiblePlatform();
+        addObject(invisiblePlatform8,0,44);
+        invisiblePlatform8.setLocation(0,3);
+        InvisiblePlatform invisiblePlatform9 = new InvisiblePlatform();
+        addObject(invisiblePlatform9,0,3);
+        InvisiblePlatform invisiblePlatform10 = new InvisiblePlatform();
+        addObject(invisiblePlatform10,899,723);
+        platform5.setLocation(899,629);
+        InvisiblePlatform invisiblePlatform11 = new InvisiblePlatform();
+        addObject(invisiblePlatform11,899,629);
+        pinkDoor2.setLocation(899,537);
+        InvisiblePlatform invisiblePlatform12 = new InvisiblePlatform();
+        addObject(invisiblePlatform12,899,537);
+        pinkDoor2.setLocation(899,441);
+        InvisiblePlatform invisiblePlatform13 = new InvisiblePlatform();
+        addObject(invisiblePlatform13,899,441);
+        InvisiblePlatform invisiblePlatform14 = new InvisiblePlatform();
+        addObject(invisiblePlatform14,899,343);
+        InvisiblePlatform invisiblePlatform15 = new InvisiblePlatform();
+        addObject(invisiblePlatform15,899,245);
+        InvisiblePlatform invisiblePlatform16 = new InvisiblePlatform();
+        addObject(invisiblePlatform16,899,149);
+        InvisiblePlatform invisiblePlatform17 = new InvisiblePlatform();
+        addObject(invisiblePlatform17,899,69);
+        invisiblePlatform17.setLocation(899,49);
+        InvisiblePlatform invisiblePlatform18 = new InvisiblePlatform();
+        addObject(invisiblePlatform18,899,49);
     }
 }
