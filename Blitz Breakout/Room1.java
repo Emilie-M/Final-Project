@@ -94,7 +94,6 @@ public class Room1 extends SimulationWorld
         {
             addObject(new BlueKey(), 58, 735);
             a++;
-            System.out.println(a);
         }
         if (isGoldKeyAcquired2 && b < 1) 
         {
@@ -205,7 +204,7 @@ public class Room1 extends SimulationWorld
         aura.setLocation(730,450);
         Flame flame2 = new Flame();
         addObject(flame2,729,446);
-        
+
         InvisiblePlatform invisiblePlatform = new InvisiblePlatform();
         addObject(invisiblePlatform,0,397);
 
@@ -251,5 +250,7 @@ public class Room1 extends SimulationWorld
         addObject(invisiblePlatform19,0,631);
         InvisiblePlatform invisiblePlatform20 = new InvisiblePlatform();
         addObject(invisiblePlatform20,899,414);
+        Spider spider = new Spider(1, 9);
+        addObject(spider,421,206);
     }
 }
