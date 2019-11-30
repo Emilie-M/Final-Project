@@ -23,7 +23,6 @@ public class MovingPlatform extends Platform
     public void act() 
     {
         super.act();
-        
         if (position.getY() > maxHeight)
         {
             velocity = new Vector2D(0.0, -PLATORM_SPEED);

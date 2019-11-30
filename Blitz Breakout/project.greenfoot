@@ -34,6 +34,7 @@ class.Room1.image=BaseWallV4.png
 class.Room2.image=BaseWallV4.png
 class.Room3.image=BaseWallV4.png
 class.Room4.image=BaseWallV4.png
+class.Room5.image=BaseWallV4.png
 class.SilverDoor.image=Door1Silver.png
 class.SilverDoor2.image=Door1Silver.png
 class.SilverKey.image=silverKey.png
@@ -46,6 +47,7 @@ dependency1.type=UsesDependency
 dependency10.from=SimulationWorld
 dependency10.to=SilverKey
 dependency10.type=UsesDependency
+<<<<<<< HEAD
 dependency100.from=Flynn
 dependency100.to=Spider
 dependency100.type=UsesDependency
@@ -57,6 +59,19 @@ dependency102.to=Flynn
 dependency102.type=UsesDependency
 dependency103.from=RedDoor
 dependency103.to=RedKey
+=======
+dependency100.from=Door
+dependency100.to=Flynn
+dependency100.type=UsesDependency
+dependency101.from=RedDoor
+dependency101.to=RedKey
+dependency101.type=UsesDependency
+dependency102.from=GreenDoor2
+dependency102.to=SimulationWorld
+dependency102.type=UsesDependency
+dependency103.from=GreenDoor2
+dependency103.to=Room3
+>>>>>>> AkashBranch7
 dependency103.type=UsesDependency
 dependency104.from=GreenDoor2
 dependency104.to=SimulationWorld
@@ -394,6 +409,7 @@ dependency55.type=UsesDependency
 dependency56.from=Room4
 dependency56.to=InvisiblePlatform
 dependency56.type=UsesDependency
+<<<<<<< HEAD
 dependency57.from=Room4
 dependency57.to=MovingPlatform
 dependency57.type=UsesDependency
@@ -402,11 +418,22 @@ dependency58.to=Point2D
 dependency58.type=UsesDependency
 dependency59.from=Room3
 dependency59.to=Spider
+=======
+dependency57.from=Room3
+dependency57.to=Point2D
+dependency57.type=UsesDependency
+dependency58.from=Room3
+dependency58.to=Spider
+dependency58.type=UsesDependency
+dependency59.from=Room3
+dependency59.to=GreenKey
+>>>>>>> AkashBranch7
 dependency59.type=UsesDependency
 dependency6.from=SimulationWorld
 dependency6.to=GreenKey
 dependency6.type=UsesDependency
 dependency60.from=Room3
+<<<<<<< HEAD
 dependency60.to=GreenKey
 dependency60.type=UsesDependency
 dependency61.from=Room3
@@ -435,11 +462,42 @@ dependency68.to=Flynn
 dependency68.type=UsesDependency
 dependency69.from=Room3
 dependency69.to=Platform
+=======
+dependency60.to=BlueKey
+dependency60.type=UsesDependency
+dependency61.from=Room3
+dependency61.to=GoldKey
+dependency61.type=UsesDependency
+dependency62.from=Room3
+dependency62.to=OrangeKey
+dependency62.type=UsesDependency
+dependency63.from=Room3
+dependency63.to=PinkKey
+dependency63.type=UsesDependency
+dependency64.from=Room3
+dependency64.to=RedKey
+dependency64.type=UsesDependency
+dependency65.from=Room3
+dependency65.to=SilverKey
+dependency65.type=UsesDependency
+dependency66.from=Room3
+dependency66.to=Heart
+dependency66.type=UsesDependency
+dependency67.from=Room3
+dependency67.to=Flynn
+dependency67.type=UsesDependency
+dependency68.from=Room3
+dependency68.to=Platform
+dependency68.type=UsesDependency
+dependency69.from=Room3
+dependency69.to=PinkDoor2
+>>>>>>> AkashBranch7
 dependency69.type=UsesDependency
 dependency7.from=SimulationWorld
 dependency7.to=OrangeKey
 dependency7.type=UsesDependency
 dependency70.from=Room3
+<<<<<<< HEAD
 dependency70.to=PinkDoor2
 dependency70.type=UsesDependency
 dependency71.from=Room3
@@ -468,11 +526,42 @@ dependency78.to=StartMenu
 dependency78.type=UsesDependency
 dependency79.from=SplashScreen
 dependency79.to=PurpleSmoke
+=======
+dependency70.to=OrangeDoor
+dependency70.type=UsesDependency
+dependency71.from=Room3
+dependency71.to=GreenDoor
+dependency71.type=UsesDependency
+dependency72.from=Room3
+dependency72.to=InvisiblePlatform
+dependency72.type=UsesDependency
+dependency73.from=StartMenu
+dependency73.to=GifImage
+dependency73.type=UsesDependency
+dependency74.from=StartMenu
+dependency74.to=Point2D
+dependency74.type=UsesDependency
+dependency75.from=StartMenu
+dependency75.to=Room1
+dependency75.type=UsesDependency
+dependency76.from=SplashScreen
+dependency76.to=Point2D
+dependency76.type=UsesDependency
+dependency77.from=SplashScreen
+dependency77.to=StartMenu
+dependency77.type=UsesDependency
+dependency78.from=SplashScreen
+dependency78.to=PurpleSmoke
+dependency78.type=UsesDependency
+dependency79.from=GameOverScreen
+dependency79.to=GifImage
+>>>>>>> AkashBranch7
 dependency79.type=UsesDependency
 dependency8.from=SimulationWorld
 dependency8.to=PinkKey
 dependency8.type=UsesDependency
 dependency80.from=GameOverScreen
+<<<<<<< HEAD
 dependency80.to=GifImage
 dependency80.type=UsesDependency
 dependency81.from=GameOverScreen
@@ -501,10 +590,41 @@ dependency88.to=SimulationWorld
 dependency88.type=UsesDependency
 dependency89.from=HorizontalMovingPlatform
 dependency89.to=Vector2D
+=======
+dependency80.to=Point2D
+dependency80.type=UsesDependency
+dependency81.from=GameOverScreen
+dependency81.to=StartMenu
+dependency81.type=UsesDependency
+dependency82.from=Heart
+dependency82.to=SimulationWorld
+dependency82.type=UsesDependency
+dependency83.from=Heart
+dependency83.to=GameOverScreen
+dependency83.type=UsesDependency
+dependency84.from=Heart
+dependency84.to=Flynn
+dependency84.type=UsesDependency
+dependency85.from=SimulationActor
+dependency85.to=Point2D
+dependency85.type=UsesDependency
+dependency86.from=SimulationActor
+dependency86.to=Vector2D
+dependency86.type=UsesDependency
+dependency87.from=SimulationActor
+dependency87.to=SimulationWorld
+dependency87.type=UsesDependency
+dependency88.from=MovingPlatform
+dependency88.to=Vector2D
+dependency88.type=UsesDependency
+dependency89.from=PlatformActor
+dependency89.to=Point2D
+>>>>>>> AkashBranch7
 dependency89.type=UsesDependency
 dependency9.from=SimulationWorld
 dependency9.to=RedKey
 dependency9.type=UsesDependency
+<<<<<<< HEAD
 dependency90.from=MovingPlatform
 dependency90.to=Vector2D
 dependency90.type=UsesDependency
@@ -542,6 +662,45 @@ editor.fx.0.y=100
 height=1056
 package.numDependencies=165
 package.numTargets=53
+=======
+dependency90.from=PlatformActor
+dependency90.to=Vector2D
+dependency90.type=UsesDependency
+dependency91.from=PlatformActor
+dependency91.to=Platform
+dependency91.type=UsesDependency
+dependency92.from=PlatformActor
+dependency92.to=InvisiblePlatform
+dependency92.type=UsesDependency
+dependency93.from=Flynn
+dependency93.to=Vector2D
+dependency93.type=UsesDependency
+dependency94.from=Flynn
+dependency94.to=SimulationWorld
+dependency94.type=UsesDependency
+dependency95.from=Flynn
+dependency95.to=Dialog
+dependency95.type=UsesDependency
+dependency96.from=Flynn
+dependency96.to=GameOverScreen
+dependency96.type=UsesDependency
+dependency97.from=Flynn
+dependency97.to=Door
+dependency97.type=UsesDependency
+dependency98.from=Flynn
+dependency98.to=Spider
+dependency98.type=UsesDependency
+dependency99.from=FirstClue
+dependency99.to=Flynn
+dependency99.type=UsesDependency
+editor.fx.0.height=915
+editor.fx.0.width=1493
+editor.fx.0.x=403
+editor.fx.0.y=100
+height=1056
+package.numDependencies=161
+package.numTargets=52
+>>>>>>> AkashBranch7
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -627,7 +786,11 @@ target18.width=110
 target18.x=0
 target18.y=0
 target19.height=50
+<<<<<<< HEAD
 target19.name=SilverDoor2
+=======
+target19.name=Room5
+>>>>>>> AkashBranch7
 target19.showInterface=false
 target19.type=ClassTarget
 target19.width=90
@@ -760,6 +923,7 @@ target35.width=80
 target35.x=0
 target35.y=0
 target36.height=50
+<<<<<<< HEAD
 target36.name=HorizontalMovingPlatform
 target36.showInterface=false
 target36.type=ClassTarget
@@ -775,13 +939,34 @@ target37.x=0
 target37.y=0
 target38.height=50
 target38.name=GoldKey
+=======
+target36.name=SplashScreen
+target36.showInterface=false
+target36.type=ClassTarget
+target36.width=90
+target36.x=0
+target36.y=0
+target37.height=50
+target37.name=GoldKey
+target37.showInterface=false
+target37.type=ClassTarget
+target37.width=80
+target37.x=0
+target37.y=0
+target38.height=50
+target38.name=Flynn
+>>>>>>> AkashBranch7
 target38.showInterface=false
 target38.type=ClassTarget
-target38.width=80
+target38.width=100
 target38.x=0
 target38.y=0
 target39.height=50
+<<<<<<< HEAD
 target39.name=Flynn
+=======
+target39.name=RedDoor2
+>>>>>>> AkashBranch7
 target39.showInterface=false
 target39.type=ClassTarget
 target39.width=100
@@ -795,13 +980,18 @@ target4.width=80
 target4.x=0
 target4.y=0
 target40.height=50
+<<<<<<< HEAD
 target40.name=RedDoor2
+=======
+target40.name=PinkDoor
+>>>>>>> AkashBranch7
 target40.showInterface=false
 target40.type=ClassTarget
 target40.width=80
 target40.x=0
 target40.y=0
 target41.height=50
+<<<<<<< HEAD
 target41.name=PinkDoor
 target41.showInterface=false
 target41.type=ClassTarget
@@ -817,51 +1007,95 @@ target42.x=0
 target42.y=0
 target43.height=50
 target43.name=MovingPlatform
+=======
+target41.name=SimulationWorld
+target41.showInterface=false
+target41.type=ClassTarget
+target41.width=110
+target41.x=0
+target41.y=0
+target42.height=50
+target42.name=MovingPlatform
+target42.showInterface=false
+target42.type=ClassTarget
+target42.width=130
+target42.x=0
+target42.y=0
+target43.height=50
+target43.name=GreenKey
+>>>>>>> AkashBranch7
 target43.showInterface=false
 target43.type=ClassTarget
 target43.width=130
 target43.x=0
 target43.y=0
 target44.height=50
+<<<<<<< HEAD
 target44.name=GreenKey
+=======
+target44.name=Door
+>>>>>>> AkashBranch7
 target44.showInterface=false
 target44.type=ClassTarget
 target44.width=80
 target44.x=0
 target44.y=0
 target45.height=50
+<<<<<<< HEAD
 target45.name=Door
+=======
+target45.name=GameOverScreen
+>>>>>>> AkashBranch7
 target45.showInterface=false
 target45.type=ClassTarget
-target45.width=80
+target45.width=120
 target45.x=0
 target45.y=0
 target46.height=50
+<<<<<<< HEAD
 target46.name=GameOverScreen
+=======
+target46.name=GoldDoor2
+>>>>>>> AkashBranch7
 target46.showInterface=false
 target46.type=ClassTarget
 target46.width=120
 target46.x=0
 target46.y=0
 target47.height=50
+<<<<<<< HEAD
 target47.name=GoldDoor2
+=======
+target47.name=SpriteSheet
+>>>>>>> AkashBranch7
 target47.showInterface=false
 target47.type=ClassTarget
 target47.width=80
 target47.x=0
 target47.y=0
 target48.height=50
+<<<<<<< HEAD
 target48.name=SpriteSheet
+=======
+target48.name=OrangeDoor2
+>>>>>>> AkashBranch7
 target48.showInterface=false
 target48.type=ClassTarget
-target48.width=80
+target48.width=100
 target48.x=0
 target48.y=0
 target49.height=50
+<<<<<<< HEAD
 target49.name=OrangeDoor2
 target49.showInterface=false
 target49.type=ClassTarget
 target49.width=100
+=======
+target49.name=Vector2D
+target49.showInterface=false
+target49.type=ClassTarget
+target49.width=80
+>>>>>>> AkashBranch7
 target49.x=0
 target49.y=0
 target5.height=50
@@ -872,20 +1106,29 @@ target5.width=80
 target5.x=0
 target5.y=0
 target50.height=50
+<<<<<<< HEAD
 target50.name=Vector2D
+=======
+target50.name=Spider
+>>>>>>> AkashBranch7
 target50.showInterface=false
 target50.type=ClassTarget
 target50.width=80
 target50.x=0
 target50.y=0
 target51.height=50
+<<<<<<< HEAD
 target51.name=Spider
+=======
+target51.name=GoldDoor
+>>>>>>> AkashBranch7
 target51.showInterface=false
 target51.type=ClassTarget
 target51.width=120
 target51.x=0
 target51.y=0
 target52.height=50
+<<<<<<< HEAD
 target52.name=GoldDoor
 target52.showInterface=false
 target52.type=ClassTarget
@@ -899,6 +1142,14 @@ target53.type=ClassTarget
 target53.width=80
 target53.x=0
 target53.y=0
+=======
+target52.name=PinkDoor2
+target52.showInterface=false
+target52.type=ClassTarget
+target52.width=80
+target52.x=0
+target52.y=0
+>>>>>>> AkashBranch7
 target6.height=50
 target6.name=RedDoor
 target6.showInterface=false
@@ -929,6 +1180,10 @@ target9.x=0
 target9.y=0
 version=3.0.0
 width=1936
+<<<<<<< HEAD
 world.lastInstantiated=Room1
+=======
+world.lastInstantiated=Room4
+>>>>>>> AkashBranch7
 xPosition=0
 yPosition=0
