@@ -58,7 +58,7 @@ public class Room2 extends SimulationWorld
         if ((isPinkKeyAcquired2 == false) && k < 1) 
         {
             addObject(new PinkKey(), 87,534);
-            isPinkKeyAcquired2 = true;
+            //isPinkKeyAcquired2 = true;
             k++;
         }
         // Copy all 7 below for new Room

@@ -62,12 +62,9 @@ public class Room1 extends SimulationWorld
     private int f = 0;
     private int g = 0;
     
-
-    
     public void act()
     {
         super.act();
-
         popUp += getTimeStepDuration();
         if (popUp >= 2 && l < 1 && isItPoping && dialogPop2)
         {
@@ -85,17 +82,19 @@ public class Room1 extends SimulationWorld
         
         
         // Do the true statement Below new Room #2
-        if ((!(isBlueKeyAcquired2)) && j < 1) 
+        if ((isBlueKeyAcquired2 == false) && j < 1) 
         {
             addObject(new BlueKey(),547,563);
-            isBlueKeyAcquired2 = true;
+            //isBlueKeyAcquired2 = true;
             j++;
         }
+        
         // Copy all 7 below for new Room #3
-        if (isBlueKeyAcquired2 && a < 1) 
+        if ((isBlueKeyAcquired2 == true) && a < 1) 
         {
             addObject(new BlueKey(), 58, 735);
-            j++;
+            a++;
+            System.out.println(a);
         }
         if (isGoldKeyAcquired2 && b < 1) 
         {

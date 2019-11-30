@@ -66,7 +66,7 @@ public class Room3 extends SimulationWorld
         if (!(isGreenKeyAcquired2) && p < 1)
         {
             addObject(new GreenKey(), 90,534);
-            isGreenKeyAcquired2 = true;
+            //isGreenKeyAcquired2 = true;
             p++;
         }
         
@@ -74,7 +74,7 @@ public class Room3 extends SimulationWorld
         if (isBlueKeyAcquired2 && a < 1) 
         {
             addObject(new BlueKey(), 58, 735);
-            j++;
+            a++;
         }
         if (isGoldKeyAcquired2 && b < 1) 
         {
@@ -127,7 +127,7 @@ public class Room3 extends SimulationWorld
             j++;
         }
 
-        // Flynn Spawn
+        
         if (positionNumber == 0 && i < 1)
         {
             addObject(new Flynn(), 178, 570);
