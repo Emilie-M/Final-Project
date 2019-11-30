@@ -127,6 +127,7 @@ public class Room3 extends SimulationWorld
             j++;
         }
 
+        // Flynn Spawn
         if (positionNumber == 0 && i < 1)
         {
             addObject(new Flynn(), 178, 570);

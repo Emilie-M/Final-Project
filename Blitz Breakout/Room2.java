@@ -55,17 +55,17 @@ public class Room2 extends SimulationWorld
     public void act()
     {
         super.act();
-        if (!(isPinkKeyAcquired2) && j < 1) 
+        if ((isPinkKeyAcquired2 == false) && k < 1) 
         {
             addObject(new PinkKey(), 87,534);
             isPinkKeyAcquired2 = true;
-            j++;
+            k++;
         }
         // Copy all 7 below for new Room
         if (isBlueKeyAcquired2 && a < 1) 
         {
             addObject(new BlueKey(), 58, 735);
-            j++;
+            a++;
         }
         if (isGoldKeyAcquired2 && b < 1) 
         {
@@ -105,13 +105,13 @@ public class Room2 extends SimulationWorld
             addObject(new Heart(), 61, 52);
             j++;
         }
-        if (hearts == 2 && j < 2)
+        if (hearts == 2 && j < 1)
         {
             addObject(new Heart(), 61, 52);
             addObject(new Heart(), 93, 52);
             j++;
         }
-        if (hearts == 3 && j < 3) 
+        if (hearts == 3 && j < 1) 
         {
             addObject(new Heart(), 61, 52);
             addObject(new Heart(), 93, 52);
@@ -119,6 +119,7 @@ public class Room2 extends SimulationWorld
             j++;
         }
 
+        // Flynn Spawn
         if (positionNumber == 0 && i < 1)
         {
             addObject(new Flynn(), 297, 286);
