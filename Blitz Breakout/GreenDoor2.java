@@ -17,8 +17,7 @@ public class GreenDoor2 extends Door
         super.act();
         if (isDoorTouchingFlynn()) 
         {
-            if (getGreenKey())
-            {
+            
                 SimulationWorld world = (SimulationWorld) getWorld();
                 Greenfoot.setWorld(new Room3(Heart.getHearts(), 0, true, world.getGoldKey(), true, world.getOrangeKey(), world.getPinkKey(), 
                 world.getRedKey(), world.getSilverKey()));
@@ -26,7 +25,7 @@ public class GreenDoor2 extends Door
                 //(int heart, int positionNum, boolean isBlueKeyAcquired, boolean isGoldKeyAcquired, 
                 //boolean isGreenKeyAcquired, boolean isOrangeKeyAcquired, boolean isPinkKeyAcquired,boolean isRedKeyAcquired, boolean isSilverKeyAcquired)
                 //world.getPinkKey()
-            }
+            
         }
     }
     public boolean getGreenKey()

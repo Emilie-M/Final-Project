@@ -20,8 +20,7 @@ public class GoldDoor2 extends Door
             
             //SimulationWorld world = (SimulationWorld) getWorld();
             //Greenfoot.setWorld(new Room2());
-            return;
-            
+
         }
     }
     public boolean getGoldKey()
