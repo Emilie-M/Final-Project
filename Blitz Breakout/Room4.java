@@ -60,7 +60,7 @@ public class Room4 extends SimulationWorld
         if (isBlueKeyAcquired2 && a < 1) 
         {
             addObject(new BlueKey(), 58, 735);
-            j++;
+            a++;
         }
         if (isGoldKeyAcquired2 && b < 1) 
         {
