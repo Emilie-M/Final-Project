@@ -30,8 +30,7 @@ public class Room1 extends SimulationWorld
     public Room1(boolean dialogPop, int heart, int positionNum, boolean isBlueKeyAcquired, boolean isGoldKeyAcquired, 
     boolean isGreenKeyAcquired, boolean isOrangeKeyAcquired, boolean isPinkKeyAcquired,boolean isRedKeyAcquired, boolean isSilverKeyAcquired)
     {
-        super("", 900, 768, new Point2D(8.0, 6.0), 16.0);
-        super.stopped();
+        super("ost.wav", 900, 768, new Point2D(8.0, 6.0), 16.0);
         prepare();
         dialogPop2 = dialogPop;
         hearts = heart;
@@ -73,7 +72,7 @@ public class Room1 extends SimulationWorld
             isItPoping = false;
         }
         
-        if (popUp >= 7 && m < 1 && !(isItPoping) && dialogPop2)
+        if (popUp >= 5 && m < 1 && !(isItPoping) && dialogPop2)
         {
             Greenfoot.delay(260);
             addObject(new Dialog("I did enter this manor though, maybe I'm under it?", "", "\"Press enter to close.\"", ""), 449, 666);

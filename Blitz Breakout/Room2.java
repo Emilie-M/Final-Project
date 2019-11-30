@@ -15,7 +15,7 @@ public class Room2 extends SimulationWorld
     protected boolean isPinkKeyAcquired2;
     protected boolean isRedKeyAcquired2;
     protected boolean isSilverKeyAcquired2;
-    
+
     protected int hearts;
     protected int positionNumber;
     /**
@@ -25,9 +25,9 @@ public class Room2 extends SimulationWorld
     public Room2(int heart, int positionNum, boolean isBlueKeyAcquired, boolean isGoldKeyAcquired, 
     boolean isGreenKeyAcquired, boolean isOrangeKeyAcquired, boolean isPinkKeyAcquired,boolean isRedKeyAcquired, boolean isSilverKeyAcquired)
     {
-        super("", 900, 768, new Point2D(8.0, 6.0), 16.0);
+        super("ost.wav", 900, 768, new Point2D(8.0, 6.0), 16.0);
         prepare();
-        
+
         isBlueKeyAcquired2 = isBlueKeyAcquired;
         isGoldKeyAcquired2 = isGoldKeyAcquired;
         isGreenKeyAcquired2 = isGreenKeyAcquired;
@@ -35,7 +35,7 @@ public class Room2 extends SimulationWorld
         isPinkKeyAcquired2 = isPinkKeyAcquired;
         isRedKeyAcquired2 = isRedKeyAcquired;
         isSilverKeyAcquired2 = isSilverKeyAcquired;
-        
+
         hearts = heart;
         positionNumber = positionNum;
     }
@@ -44,7 +44,7 @@ public class Room2 extends SimulationWorld
     private int k = 0;
     private int l = 0;
     private int m = 0;
-    
+
     private int a = 0;
     private int b = 0;
     private int c = 0;
@@ -98,8 +98,7 @@ public class Room2 extends SimulationWorld
             g++;
         }
         // STAP
-        
-        
+
         if (hearts == 1 && j < 1) 
         {
             addObject(new Heart(), 61, 52);
@@ -179,7 +178,7 @@ public class Room2 extends SimulationWorld
         InvisiblePlatform invisiblePlatform4 = new InvisiblePlatform();
         addObject(invisiblePlatform4,0,423);
         platform10.setLocation(85,233);
-        
+
         InvisiblePlatform invisiblePlatform5 = new InvisiblePlatform();
         addObject(invisiblePlatform5,0,324);
         InvisiblePlatform invisiblePlatform6 = new InvisiblePlatform();

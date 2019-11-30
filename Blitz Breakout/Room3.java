@@ -25,7 +25,7 @@ public class Room3 extends SimulationWorld
     public Room3(int heart, int positionNum, boolean isBlueKeyAcquired, boolean isGoldKeyAcquired, 
     boolean isGreenKeyAcquired, boolean isOrangeKeyAcquired, boolean isPinkKeyAcquired,boolean isRedKeyAcquired, boolean isSilverKeyAcquired)
     {
-        super("", 900, 768, new Point2D(8.0, 6.0), 16.0);
+        super("ost.wav", 900, 768, new Point2D(8.0, 6.0), 16.0);
         prepare();
         
         isBlueKeyAcquired2 = isBlueKeyAcquired;
