@@ -167,6 +167,7 @@ public class Room5 extends SimulationWorld
         addObject(invisiblePlatform15,0,138);
         InvisiblePlatform invisiblePlatform16 = new InvisiblePlatform();
         addObject(invisiblePlatform16,1,41);
+        
         Platform platform = new Platform();
         addObject(platform,829,216);
         Platform platform2 = new Platform();
@@ -187,8 +188,8 @@ public class Room5 extends SimulationWorld
         addObject(orangeDoor2,844,119);
         Spider spider = new Spider(2, 8);
         addObject(spider,356,234);
-        Spider spider2 = new Spider(2, 8);
-        addObject(spider2,470,586);
+        Spider spider2 = new Spider(1, 14);
+        addObject(spider2,185,0);
         Platform platform8 = new Platform();
         addObject(platform8,779,557);
     }
