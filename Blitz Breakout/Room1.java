@@ -30,7 +30,7 @@ public class Room1 extends SimulationWorld
     public Room1(boolean dialogPop, int heart, int positionNum, boolean isBlueKeyAcquired, boolean isGoldKeyAcquired, 
     boolean isGreenKeyAcquired, boolean isOrangeKeyAcquired, boolean isPinkKeyAcquired,boolean isRedKeyAcquired, boolean isSilverKeyAcquired)
     {
-        super("ost.wav", 900, 768, new Point2D(8.0, 6.0), 16.0);
+        super("", 900, 768, new Point2D(8.0, 6.0), 16.0);
         super.stopped();
         prepare();
         dialogPop2 = dialogPop;
@@ -204,7 +204,7 @@ public class Room1 extends SimulationWorld
         aura.setLocation(730,450);
         Flame flame2 = new Flame();
         addObject(flame2,729,446);
-
+        
         InvisiblePlatform invisiblePlatform = new InvisiblePlatform();
         addObject(invisiblePlatform,0,397);
 
@@ -250,7 +250,5 @@ public class Room1 extends SimulationWorld
         addObject(invisiblePlatform19,0,631);
         InvisiblePlatform invisiblePlatform20 = new InvisiblePlatform();
         addObject(invisiblePlatform20,899,414);
-        Spider spider = new Spider(1, 9);
-        addObject(spider,421,206);
     }
 }
