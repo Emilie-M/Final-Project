@@ -82,7 +82,8 @@ public class Room1 extends SimulationWorld
             addObject(new Dialog("I did enter this manor though, maybe I'm under it?", "", "\"Press enter to close.\"", ""), 449, 666);
             m++;
         }
-            
+        
+        
         // Do the true statement Below new Room #2
         if ((!(isBlueKeyAcquired2)) && j < 1) 
         {
