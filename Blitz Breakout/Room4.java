@@ -92,6 +92,31 @@ public class Room4 extends SimulationWorld
             addObject(new SilverKey(), 70, 735);
             g++;
         }
+        
+        if(i < 1)
+        {
+            addObject(new Flynn(), 185, 99);
+            i++;
+        }
+
+        if (hearts == 1 && j < 1) 
+        {
+            addObject(new Heart(), 61, 52);
+            j++;
+        }
+        if (hearts == 2 && j < 2)
+        {
+            addObject(new Heart(), 61, 52);
+            addObject(new Heart(), 93, 52);
+            j++;
+        }
+        if (hearts == 3 && j < 3) 
+        {
+            addObject(new Heart(), 61, 52);
+            addObject(new Heart(), 93, 52);
+            addObject(new Heart(), 125, 52);
+            j++;
+        }
     }
     
     public void prepare() 
@@ -148,5 +173,10 @@ public class Room4 extends SimulationWorld
         addObject(invisiblePlatform15,0,138);
         InvisiblePlatform invisiblePlatform16 = new InvisiblePlatform();
         addObject(invisiblePlatform16,1,41);
+        removeObject(platform8);
+        platform6.setLocation(542,444);
+        removeObject(platform7);
+        MovingPlatform movingPlatform = new MovingPlatform(5, 9);
+        addObject(movingPlatform,378,261);
     }
 }
