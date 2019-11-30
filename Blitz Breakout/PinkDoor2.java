@@ -20,8 +20,12 @@ public class PinkDoor2 extends Door
             if (getPinkKey() == true)
             {
                 SimulationWorld world = (SimulationWorld) getWorld();
-                Greenfoot.setWorld(new Room2(Heart.getHearts(), true, getPinkKey(), 1));
-                return;
+                Greenfoot.setWorld(new Room2(Heart.getHearts(), 0, true, world.getGoldKey(), world.getGreenKey(), world.getOrangeKey(), true, 
+                world.getRedKey(), world.getSilverKey()));
+                // USE STATEMENTS BELOW TO COPY CODE IN DOORS
+                //(int heart, int positionNum, boolean isBlueKeyAcquired, boolean isGoldKeyAcquired, 
+                //boolean isGreenKeyAcquired, boolean isOrangeKeyAcquired, boolean isPinkKeyAcquired,boolean isRedKeyAcquired, boolean isSilverKeyAcquired)
+                //world.getBlaBLaKey()
             }
         }
     }

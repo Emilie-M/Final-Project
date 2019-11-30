@@ -8,22 +8,34 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Room4 extends SimulationWorld
 {
-    protected boolean isPinkKeyAcquired2;
+    protected boolean isBlueKeyAcquired2;
+    protected boolean isGoldKeyAcquired2;
     protected boolean isGreenKeyAcquired2;
     protected boolean isOrangeKeyAcquired2;
+    protected boolean isPinkKeyAcquired2;
+    protected boolean isRedKeyAcquired2;
+    protected boolean isSilverKeyAcquired2;
+    
     protected int hearts;
     protected int positionNumber;
     /**
      * Constructor for objects of class Room2.
      * 
      */
-    public Room4(int heart, boolean isPinkKeyAcquired,boolean isGreenKeyAcquired, boolean isOrangeKeyAcquired, int positionNum)
+    public Room4(int heart, int positionNum, boolean isBlueKeyAcquired, boolean isGoldKeyAcquired, 
+    boolean isGreenKeyAcquired, boolean isOrangeKeyAcquired, boolean isPinkKeyAcquired,boolean isRedKeyAcquired, boolean isSilverKeyAcquired)
     {
         super("", 900, 768, new Point2D(8.0, 6.0), 16.0);
         prepare();
-        isPinkKeyAcquired2 = isPinkKeyAcquired;
+        
+        isBlueKeyAcquired2 = isBlueKeyAcquired;
+        isGoldKeyAcquired2 = isGoldKeyAcquired;
         isGreenKeyAcquired2 = isGreenKeyAcquired;
         isOrangeKeyAcquired2 = isOrangeKeyAcquired;
+        isPinkKeyAcquired2 = isPinkKeyAcquired;
+        isRedKeyAcquired2 = isRedKeyAcquired;
+        isSilverKeyAcquired2 = isSilverKeyAcquired;
+        
         hearts = heart;
         positionNumber = positionNum;
     }
@@ -32,24 +44,55 @@ public class Room4 extends SimulationWorld
     private int k = 0;
     private int l = 0;
     private int m = 0;
+    
+    private int a = 0;
+    private int b = 0;
+    private int c = 0;
+    private int d = 0;
+    private int e = 0;
+    private int f = 0;
+    private int g = 0;
     public void act()
     {
         super.act();
-        if (isPinkKeyAcquired2 && k < 1) 
+        
+        // Copy all 7 below for new Room
+        if (isBlueKeyAcquired2 && a < 1) 
         {
-            addObject(new PinkKey(), 62, 735);
-            k++;
+            addObject(new BlueKey(), 58, 735);
+            j++;
         }
-        if (isGreenKeyAcquired2 && l < 1) 
+        if (isGoldKeyAcquired2 && b < 1) 
+        {
+            addObject(new GoldKey(), 60, 735);
+            b++;
+        }
+        if (isGreenKeyAcquired2 && c < 1) 
         {
             addObject(new GreenKey(), 62, 735);
-            l++;
+            c++;
         }
-        if (isOrangeKeyAcquired2 && m < 1) 
+        if (isOrangeKeyAcquired2 && d < 1) 
         {
-            addObject(new OrangeKey(), 62, 735);
-            m++;
+            addObject(new OrangeKey(), 64, 735);
+            d++;
         }
+        if (isPinkKeyAcquired2 && e < 1) 
+        {
+            addObject(new PinkKey(), 66,735);
+            e++;
+        }
+        if (isRedKeyAcquired2 && f < 1) 
+        {
+            addObject(new RedKey(), 68, 735);
+            f++;
+        }
+        if (isSilverKeyAcquired2 && g < 1) 
+        {
+            addObject(new SilverKey(), 70, 735);
+            g++;
+        }
+        // STAP
         
         if (hearts == 1 && j < 1) 
         {
@@ -71,7 +114,7 @@ public class Room4 extends SimulationWorld
         }
         
         
-
+        // Flynn Spawn
         if (positionNumber == 0 && i < 1)
         {
             addObject(new Flynn(), 178, 570);
