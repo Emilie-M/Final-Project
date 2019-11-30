@@ -55,7 +55,7 @@ public class Room4 extends SimulationWorld
     public void act()
     {
         super.act();
-        
+
         // Copy all 7 below for new Room
         if (isBlueKeyAcquired2 && a < 1) 
         {
@@ -113,23 +113,37 @@ public class Room4 extends SimulationWorld
             j++;
         }
         
-        
         // Flynn Spawn
-        if (positionNumber == 0 && i < 1)
+        if (i < 1)
         {
-            addObject(new Flynn(), 178, 570);
-            i++;
-        }
-        if(positionNumber == 1 && i < 1)
-        {
-            addObject(new Flynn(), 693, 278);
+            addObject(new Flynn(), 185, 99);
             i++;
         }
     }
     
     public void prepare() 
     {
-
+        Platform platform = new Platform();
+        addObject(platform,71,175);
+        Platform platform2 = new Platform();
+        addObject(platform2,190,175);
+        Platform platform3 = new Platform();
+        addObject(platform3,70,597);
+        Platform platform4 = new Platform();
+        addObject(platform4,778,304);
+        Platform platform5 = new Platform();
+        addObject(platform5,307,526);
+        Platform platform6 = new Platform();
+        addObject(platform6,513,418);
+        Platform platform7 = new Platform();
+        addObject(platform7,387,292);
+        Platform platform8 = new Platform();
+        addObject(platform8,511,163);
+        GreenDoor2 greenDoor2 = new GreenDoor2();
+        addObject(greenDoor2,61,79);
+        OrangeKey orangeKey = new OrangeKey();
+        addObject(orangeKey,64,580);
+        
         InvisiblePlatform invisiblePlatform = new InvisiblePlatform();
         addObject(invisiblePlatform,899,719);
         InvisiblePlatform invisiblePlatform2 = new InvisiblePlatform();
@@ -162,5 +176,6 @@ public class Room4 extends SimulationWorld
         addObject(invisiblePlatform15,0,138);
         InvisiblePlatform invisiblePlatform16 = new InvisiblePlatform();
         addObject(invisiblePlatform16,1,41);
+        
     }
 }

@@ -94,7 +94,6 @@ public class Room1 extends SimulationWorld
         {
             addObject(new BlueKey(), 58, 735);
             a++;
-            System.out.println(a);
         }
         if (isGoldKeyAcquired2 && b < 1) 
         {

@@ -17,12 +17,11 @@ public class GoldDoor2 extends Door
         super.act();
         if (isDoorTouchingFlynn()) 
         {
-            if (getGoldKey() == true)
-            {
-                //SimulationWorld world = (SimulationWorld) getWorld();
-                //Greenfoot.setWorld(new Room2());
-                return;
-            }
+            
+            //SimulationWorld world = (SimulationWorld) getWorld();
+            //Greenfoot.setWorld(new Room2());
+            return;
+            
         }
     }
     public boolean getGoldKey()

@@ -61,11 +61,12 @@ public class Room3 extends SimulationWorld
         {
             addObject(new Spider(2.0, 6.0), 459, 372);
             o++;
+            
         }
         
         if (!(isGreenKeyAcquired2) && p < 1)
         {
-            addObject(new GreenKey(), 90,534);
+            addObject(new GreenKey(), 709,542);
             //isGreenKeyAcquired2 = true;
             p++;
         }
@@ -159,18 +160,23 @@ public class Room3 extends SimulationWorld
         addObject(platform7,702,352);
         Platform platform8 = new Platform();
         addObject(platform8,823,352);
+
         PinkDoor2 pinkDoor2 = new PinkDoor2();
         addObject(pinkDoor2,56,548);
         OrangeDoor orangeDoor = new OrangeDoor();
         addObject(orangeDoor,838,255);
-        Spider spider = new Spider(2, 6);
-        addObject(spider,459,372);
+
+        Spider spider = new Spider(2.0, 6.0); 
+        addObject(spider, 459, 372);
+
         Platform platform9 = new Platform();
         addObject(platform9,295,284);
         Platform platform10 = new Platform();
         addObject(platform10,182,180);
         Platform platform11 = new Platform();
         addObject(platform11,71,180);
+        Platform platform12 = new Platform();
+        addObject(platform12,718,561);
         GreenDoor greenDoor = new GreenDoor();
         addObject(greenDoor,54,83);
 

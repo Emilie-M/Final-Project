@@ -17,16 +17,15 @@ public class OrangeDoor2 extends Door
         super.act();
         if (isDoorTouchingFlynn()) 
         {
-            if (getOrangeKey() == true)
-            {
-                SimulationWorld world = (SimulationWorld) getWorld();
-                Greenfoot.setWorld(new Room3(Heart.getHearts(), 0, true, world.getGoldKey(), world.getGreenKey(), world.getOrangeKey(), world.getPinkKey(), 
-                world.getRedKey(), world.getSilverKey()));
-                // USE STATEMENTS BELOW TO COPY CODE IN DOORS
-                //(int heart, int positionNum, boolean isBlueKeyAcquired, boolean isGoldKeyAcquired, 
-                //boolean isGreenKeyAcquired, boolean isOrangeKeyAcquired, boolean isPinkKeyAcquired,boolean isRedKeyAcquired, boolean isSilverKeyAcquired)
-                //world.getBlaBLaKey()
-            }
+            
+            SimulationWorld world = (SimulationWorld) getWorld();
+            Greenfoot.setWorld(new Room3(Heart.getHearts(), 0, true, world.getGoldKey(), world.getGreenKey(), world.getOrangeKey(), world.getPinkKey(), 
+            world.getRedKey(), world.getSilverKey()));
+            // USE STATEMENTS BELOW TO COPY CODE IN DOORS
+            //(int heart, int positionNum, boolean isBlueKeyAcquired, boolean isGoldKeyAcquired, 
+            //boolean isGreenKeyAcquired, boolean isOrangeKeyAcquired, boolean isPinkKeyAcquired,boolean isRedKeyAcquired, boolean isSilverKeyAcquired)
+            //world.getBlaBLaKey()
+            
         }
     }
     public boolean getOrangeKey()
