@@ -17,12 +17,11 @@ public class SilverDoor2 extends Door
         super.act();
         if (isDoorTouchingFlynn()) 
         {
-            if (getSilverKey() == true)
-            {
-                //SimulationWorld world = (SimulationWorld) getWorld();
-                //Greenfoot.setWorld(new Room2());
-                return;
-            }
+
+            //SimulationWorld world = (SimulationWorld) getWorld();
+            //Greenfoot.setWorld(new Room2());
+
+
         }
     }
     public boolean getSilverKey()
