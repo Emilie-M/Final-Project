@@ -106,7 +106,7 @@ public class Room6 extends SimulationWorld
         }
         if(positionNumber == 1 && i < 1)
         {
-            addObject(new Flynn(), 693, 278);
+            addObject(new Flynn(), 180, 606);
             i++;
         }
         

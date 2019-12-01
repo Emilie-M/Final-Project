@@ -25,7 +25,7 @@ public class Room5 extends SimulationWorld
     public Room5(int heart, int positionNum, boolean isBlueKeyAcquired, boolean isGoldKeyAcquired, 
     boolean isGreenKeyAcquired, boolean isOrangeKeyAcquired, boolean isPinkKeyAcquired,boolean isRedKeyAcquired, boolean isSilverKeyAcquired)
     {
-        super("", 900, 768, new Point2D(8.0, 6.0), 16.0);
+        super("ost.wav", 900, 768, new Point2D(8.0, 6.0), 16.0);
         prepare();
         
         isBlueKeyAcquired2 = isBlueKeyAcquired;
@@ -101,12 +101,12 @@ public class Room5 extends SimulationWorld
         
         if (positionNumber == 0 && i < 1)
         {
-            addObject(new Flynn(), 238, 370);
+            addObject(new Flynn(), 181, 235);
             i++;
         }
         if(positionNumber == 1 && i < 1)
         {
-            addObject(new Flynn(), 693, 278);
+            addObject(new Flynn(), 716, 141);
             i++;
         }
         
@@ -129,12 +129,12 @@ public class Room5 extends SimulationWorld
             j++;
         }
     }
-    
+
     public void prepare() 
     {
         RedDoor redDoor = new RedDoor();
         addObject(redDoor,55,214);
-        
+
         InvisiblePlatform invisiblePlatform = new InvisiblePlatform();
         addObject(invisiblePlatform,899,719);
         InvisiblePlatform invisiblePlatform2 = new InvisiblePlatform();
@@ -167,7 +167,7 @@ public class Room5 extends SimulationWorld
         addObject(invisiblePlatform15,0,138);
         InvisiblePlatform invisiblePlatform16 = new InvisiblePlatform();
         addObject(invisiblePlatform16,1,41);
-        
+
         Platform platform = new Platform();
         addObject(platform,829,216);
         Platform platform2 = new Platform();

@@ -46,21 +46,4 @@ public class GreenDoor extends Door
 
         return false;
     }
-    public boolean getOrangeKey()
-    {
-        List <OrangeKey> orangeKeyList = getWorld().getObjects(OrangeKey.class);
-        
-        if (orangeKeyList.size() > 0)
-        {
-            OrangeKey orangeKey = orangeKeyList.get(0);
-            double y = (double) (orangeKey.getY());
-            
-            if (y > 705)
-            {
-                return true;
-            }   
-        }
-
-        return false;
-    }
 }

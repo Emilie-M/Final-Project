@@ -18,7 +18,7 @@ public class GoldDoor2 extends Door
         if (isDoorTouchingFlynn()) 
         {
             SimulationWorld world = (SimulationWorld) getWorld();
-            Greenfoot.setWorld(new Room6(Heart.getHearts(), 0, true, world.getGoldKey(), world.getGreenKey(), world.getOrangeKey(), world.getPinkKey(), 
+            Greenfoot.setWorld(new Room6(Heart.getHearts(), 1, true, world.getGoldKey(), world.getGreenKey(), world.getOrangeKey(), world.getPinkKey(), 
             world.getRedKey(), world.getSilverKey()));
         }
     }

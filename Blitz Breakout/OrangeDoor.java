@@ -20,7 +20,7 @@ public class OrangeDoor extends Door
             if (getOrangeKey() == true)
             {
                 SimulationWorld world = (SimulationWorld) getWorld();
-                Greenfoot.setWorld(new Room5(Heart.getHearts(), 0, true, world.getGoldKey(), world.getGreenKey(), world.getOrangeKey(),
+                Greenfoot.setWorld(new Room5(Heart.getHearts(), 1, true, world.getGoldKey(), world.getGreenKey(), world.getOrangeKey(),
                 world.getPinkKey(), world.getRedKey(), world.getSilverKey()));
                 
             }
