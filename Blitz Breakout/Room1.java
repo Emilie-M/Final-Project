@@ -132,13 +132,13 @@ public class Room1 extends SimulationWorld
             addObject(new Heart(), 61, 52);
             k++;
         }
-        if (hearts == 2 && k < 2)
+        if (hearts == 2 && k < 1)
         {
             addObject(new Heart(), 61, 52);
             addObject(new Heart(), 93, 52);
             k++;
         }
-        if (hearts == 3 && k < 3) 
+        if (hearts == 3 && k < 1) 
         {
             addObject(new Heart(), 61, 52);
             addObject(new Heart(), 93, 52);

@@ -55,7 +55,12 @@ public class Room4 extends SimulationWorld
     public void act()
     {
         super.act();
-
+        if (!(isOrangeKeyAcquired2) && k < 1)
+        {
+            addObject(new OrangeKey(), 64,580);
+            //isGreenKeyAcquired2 = true;
+            k++;
+        }
         // Copy all 7 below for new Room
         if (isBlueKeyAcquired2 && a < 1) 
         {
@@ -104,13 +109,13 @@ public class Room4 extends SimulationWorld
             addObject(new Heart(), 61, 52);
             j++;
         }
-        if (hearts == 2 && j < 2)
+        if (hearts == 2 && j < 1)
         {
             addObject(new Heart(), 61, 52);
             addObject(new Heart(), 93, 52);
             j++;
         }
-        if (hearts == 3 && j < 3) 
+        if (hearts == 3 && j < 1) 
         {
             addObject(new Heart(), 61, 52);
             addObject(new Heart(), 93, 52);
@@ -121,6 +126,8 @@ public class Room4 extends SimulationWorld
     
     public void prepare() 
     {
+        MovingPlatform movingPlatform = new MovingPlatform(5, 9);
+        addObject(movingPlatform,378,261);
         Platform platform = new Platform();
         addObject(platform,71,175);
         Platform platform2 = new Platform();
@@ -135,8 +142,7 @@ public class Room4 extends SimulationWorld
         addObject(platform6,542,444);
         GreenDoor2 greenDoor2 = new GreenDoor2();
         addObject(greenDoor2,61,79);
-        OrangeKey orangeKey = new OrangeKey();
-        addObject(orangeKey,64,580);
+        
         
         InvisiblePlatform invisiblePlatform = new InvisiblePlatform();
         addObject(invisiblePlatform,899,719);
@@ -170,8 +176,5 @@ public class Room4 extends SimulationWorld
         addObject(invisiblePlatform15,0,138);
         InvisiblePlatform invisiblePlatform16 = new InvisiblePlatform();
         addObject(invisiblePlatform16,1,41);
-        
-        MovingPlatform movingPlatform = new MovingPlatform(5, 9);
-        addObject(movingPlatform,378,261);
     }
 }

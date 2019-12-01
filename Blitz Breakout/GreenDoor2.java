@@ -19,7 +19,7 @@ public class GreenDoor2 extends Door
         {
 
                 SimulationWorld world = (SimulationWorld) getWorld();
-                Greenfoot.setWorld(new Room3(Heart.getHearts(), 0, true, world.getGoldKey(), true, world.getOrangeKey(), world.getPinkKey(), 
+                Greenfoot.setWorld(new Room3(Heart.getHearts(), 1, true, world.getGoldKey(), true, world.getOrangeKey(), world.getPinkKey(), 
                 world.getRedKey(), world.getSilverKey()));
                 // USE STATEMENTS BELOW TO COPY CODE IN DOORS
                 //(int heart, int positionNum, boolean isBlueKeyAcquired, boolean isGoldKeyAcquired, 

@@ -113,13 +113,13 @@ public class Room3 extends SimulationWorld
             addObject(new Heart(), 61, 52);
             j++;
         }
-        if (hearts == 2 && j < 2)
+        if (hearts == 2 && j < 1)
         {
             addObject(new Heart(), 61, 52);
             addObject(new Heart(), 93, 52);
             j++;
         }
-        if (hearts == 3 && j < 3) 
+        if (hearts == 3 && j < 1) 
         {
             addObject(new Heart(), 61, 52);
             addObject(new Heart(), 93, 52);
@@ -135,18 +135,23 @@ public class Room3 extends SimulationWorld
         }
         if(positionNumber == 1 && i < 1)
         {
-            addObject(new Flynn(), 693, 278);
+            addObject(new Flynn(), 203, 103);
             i++;
         }
-        
+        if(positionNumber == 2 && i < 1)
+        {
+            addObject(new Flynn(), 74, 278);
+            i++;
+        }
     }
 
     public void prepare()
     {
+        
         Platform platform = new Platform();
-        addObject(platform,0,618);
+        addObject(platform,75,657);
         Platform platform2 = new Platform();
-        addObject(platform2,204,645);
+        addObject(platform2,198,657);
         Platform platform3 = new Platform();
         addObject(platform3,328,537);
         Platform platform4 = new Platform();
@@ -160,8 +165,6 @@ public class Room3 extends SimulationWorld
         Platform platform8 = new Platform();
         addObject(platform8,823,352);
 
-        PinkDoor2 pinkDoor2 = new PinkDoor2();
-        addObject(pinkDoor2,56,548);
         OrangeDoor orangeDoor = new OrangeDoor();
         addObject(orangeDoor,838,255);
 
@@ -170,15 +173,23 @@ public class Room3 extends SimulationWorld
 
         Platform platform9 = new Platform();
         addObject(platform9,295,284);
-        Platform platform10 = new Platform();
-        addObject(platform10,182,180);
-        Platform platform11 = new Platform();
-        addObject(platform11,0,128);
         Platform platform12 = new Platform();
         addObject(platform12,718,561);
-        GreenDoor greenDoor = new GreenDoor();
-        addObject(greenDoor,0,39);
 
+        
+        GreenDoor greenDoor = new GreenDoor();
+        addObject(greenDoor,60,80);
+        
+        Platform platform10 = new Platform();
+        addObject(platform10,77,177);
+        
+        Platform platform11 = new Platform();
+        addObject(platform11,212,177);
+       
+        PinkDoor2 pinkDoor2 = new PinkDoor2();
+        addObject(pinkDoor2,61,560);
+        
+        
         InvisiblePlatform invisiblePlatform = new InvisiblePlatform();
         addObject(invisiblePlatform,0,719);
         InvisiblePlatform invisiblePlatform2 = new InvisiblePlatform();
@@ -213,5 +224,7 @@ public class Room3 extends SimulationWorld
         addObject(invisiblePlatform16,898,85);
         InvisiblePlatform invisiblePlatform17 = new InvisiblePlatform();
         addObject(invisiblePlatform17,899,32);
+
+        
     }
 }
