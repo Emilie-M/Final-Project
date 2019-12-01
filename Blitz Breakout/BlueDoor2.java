@@ -14,22 +14,6 @@ public class BlueDoor2 extends Door
         transitionToRoom1();
     }
 
-    public boolean getBlueKey()
-    {
-        List <BlueKey> blueKeyList = getWorld().getObjects(BlueKey.class);
-
-        if (blueKeyList.size() > 0)
-        {
-            BlueKey blueKey = blueKeyList.get(0);
-            double y = (double) (blueKey.getY());
-            if (y > 705)
-            {
-                return true;
-            }   
-        }
-        return false;
-    }
-
     public void transitionToRoom1()
     {
         if (isDoorTouchingFlynn()) 

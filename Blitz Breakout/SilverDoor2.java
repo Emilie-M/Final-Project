@@ -24,22 +24,6 @@ public class SilverDoor2 extends Door
 
         }
     }
-    public boolean getSilverKey()
-    {
-        List <SilverKey> silverKeyList = getWorld().getObjects(SilverKey.class);
-        
-        if (silverKeyList.size() > 0)
-        {
-            SilverKey silverKey = silverKeyList.get(0);
-            double y = (double) (silverKey.getY());
-            
-            if (y > 705)
-            {
-                return true;
-            }   
-        }
-
-        return false;
-    }
+    
 }
 

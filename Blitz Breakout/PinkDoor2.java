@@ -26,20 +26,4 @@ public class PinkDoor2 extends Door
             //world.getBlaBLaKey()
         }
     }
-    public boolean getPinkKey()
-    {
-        List <PinkKey> pinkKeyList = getWorld().getObjects(PinkKey.class);
-        
-        if (pinkKeyList.size() > 0)
-        {
-            PinkKey pinkKey = pinkKeyList.get(0);
-            double y = (double) (pinkKey.getY());
-            
-            if (y > 705)
-            {
-                return true;
-            }   
-        }
-        return false;
-    }
 }
