@@ -102,7 +102,7 @@ public class Room7 extends SimulationWorld
         
         if (positionNumber == 0 && i < 1)
         {
-            addObject(new Flynn(), 200, 149);
+            addObject(new Flynn(),729,601);
             i++;
         }
         if(positionNumber == 1 && i < 1)
@@ -134,8 +134,46 @@ public class Room7 extends SimulationWorld
     public void prepare() 
     {
         GoldDoor2 goldDoor2 = new GoldDoor2();
-        addObject(goldDoor2,76,129);
+        addObject(goldDoor2,819,601);
 
+        Platform platform = new Platform();
+        addObject(platform,825,674);
+        Platform platform2 = new Platform();
+        addObject(platform2,712,674);
+        Platform platform3 = new Platform();
+        addObject(platform3,409,566);
+        Platform platform4 = new Platform();
+        addObject(platform4,492,592);
+        Platform platform5 = new Platform();
+        addObject(platform5,144,675);
+        
+        
+        HorizontalMovingPlatform horizontalMovingPlatform = new HorizontalMovingPlatform(3, 5);
+        addObject(horizontalMovingPlatform,382,214);
+        
+        Platform platform6 = new Platform();
+        addObject(platform6,110,133);
+        Rat rat = new Rat(3, 4);
+        addObject(rat,409,566);
+        
+        MovingPlatform movingPlatform = new MovingPlatform(3, 4);
+        addObject(movingPlatform,192,342);
+        MovingPlatform movingPlatform2 = new MovingPlatform(1, 4);
+        addObject(movingPlatform2,628,167);
+        
+        SilverDoor silverDoor = new SilverDoor();
+        addObject(silverDoor,837,82);
+        Platform platform7 = new Platform();
+        addObject(platform7,773,178);
+        Platform platform8 = new Platform();
+        addObject(platform8,749,180);
+        Spider spider = new Spider(1, 3);
+        addObject(spider,236,145);
+        Spider spider2 = new Spider(1, 3);
+        addObject(spider2,600,86);
+        
+        
+        
         InvisiblePlatform invisiblePlatform = new InvisiblePlatform();
         addObject(invisiblePlatform,899,719);
         InvisiblePlatform invisiblePlatform2 = new InvisiblePlatform();
@@ -168,5 +206,6 @@ public class Room7 extends SimulationWorld
         addObject(invisiblePlatform15,0,138);
         InvisiblePlatform invisiblePlatform16 = new InvisiblePlatform();
         addObject(invisiblePlatform16,1,41);
+        
     }
 }

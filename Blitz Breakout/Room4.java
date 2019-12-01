@@ -132,15 +132,12 @@ public class Room4 extends SimulationWorld
         Platform platform5 = new Platform();
         addObject(platform5,307,526);
         Platform platform6 = new Platform();
-        addObject(platform6,513,418);
-        Platform platform7 = new Platform();
-        addObject(platform7,387,292);
-        Platform platform8 = new Platform();
-        addObject(platform8,511,163);
+        addObject(platform6,542,444);
         GreenDoor2 greenDoor2 = new GreenDoor2();
         addObject(greenDoor2,61,79);
         OrangeKey orangeKey = new OrangeKey();
         addObject(orangeKey,64,580);
+        
         InvisiblePlatform invisiblePlatform = new InvisiblePlatform();
         addObject(invisiblePlatform,899,719);
         InvisiblePlatform invisiblePlatform2 = new InvisiblePlatform();
@@ -173,9 +170,7 @@ public class Room4 extends SimulationWorld
         addObject(invisiblePlatform15,0,138);
         InvisiblePlatform invisiblePlatform16 = new InvisiblePlatform();
         addObject(invisiblePlatform16,1,41);
-        removeObject(platform8);
-        platform6.setLocation(542,444);
-        removeObject(platform7);
+        
         MovingPlatform movingPlatform = new MovingPlatform(5, 9);
         addObject(movingPlatform,378,261);
     }

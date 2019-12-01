@@ -144,7 +144,7 @@ public class Room3 extends SimulationWorld
     public void prepare()
     {
         Platform platform = new Platform();
-        addObject(platform,71,645);
+        addObject(platform,0,618);
         Platform platform2 = new Platform();
         addObject(platform2,204,645);
         Platform platform3 = new Platform();
@@ -173,15 +173,14 @@ public class Room3 extends SimulationWorld
         Platform platform10 = new Platform();
         addObject(platform10,182,180);
         Platform platform11 = new Platform();
-        addObject(platform11,71,180);
+        addObject(platform11,0,128);
         Platform platform12 = new Platform();
         addObject(platform12,718,561);
         GreenDoor greenDoor = new GreenDoor();
-        addObject(greenDoor,54,83);
+        addObject(greenDoor,0,39);
 
         InvisiblePlatform invisiblePlatform = new InvisiblePlatform();
         addObject(invisiblePlatform,0,719);
-        platform.setLocation(0,618);
         InvisiblePlatform invisiblePlatform2 = new InvisiblePlatform();
         addObject(invisiblePlatform2,0,618);
         InvisiblePlatform invisiblePlatform3 = new InvisiblePlatform();
@@ -190,13 +189,10 @@ public class Room3 extends SimulationWorld
         addObject(invisiblePlatform4,0,423);
         InvisiblePlatform invisiblePlatform5 = new InvisiblePlatform();
         addObject(invisiblePlatform5,0,325);
-        platform11.setLocation(0,226);
         InvisiblePlatform invisiblePlatform6 = new InvisiblePlatform();
         addObject(invisiblePlatform6,0,226);
-        platform11.setLocation(0,128);
         InvisiblePlatform invisiblePlatform7 = new InvisiblePlatform();
         addObject(invisiblePlatform7,0,128);
-        greenDoor.setLocation(0,39);
         InvisiblePlatform invisiblePlatform8 = new InvisiblePlatform();
         addObject(invisiblePlatform8,0,39);
         InvisiblePlatform invisiblePlatform9 = new InvisiblePlatform();
