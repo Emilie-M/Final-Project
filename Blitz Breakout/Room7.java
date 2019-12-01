@@ -134,7 +134,7 @@ public class Room7 extends SimulationWorld
     public void prepare() 
     {
         GoldDoor2 goldDoor2 = new GoldDoor2();
-        addObject(goldDoor2,819,601);
+        addObject(goldDoor2,819,577);
 
         Platform platform = new Platform();
         addObject(platform,825,674);
