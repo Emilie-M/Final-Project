@@ -17,28 +17,9 @@ public class RedDoor2 extends Door
         super.act();
         if (isDoorTouchingFlynn()) 
         {
-
-            //SimulationWorld world = (SimulationWorld) getWorld();
-            //Greenfoot.setWorld(new Room2());
-
-
+            SimulationWorld world = (SimulationWorld) getWorld();
+            Greenfoot.setWorld(new Room5(Heart.getHearts(), 0, true, world.getGoldKey(), world.getGreenKey(), world.getOrangeKey(), world.getPinkKey(), 
+                world.getRedKey(), world.getSilverKey()));
         }
-    }
-    public boolean getRedKey()
-    {
-        List <RedKey> redKeyList = getWorld().getObjects(RedKey.class);
-        
-        if (redKeyList.size() > 0)
-        {
-            RedKey redKey = redKeyList.get(0);
-            double y = (double) (redKey.getY());
-            
-            if (y > 705)
-            {
-                return true;
-            }   
-        }
-
-        return false;
     }
 }

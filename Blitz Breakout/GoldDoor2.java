@@ -17,27 +17,10 @@ public class GoldDoor2 extends Door
         super.act();
         if (isDoorTouchingFlynn()) 
         {
-
-            //SimulationWorld world = (SimulationWorld) getWorld();
-            //Greenfoot.setWorld(new Room2());
+            SimulationWorld world = (SimulationWorld) getWorld();
+            Greenfoot.setWorld(new Room6(Heart.getHearts(), 0, true, world.getGoldKey(), world.getGreenKey(), world.getOrangeKey(), world.getPinkKey(), 
+                world.getRedKey(), world.getSilverKey()));
 
         }
-    }
-    public boolean getGoldKey()
-    {
-        List <GoldKey> goldKeyList = getWorld().getObjects(GoldKey.class);
-        
-        if (goldKeyList.size() > 0)
-        {
-            GoldKey goldKey = goldKeyList.get(0);
-            double y = (double) (goldKey.getY());
-            
-            if (y > 705)
-            {
-                return true;
-            }   
-        }
-
-        return false;
     }
 }
