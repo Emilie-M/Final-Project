@@ -176,7 +176,7 @@ public class Room6 extends SimulationWorld
         addObject(platform3,491,343);
 
         Platform platform4 = new Platform();
-        addObject(platform4,783,618);
+        addObject(platform4,803,602);
         Platform platform5 = new Platform();
         addObject(platform5,785,174);
         Platform platform6 = new Platform();
@@ -189,7 +189,6 @@ public class Room6 extends SimulationWorld
         addObject(movingPlatform,633,138);
         HorizontalMovingPlatform horizontalMovingPlatform = new HorizontalMovingPlatform(6, 12);
         addObject(horizontalMovingPlatform,502,559);
-        platform4.setLocation(803,602);
         
         Spider spider = new Spider(0, 8);
         addObject(spider,327,95);

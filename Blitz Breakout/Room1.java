@@ -166,7 +166,7 @@ public class Room1 extends SimulationWorld
     private void prepare()
     {
         Platform platform = new Platform();
-        addObject(platform,189,463);
+        addObject(platform,194,464);
         Platform platform2 = new Platform();
         addObject(platform2,327,464);
         Platform platform3 = new Platform();
@@ -179,7 +179,6 @@ public class Room1 extends SimulationWorld
         addObject(platform5,819,538);
         Platform platform6 = new Platform();
         addObject(platform6,68,464);
-        platform.setLocation(194,464);
 
         Heart heart = new Heart();
         addObject(heart,61,52);
@@ -194,13 +193,8 @@ public class Room1 extends SimulationWorld
         addObject(platform13,828,538);
         Torch torch = new Torch();
         addObject(torch,727,456);
-        Flame flame = new Flame();
-        addObject(flame,686,270);
-        flame.setLocation(723,385);
         Aura aura = new Aura();
-        addObject(aura,580,317);
-        removeObject(flame);
-        aura.setLocation(730,450);
+        addObject(aura,730,450);
         Flame flame2 = new Flame();
         addObject(flame2,729,446);
         
@@ -213,9 +207,6 @@ public class Room1 extends SimulationWorld
         addObject(invisiblePlatform8,0,46);
         InvisiblePlatform invisiblePlatform9 = new InvisiblePlatform();
         addObject(invisiblePlatform9,0,531);
-        InvisiblePlatform invisiblePlatform10 = new InvisiblePlatform();
-        addObject(invisiblePlatform10,0,633);
-        removeObject(invisiblePlatform10);
         InvisiblePlatform invisiblePlatform11 = new InvisiblePlatform();
         addObject(invisiblePlatform11,0,726);
         InvisiblePlatform invisiblePlatform3 = new InvisiblePlatform();
@@ -233,16 +224,13 @@ public class Room1 extends SimulationWorld
         InvisiblePlatform invisiblePlatform12 = new InvisiblePlatform();
         addObject(invisiblePlatform12,899,353);
         InvisiblePlatform invisiblePlatform13 = new InvisiblePlatform();
-        addObject(invisiblePlatform13,899,454);
-        invisiblePlatform13.setLocation(898,471);
-        invisiblePlatform13.setLocation(899,472);
+        addObject(invisiblePlatform13,899,472);
         InvisiblePlatform invisiblePlatform14 = new InvisiblePlatform();
         addObject(invisiblePlatform14,899,472);
         InvisiblePlatform invisiblePlatform15 = new InvisiblePlatform();
         addObject(invisiblePlatform15,898,604);
         InvisiblePlatform invisiblePlatform16 = new InvisiblePlatform();
-        addObject(invisiblePlatform16,899,706);
-        invisiblePlatform16.setLocation(899,679);
+        addObject(invisiblePlatform16,899,679);
         InvisiblePlatform invisiblePlatform18 = new InvisiblePlatform();
         addObject(invisiblePlatform18,899,724);
         InvisiblePlatform invisiblePlatform19 = new InvisiblePlatform();

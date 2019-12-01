@@ -133,24 +133,15 @@ public class Room2 extends SimulationWorld
 
     public void prepare()
     {
-        Platform platform = new Platform();
-        addObject(platform, 756, 599);
-        PinkDoor pinkDoor = new PinkDoor();
-        addObject(pinkDoor, 756, 502);
-
-        removeObject(platform);
-        removeObject(pinkDoor);
-
+        
         Platform platform2 = new Platform();
         addObject(platform2, 277, 306);
-        Platform platform3 = new Platform();
-        addObject(platform3, 451, 480);
-        removeObject(platform3);
+       
 
         Platform platform4 = new Platform();
         addObject(platform4, 535, 604);
         Platform platform5 = new Platform();
-        addObject(platform5, 828, 595);
+        addObject(platform5, 899,629);
         Platform platform6 = new Platform();
         addObject(platform6, 718, 595);
         Platform platform7 = new Platform();
@@ -163,11 +154,11 @@ public class Room2 extends SimulationWorld
         BlueDoor2 blueDoor2 = new BlueDoor2();
         addObject(blueDoor2, 98, 89);
         Platform platform10 = new Platform();
-        addObject(platform10, 97, 187);
+        addObject(platform10, 85,233);
         Platform platform11 = new Platform();
         addObject(platform11, 351, 480);
         PinkDoor pinkDoor2 = new PinkDoor();
-        addObject(pinkDoor2, 845, 499);
+        addObject(pinkDoor2, 899,441);
 
         InvisiblePlatform invisiblePlatform = new InvisiblePlatform();
         addObject(invisiblePlatform,0,719);
@@ -177,7 +168,6 @@ public class Room2 extends SimulationWorld
         addObject(invisiblePlatform3,0,521);
         InvisiblePlatform invisiblePlatform4 = new InvisiblePlatform();
         addObject(invisiblePlatform4,0,423);
-        platform10.setLocation(85,233);
 
         InvisiblePlatform invisiblePlatform5 = new InvisiblePlatform();
         addObject(invisiblePlatform5,0,324);
@@ -186,19 +176,15 @@ public class Room2 extends SimulationWorld
         InvisiblePlatform invisiblePlatform7 = new InvisiblePlatform();
         addObject(invisiblePlatform7,0,126);
         InvisiblePlatform invisiblePlatform8 = new InvisiblePlatform();
-        addObject(invisiblePlatform8,0,44);
-        invisiblePlatform8.setLocation(0,3);
+        addObject(invisiblePlatform8,0,3);
         InvisiblePlatform invisiblePlatform9 = new InvisiblePlatform();
         addObject(invisiblePlatform9,0,3);
         InvisiblePlatform invisiblePlatform10 = new InvisiblePlatform();
         addObject(invisiblePlatform10,899,723);
-        platform5.setLocation(899,629);
         InvisiblePlatform invisiblePlatform11 = new InvisiblePlatform();
         addObject(invisiblePlatform11,899,629);
-        pinkDoor2.setLocation(899,537);
         InvisiblePlatform invisiblePlatform12 = new InvisiblePlatform();
         addObject(invisiblePlatform12,899,537);
-        pinkDoor2.setLocation(899,441);
         InvisiblePlatform invisiblePlatform13 = new InvisiblePlatform();
         addObject(invisiblePlatform13,899,441);
         InvisiblePlatform invisiblePlatform14 = new InvisiblePlatform();
@@ -208,8 +194,7 @@ public class Room2 extends SimulationWorld
         InvisiblePlatform invisiblePlatform16 = new InvisiblePlatform();
         addObject(invisiblePlatform16,899,149);
         InvisiblePlatform invisiblePlatform17 = new InvisiblePlatform();
-        addObject(invisiblePlatform17,899,69);
-        invisiblePlatform17.setLocation(899,49);
+        addObject(invisiblePlatform17,899,49);
         InvisiblePlatform invisiblePlatform18 = new InvisiblePlatform();
         addObject(invisiblePlatform18,899,49);
     }

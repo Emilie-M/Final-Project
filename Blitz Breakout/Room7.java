@@ -56,11 +56,11 @@ public class Room7 extends SimulationWorld
     {
         super.act();
         
-        //if (!isSilverKeyAcquired2 && k < 1) 
-        //{
-        //    addObject(new SilverKey(), 803,602);
-        //    k++;
-        //}
+        if (!isSilverKeyAcquired2 && k < 1) 
+        {
+            addObject(new SilverKey(), 104,116);
+            k++;
+        }
         
         // Copy all 7 below for new Room
         if (isBlueKeyAcquired2 && a < 1) 
@@ -102,7 +102,7 @@ public class Room7 extends SimulationWorld
         
         if (positionNumber == 0 && i < 1)
         {
-            addObject(new Flynn(), 200, 149);
+            addObject(new Flynn(),729,601);
             i++;
         }
         if(positionNumber == 1 && i < 1)
@@ -134,8 +134,47 @@ public class Room7 extends SimulationWorld
     public void prepare() 
     {
         GoldDoor2 goldDoor2 = new GoldDoor2();
-        addObject(goldDoor2,76,129);
+        addObject(goldDoor2,819,601);
 
+        Platform platform = new Platform();
+        addObject(platform,825,674);
+        Platform platform2 = new Platform();
+        addObject(platform2,712,674);
+        Platform platform3 = new Platform();
+        addObject(platform3,409,461);
+        Platform platform5 = new Platform();
+        addObject(platform5,144,675);
+        
+        Platform platform10 = new Platform();
+        addObject(platform10,499,461);
+        Platform platform11 = new Platform();
+        addObject(platform11,357,461);
+        Platform platform6 = new Platform();
+        addObject(platform6,110,133);
+
+        HorizontalMovingPlatform horizontalMovingPlatform = new HorizontalMovingPlatform(5, 10);
+        addObject(horizontalMovingPlatform,382,214);
+
+        Rat rat = new Rat(5, 9);
+        addObject(rat,409,437);
+
+        MovingPlatform movingPlatform = new MovingPlatform(3, 9);
+        addObject(movingPlatform,192,342);
+        MovingPlatform movingPlatform2 = new MovingPlatform(1, 6);
+        addObject(movingPlatform2,628,167);
+
+        SilverDoor silverDoor = new SilverDoor();
+        addObject(silverDoor,837,87);
+        Platform platform7 = new Platform();
+        addObject(platform7,845,184);
+        Platform platform8 = new Platform();
+        addObject(platform8,749,184);
+        Spider spider = new Spider(1, 7);
+        addObject(spider,236,145);
+        Spider spider2 = new Spider(1, 7);
+        addObject(spider2,600,86);
+
+        
         InvisiblePlatform invisiblePlatform = new InvisiblePlatform();
         addObject(invisiblePlatform,899,719);
         InvisiblePlatform invisiblePlatform2 = new InvisiblePlatform();
@@ -168,5 +207,6 @@ public class Room7 extends SimulationWorld
         addObject(invisiblePlatform15,0,138);
         InvisiblePlatform invisiblePlatform16 = new InvisiblePlatform();
         addObject(invisiblePlatform16,1,41);
+
     }
 }
