@@ -58,7 +58,6 @@ public class Room4 extends SimulationWorld
         if (!(isOrangeKeyAcquired2) && k < 1)
         {
             addObject(new OrangeKey(), 64,580);
-            //isGreenKeyAcquired2 = true;
             k++;
         }
         // Copy all 7 below for new Room
@@ -126,8 +125,8 @@ public class Room4 extends SimulationWorld
     
     public void prepare() 
     {
-        MovingPlatform movingPlatform = new MovingPlatform(5, 9);
-        addObject(movingPlatform,378,261);
+        MovingPlatform movingPlatform2 = new MovingPlatform(5, 9);
+        addObject(movingPlatform2,378,261);
         
         Platform platform = new Platform();
         addObject(platform,71,175);
@@ -176,7 +175,5 @@ public class Room4 extends SimulationWorld
         addObject(invisiblePlatform15,0,138);
         InvisiblePlatform invisiblePlatform16 = new InvisiblePlatform();
         addObject(invisiblePlatform16,1,41);
-        
-        
     }
 }
