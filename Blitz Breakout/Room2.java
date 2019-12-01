@@ -57,7 +57,7 @@ public class Room2 extends SimulationWorld
         super.act();
         if ((isPinkKeyAcquired2 == false) && k < 1) 
         {
-            addObject(new PinkKey(), 87,534);
+            addObject(new PinkKey(), 103,603);
             //isPinkKeyAcquired2 = true;
             k++;
         }
@@ -121,7 +121,7 @@ public class Room2 extends SimulationWorld
         // Flynn Spawn
         if (positionNumber == 0 && i < 1)
         {
-            addObject(new Flynn(), 297, 286);
+            addObject(new Flynn(), 219, 110);
             i++;
         }
         if(positionNumber == 1 && i < 1)
@@ -133,39 +133,36 @@ public class Room2 extends SimulationWorld
 
     public void prepare()
     {
-        
+        Platform platform = new Platform();
+        addObject(platform,75,186);
         Platform platform2 = new Platform();
-        addObject(platform2, 277, 306);
-       
-
+        addObject(platform2,202,186);
+        Platform platform3 = new Platform();
+        addObject(platform3,306,353);
         Platform platform4 = new Platform();
-        addObject(platform4, 535, 604);
+        addObject(platform4,249,536);
         Platform platform5 = new Platform();
-        addObject(platform5, 899,629);
+        addObject(platform5,116,620);
         Platform platform6 = new Platform();
-        addObject(platform6, 718, 595);
+        addObject(platform6,524,623);
         Platform platform7 = new Platform();
-        addObject(platform7, 651, 482);
+        addObject(platform7,829,620);
         Platform platform8 = new Platform();
-        addObject(platform8, 756, 380);
+        addObject(platform8,737,620);
+        PinkDoor pinkDoor = new PinkDoor();
+        addObject(pinkDoor,846,523);
         Platform platform9 = new Platform();
-        addObject(platform9, 113, 552);
+        addObject(platform9,655,515);
+        Platform platform10 = new Platform();
+        addObject(platform10,748,397);
 
         BlueDoor2 blueDoor2 = new BlueDoor2();
-        addObject(blueDoor2, 98, 89);
-        Platform platform10 = new Platform();
-        addObject(platform10, 85,233);
-        Platform platform11 = new Platform();
-        addObject(platform11, 351, 480);
-        PinkDoor pinkDoor2 = new PinkDoor();
-        addObject(pinkDoor2, 899,441);
+        addObject(blueDoor2,62,89);
 
         InvisiblePlatform invisiblePlatform = new InvisiblePlatform();
         addObject(invisiblePlatform,0,719);
         InvisiblePlatform invisiblePlatform2 = new InvisiblePlatform();
         addObject(invisiblePlatform2,0,620);
-        InvisiblePlatform invisiblePlatform3 = new InvisiblePlatform();
-        addObject(invisiblePlatform3,0,521);
         InvisiblePlatform invisiblePlatform4 = new InvisiblePlatform();
         addObject(invisiblePlatform4,0,423);
 
@@ -197,5 +194,11 @@ public class Room2 extends SimulationWorld
         addObject(invisiblePlatform17,899,49);
         InvisiblePlatform invisiblePlatform18 = new InvisiblePlatform();
         addObject(invisiblePlatform18,899,49);
+        InvisiblePlatform invisiblePlatform19 = new InvisiblePlatform();
+        addObject(invisiblePlatform19,0,520);
+
+        
+        
+        
     }
 }
