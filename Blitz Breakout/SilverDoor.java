@@ -20,7 +20,7 @@ public class SilverDoor extends Door
             if (getSilverKey() == true)
             {
                 //SimulationWorld world = (SimulationWorld) getWorld();
-                //Greenfoot.setWorld(new Room2());
+                //world.transitionToWorld(new Room2());
                 return;
             }
         }

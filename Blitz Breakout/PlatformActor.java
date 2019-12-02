@@ -58,7 +58,9 @@ public class PlatformActor extends SimulationActor
         if (p != null  && velocity.getY() < 0.0)
         {
             // Update position to lie on the platform
-            setLocation(getX(), p.getY() - p.getHeight() / 2 - getHeight() / 2);
+            //setLocation(getX(), p.getY() - p.getHeight() / 2 - getHeight() / 2);
+            Point2D newPosition = new Point2D(getX(), p.getY() - p.getHeight() / 2 - getHeight() / 2);
+            position = windowToWorld(newPosition);
             
             // Update the velocity to stop falling
             velocity.setY(Math.max(velocity.getY(), 0.0));

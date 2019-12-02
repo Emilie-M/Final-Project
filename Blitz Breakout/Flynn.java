@@ -59,7 +59,7 @@ public class Flynn extends PlatformActor
     
     public Flynn()
     {
-        super(null, new Vector2D(0,0), new Vector2D(0, GRAVITY));
+        super(null, new Vector2D(0,0), new Vector2D(0, GRAVITY));        
         //currentSpriteSheet = 1;
         //currentColumn = 0;
         //currentFrameTime = 0.0;
@@ -67,6 +67,7 @@ public class Flynn extends PlatformActor
         //GreenfootImage sprite = runRight.getSprite(0, 0);
         //setImage(sprite);
         //setImage(standRight);
+        lives = 3;
         
     }
 

@@ -12,8 +12,17 @@ public class Heart extends Actor
 
     public void act() 
     {
-         hearts = Flynn.getLives();
-         handleHearts();
+        //try
+        {
+            
+            
+             hearts = Flynn.getLives();
+             handleHearts();
+        }
+        //catch(Exception e)
+        {
+        }
+        
     }  
 
     public void handleHearts()
@@ -28,9 +37,9 @@ public class Heart extends Actor
             getWorld().removeObjects(getWorld().getObjectsAt(93, 52,Heart.class));
         }
         
-        if (hearts == 0) 
+        if (Flynn.lives <= 0) 
         {
-            getWorld().removeObjects(getWorld().getObjectsAt(61, 52,Heart.class)); 
+            //getWorld().removeObjects(getWorld().getObjectsAt(61, 52,Heart.class)); 
             SimulationWorld world = (SimulationWorld) getWorld();
             world.transitionToWorld(new GameOverScreen());
         }

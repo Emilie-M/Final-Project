@@ -19,7 +19,7 @@ public class BlueDoor2 extends Door
         if (isDoorTouchingFlynn()) 
         {
             SimulationWorld world = (SimulationWorld) getWorld();
-            Greenfoot.setWorld(new Room1(false, Heart.getHearts(), 1, true, world.getGoldKey(), 
+            world.transitionToWorld(new Room1(false, Heart.getHearts(), 1, true, world.getGoldKey(), 
             world.getGreenKey(), world.getOrangeKey(), world.getPinkKey(), world.getRedKey(), world.getSilverKey()));
             // USE STATEMENTS BELOW TO COPY CODE IN DOORS
             //(int heart, int positionNum, boolean isBlueKeyAcquired, boolean isGoldKeyAcquired, 

@@ -18,7 +18,7 @@ public class RedDoor2 extends Door
         if (isDoorTouchingFlynn()) 
         {
             SimulationWorld world = (SimulationWorld) getWorld();
-            Greenfoot.setWorld(new Room5(Heart.getHearts(), 0, true, world.getGoldKey(), world.getGreenKey(), world.getOrangeKey(), world.getPinkKey(), 
+            world.transitionToWorld(new Room5(Heart.getHearts(), 0, true, world.getGoldKey(), world.getGreenKey(), world.getOrangeKey(), world.getPinkKey(), 
                 world.getRedKey(), world.getSilverKey()));
         }
     }

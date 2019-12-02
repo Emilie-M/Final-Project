@@ -20,7 +20,7 @@ public class GoldDoor extends Door
             if (getGoldKey() == true)
             {
                 SimulationWorld world = (SimulationWorld) getWorld();
-                Greenfoot.setWorld(new Room7(Heart.getHearts(), 0, true, world.getGoldKey(), world.getGreenKey(), world.getOrangeKey(), world.getPinkKey(), 
+                world.transitionToWorld(new Room7(Heart.getHearts(), 0, true, world.getGoldKey(), world.getGreenKey(), world.getOrangeKey(), world.getPinkKey(), 
                 world.getRedKey(), world.getSilverKey()));
             }
         }
