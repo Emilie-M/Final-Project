@@ -10,7 +10,7 @@ public class GameOverScreen extends SimulationWorld
 {
     public GameOverScreen()
     {
-        super("", 900, 768, new Point2D(8.0, 6.0), 16.0); 
+        super("gameOver.wav", 900, 768, new Point2D(8.0, 6.0), 16.0); 
         
         GreenfootImage img = new GreenfootImage("gameover.png");
         img.scale(900,768);
