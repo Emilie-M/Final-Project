@@ -89,7 +89,7 @@ public class Room1 extends SimulationWorld
         }
         
         // Copy all 7 below for new Room #3
-        if ((isBlueKeyAcquired2 == true) && a < 1) 
+        if (isBlueKeyAcquired2 && a < 1) 
         {
             addObject(new BlueKey(), 58, 735);
             a++;

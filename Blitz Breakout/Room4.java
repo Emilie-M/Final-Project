@@ -60,6 +60,7 @@ public class Room4 extends SimulationWorld
             addObject(new OrangeKey(), 64,580);
             k++;
         }
+        
         // Copy all 7 below for new Room
         if (isBlueKeyAcquired2 && a < 1) 
         {

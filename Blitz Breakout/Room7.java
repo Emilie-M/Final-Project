@@ -55,13 +55,13 @@ public class Room7 extends SimulationWorld
     public void act()
     {
         super.act();
-        
+
         if (!isSilverKeyAcquired2 && k < 1) 
         {
             addObject(new SilverKey(), 104,116);
             k++;
         }
-        
+
         // Copy all 7 below for new Room
         if (isBlueKeyAcquired2 && a < 1) 
         {

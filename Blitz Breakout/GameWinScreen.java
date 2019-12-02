@@ -8,12 +8,26 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class GameWinScreen extends SimulationWorld
 {
-    /**
-     * Constructor for objects of class GameWinScreen.
-     * 
-     */
+
+    GifImage gameWin = new GifImage("GameWinScreen.gif");
+
     public GameWinScreen()
     {
-        super("", 900, 768, new Point2D(8.0, 6.0), 16.0);
+        super("GameWin.wav", 900, 768, new Point2D(8.0, 6.0), 16.0);
+        
+        for (Object obj : gameWin.getImages())
+        {
+            ((GreenfootImage)obj).scale(getWidth(), getHeight());
+        }
+    }
+    public void act()
+    {
+        super.act();
+        
+        setBackground(gameWin.getCurrentImage());
+        if (Greenfoot.isKeyDown("space"))
+        {
+            transitionToWorld(new StartMenu());
+        }
     }
 }
