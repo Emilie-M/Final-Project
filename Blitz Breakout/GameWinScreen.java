@@ -15,7 +15,7 @@ public class GameWinScreen extends SimulationWorld
      */
     public GameWinScreen()
     {
-        super("", 900, 768, new Point2D(8.0, 6.0), 16.0);
+        super("GameWin.wav", 900, 768, new Point2D(8.0, 6.0), 16.0);
         
         for (Object obj : gameWin.getImages())
         {
