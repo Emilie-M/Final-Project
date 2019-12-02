@@ -73,7 +73,7 @@ public class Room3 extends SimulationWorld
         // Copy all 7 below for new Room
         if (isBlueKeyAcquired2 && a < 1) 
         {
-            addObject(new BlueKey(), 60, 735);
+            addObject(new BlueKey(), 58, 735);
             a++;
         }
         if (isGoldKeyAcquired2 && b < 1) 
@@ -83,27 +83,27 @@ public class Room3 extends SimulationWorld
         }
         if (isGreenKeyAcquired2 && c < 1) 
         {
-            addObject(new GreenKey(), 62, 735);
+            addObject(new GreenKey(), 66, 735);
             c++;
         }
         if (isOrangeKeyAcquired2 && d < 1) 
         {
-            addObject(new OrangeKey(), 64, 735);
+            addObject(new OrangeKey(), 70, 735);
             d++;
         }
         if (isPinkKeyAcquired2 && e < 1) 
         {
-            addObject(new PinkKey(), 66,735);
+            addObject(new PinkKey(), 74,735);
             e++;
         }
         if (isRedKeyAcquired2 && f < 1) 
         {
-            addObject(new RedKey(), 68, 735);
+            addObject(new RedKey(), 78, 735);
             f++;
         }
         if (isSilverKeyAcquired2 && g < 1) 
         {
-            addObject(new SilverKey(), 70, 735);
+            addObject(new SilverKey(), 82, 735);
             g++;
         }
         // STAP
