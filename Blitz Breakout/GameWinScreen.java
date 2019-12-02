@@ -8,7 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class GameWinScreen extends SimulationWorld
 {
-
     /**
      * Constructor for objects of class GameWinScreen.
      * 
