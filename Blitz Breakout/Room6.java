@@ -58,7 +58,7 @@ public class Room6 extends SimulationWorld
         
         if (!isGoldKeyAcquired2 && k < 1) 
         {
-            addObject(new GoldKey(), 803,602);
+            addObject(new GoldKey(), 799,582);
             k++;
         }
         // Copy all 7 below for new Room
