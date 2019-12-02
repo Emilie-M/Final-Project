@@ -73,12 +73,12 @@ public class Room3 extends SimulationWorld
         // Copy all 7 below for new Room
         if (isBlueKeyAcquired2 && a < 1) 
         {
-            addObject(new BlueKey(), 58, 735);
+            addObject(new BlueKey(), 60, 735);
             a++;
         }
         if (isGoldKeyAcquired2 && b < 1) 
         {
-            addObject(new GoldKey(), 60, 735);
+            addObject(new GoldKey(), 62, 735);
             b++;
         }
         if (isGreenKeyAcquired2 && c < 1) 
