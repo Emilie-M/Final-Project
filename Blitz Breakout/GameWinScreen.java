@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class GameWinScreen extends SimulationWorld
 {
 
-    GifImage gameWin = new GifImage("GameWinScreen.gif");
+    GifImage gameWin = new GifImage("GameWinScreen1.gif");
 
     public GameWinScreen()
     {
