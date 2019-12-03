@@ -135,8 +135,6 @@ public class Room4 extends SimulationWorld
         addObject(platform2,190,175);
         Platform platform3 = new Platform();
         addObject(platform3,70,597);
-        Platform platform4 = new Platform();
-        addObject(platform4,778,304);
         Platform platform5 = new Platform();
         addObject(platform5,307,526);
         Platform platform6 = new Platform();

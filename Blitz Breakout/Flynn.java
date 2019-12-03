@@ -47,6 +47,7 @@ public class Flynn extends PlatformActor
     private int frame = 1;
     private int animationCounter = 0;
     private double invincibilityTimeRemaining = 0.0;
+    private double invincibilityTimeRemaining2 = 0.0;
     //private GreenfootImage runRight4 = new GreenfootImage("");
     //protected static final double SPRITE_FRAMES_DURATION = 0.4;
     protected static final double FLYNN_VELOCITY = 1.6;
@@ -104,14 +105,16 @@ public class Flynn extends PlatformActor
         //moveOnPlatform();
         //updateFrame();
         invincibilityTimeRemaining -= getSimulationWorld().getTimeStepDuration();
+        invincibilityTimeRemaining2 -= getSimulationWorld().getTimeStepDuration();
         animationCounter++;
         hitSpiderDetection();
         hitRatDetection();
         fallen();
         
         Actor door = getOneObjectAtOffset(0, 0, Door.class);
-        if (isTouching(Door.class)) 
+        if (isTouching(Door.class) && invincibilityTimeRemaining2 < 0) 
         {
+            invincibilityTimeRemaining2 = 3.00;
             Greenfoot.playSound("openDoor.wav");
         }
     }

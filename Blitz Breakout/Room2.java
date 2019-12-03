@@ -153,8 +153,6 @@ public class Room2 extends SimulationWorld
         addObject(pinkDoor,846,523);
         Platform platform9 = new Platform();
         addObject(platform9,655,515);
-        Platform platform10 = new Platform();
-        addObject(platform10,748,397);
 
         BlueDoor2 blueDoor2 = new BlueDoor2();
         addObject(blueDoor2,62,89);

@@ -160,7 +160,7 @@ public class Room7 extends SimulationWorld
 
         MovingPlatform movingPlatform = new MovingPlatform(3, 9);
         addObject(movingPlatform,192,342);
-        MovingPlatform movingPlatform2 = new MovingPlatform(1, 6);
+        MovingPlatform movingPlatform2 = new MovingPlatform(2, 6);
         addObject(movingPlatform2,628,167);
 
         SilverDoor silverDoor = new SilverDoor();

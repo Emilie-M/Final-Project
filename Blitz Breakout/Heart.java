@@ -39,7 +39,7 @@ public class Heart extends Actor
         
         if (Flynn.lives <= 0) 
         {
-            //getWorld().removeObjects(getWorld().getObjectsAt(61, 52,Heart.class)); 
+            getWorld().removeObjects(getWorld().getObjectsAt(61, 52,Heart.class)); 
             SimulationWorld world = (SimulationWorld) getWorld();
             world.transitionToWorld(new GameOverScreen());
         }
