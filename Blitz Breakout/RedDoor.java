@@ -20,7 +20,7 @@ public class RedDoor extends Door
             if (getRedKey() == true)
             {
                 SimulationWorld world = (SimulationWorld) getWorld();
-                world.transitionToWorld(new Room6(Heart.getHearts(), 0, true, world.getGoldKey(), world.getGreenKey(), world.getOrangeKey(), world.getPinkKey(), 
+                world.transitionToWorld(new Room6(Flynn.getHearts(), 0, true, world.getGoldKey(), world.getGreenKey(), world.getOrangeKey(), world.getPinkKey(), 
                 world.getRedKey(), world.getSilverKey()));
                 return;
             }

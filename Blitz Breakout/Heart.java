@@ -14,15 +14,12 @@ public class Heart extends Actor
     {
         //try
         {
-            
-            
-             hearts = Flynn.getLives();
+             hearts = Flynn.getHearts();
              handleHearts();
         }
         //catch(Exception e)
         {
         }
-        
     }  
 
     public void handleHearts()
@@ -41,11 +38,11 @@ public class Heart extends Actor
         {
             getWorld().removeObjects(getWorld().getObjectsAt(61, 52,Heart.class)); 
             SimulationWorld world = (SimulationWorld) getWorld();
-            world.transitionToWorld(new GameOverScreen());
+            //world.transitionToWorld(new GameOverScreen());
         }
     }
     public static int getHearts()
     {
-        return hearts;
+        return Flynn.getHearts();
     }
 }

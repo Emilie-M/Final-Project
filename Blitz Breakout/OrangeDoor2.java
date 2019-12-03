@@ -18,7 +18,7 @@ public class OrangeDoor2 extends Door
         if (isDoorTouchingFlynn()) 
         {
             SimulationWorld world = (SimulationWorld) getWorld();
-            world.transitionToWorld(new Room3(Heart.getHearts(), 2, true, world.getGoldKey(), world.getGreenKey(), world.getOrangeKey(), world.getPinkKey(), 
+            world.transitionToWorld(new Room3(Flynn.getHearts(), 2, true, world.getGoldKey(), world.getGreenKey(), world.getOrangeKey(), world.getPinkKey(), 
             world.getRedKey(), world.getSilverKey()));
             // USE STATEMENTS BELOW TO COPY CODE IN DOORS
             //(int heart, int positionNum, boolean isBlueKeyAcquired, boolean isGoldKeyAcquired, 

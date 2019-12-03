@@ -68,7 +68,7 @@ public class Flynn extends PlatformActor
         //GreenfootImage sprite = runRight.getSprite(0, 0);
         //setImage(sprite);
         //setImage(standRight);
-        lives = 3;
+        
         
     }
 
@@ -117,6 +117,8 @@ public class Flynn extends PlatformActor
             invincibilityTimeRemaining2 = 3.00;
             Greenfoot.playSound("openDoor.wav");
         }
+        isDead();
+        
     }
 
     public void controlAvatar()
@@ -352,11 +354,30 @@ public class Flynn extends PlatformActor
         } 
     }
     
-    public static int getLives()
+     public static int getHearts()
     {
         return lives;
     }
     
+    public void isDead() 
+    {
+        if (lives == 2) 
+        {
+            getWorld().removeObjects(getWorld().getObjectsAt(125, 52, Heart.class));
+        }
+        
+        if (lives == 1)
+        {
+            getWorld().removeObjects(getWorld().getObjectsAt(93, 52,Heart.class));
+        }
+        
+        if (lives < 1 || lives == 0) 
+        {
+            getWorld().removeObjects(getWorld().getObjectsAt(61, 52,Heart.class)); 
+            SimulationWorld world = (SimulationWorld) getWorld();
+            world.transitionToWorld(new GameOverScreen());
+        }
+    }
     public void fallen()
     {
         List <Flynn> flynnList = getWorld().getObjects(Flynn.class);
