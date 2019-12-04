@@ -23,6 +23,7 @@ public class StartMenu extends SimulationWorld
     {
         super.act();
         setBackground(startMenu.getCurrentImage());
+        Flynn.setHearts();
 
         if (Greenfoot.isKeyDown("space"))
         {

@@ -180,12 +180,12 @@ public class Room1 extends SimulationWorld
         Platform platform6 = new Platform();
         addObject(platform6,68,464);
 
-        Heart heart = new Heart();
-        addObject(heart,61,52);
-        Heart heart2 = new Heart();
-        addObject(heart2,93,52);
-        Heart heart3 = new Heart();
-        addObject(heart3,125,52);
+        //Heart heart = new Heart();
+        //addObject(heart,61,52);
+        //Heart heart2 = new Heart();
+        //addObject(heart2,93,52);
+        //Heart heart3 = new Heart();
+        //addObject(heart3,125,52);
 
         Platform platform12 = new Platform();
         addObject(platform12,749,538);

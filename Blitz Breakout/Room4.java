@@ -128,7 +128,7 @@ public class Room4 extends SimulationWorld
     {
         MovingPlatform movingPlatform2 = new MovingPlatform(5, 9);
         addObject(movingPlatform2,378,261);
-        
+
         Platform platform = new Platform();
         addObject(platform,71,175);
         Platform platform2 = new Platform();
@@ -174,5 +174,13 @@ public class Room4 extends SimulationWorld
         addObject(invisiblePlatform15,0,138);
         InvisiblePlatform invisiblePlatform16 = new InvisiblePlatform();
         addObject(invisiblePlatform16,1,41);
+        Torch torch = new Torch();
+        addObject(torch,141,105);
+        torch.setLocation(143,93);
+        Aura aura = new Aura();
+        addObject(aura,143,93);
+        torch.setLocation(143,96);
+        Flame flame = new Flame();
+        addObject(flame,143,96);
     }
 }

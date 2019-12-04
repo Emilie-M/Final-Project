@@ -354,9 +354,14 @@ public class Flynn extends PlatformActor
         } 
     }
     
-     public static int getHearts()
+    public static int getHearts()
     {
         return lives;
+    }
+    
+    public static void setHearts()
+    {
+        lives = 3;
     }
     
     public void isDead() 

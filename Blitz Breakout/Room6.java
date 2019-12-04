@@ -189,8 +189,25 @@ public class Room6 extends SimulationWorld
         addObject(movingPlatform,633,138);
         HorizontalMovingPlatform horizontalMovingPlatform = new HorizontalMovingPlatform(6, 12);
         addObject(horizontalMovingPlatform,502,559);
-        
+
         Spider spider = new Spider(0, 8);
         addObject(spider,327,95);
+        Torch torch = new Torch();
+        addObject(torch,160,146);
+        Torch torch2 = new Torch();
+        addObject(torch2,145,603);
+        torch.setLocation(162,132);
+        Aura aura = new Aura();
+        addObject(aura,162,132);
+        torch2.setLocation(147,587);
+        Aura aura2 = new Aura();
+        addObject(aura2,147,587);
+        torch.setLocation(162,137);
+        Flame flame = new Flame();
+        addObject(flame,162,137);
+        torch2.setLocation(148,594);
+        torch2.setLocation(147,594);
+        Flame flame2 = new Flame();
+        addObject(flame2,147,594);
     }
 }

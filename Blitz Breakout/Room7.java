@@ -144,7 +144,7 @@ public class Room7 extends SimulationWorld
         addObject(platform3,409,461);
         Platform platform5 = new Platform();
         addObject(platform5,144,675);
-        
+
         Platform platform10 = new Platform();
         addObject(platform10,499,461);
         Platform platform11 = new Platform();
@@ -174,7 +174,6 @@ public class Room7 extends SimulationWorld
         Spider spider2 = new Spider(1, 7);
         addObject(spider2,600,86);
 
-        
         InvisiblePlatform invisiblePlatform = new InvisiblePlatform();
         addObject(invisiblePlatform,899,719);
         InvisiblePlatform invisiblePlatform2 = new InvisiblePlatform();
@@ -208,5 +207,21 @@ public class Room7 extends SimulationWorld
         InvisiblePlatform invisiblePlatform16 = new InvisiblePlatform();
         addObject(invisiblePlatform16,1,41);
 
+        Torch torch = new Torch();
+        addObject(torch,759,110);
+        Torch torch2 = new Torch();
+        addObject(torch2,733,596);
+        torch.setLocation(761,97);
+        Aura aura = new Aura();
+        addObject(aura,761,97);
+        torch2.setLocation(733,583);
+        Aura aura2 = new Aura();
+        addObject(aura2,733,583);
+        torch.setLocation(762,103);
+        Flame flame = new Flame();
+        addObject(flame,762,103);
+        torch2.setLocation(735,587);
+        Flame flame2 = new Flame();
+        addObject(flame2,735,587);
     }
 }

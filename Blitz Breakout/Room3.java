@@ -147,7 +147,7 @@ public class Room3 extends SimulationWorld
 
     public void prepare()
     {
-        
+
         Platform platform = new Platform();
         addObject(platform,75,657);
         Platform platform2 = new Platform();
@@ -176,20 +176,18 @@ public class Room3 extends SimulationWorld
         Platform platform12 = new Platform();
         addObject(platform12,718,561);
 
-        
         GreenDoor greenDoor = new GreenDoor();
         addObject(greenDoor,60,80);
-        
+
         Platform platform10 = new Platform();
         addObject(platform10,77,177);
-        
+
         Platform platform11 = new Platform();
         addObject(platform11,212,177);
-       
+
         PinkDoor2 pinkDoor2 = new PinkDoor2();
         addObject(pinkDoor2,61,560);
-        
-        
+
         InvisiblePlatform invisiblePlatform = new InvisiblePlatform();
         addObject(invisiblePlatform,0,719);
         InvisiblePlatform invisiblePlatform2 = new InvisiblePlatform();
@@ -225,6 +223,30 @@ public class Room3 extends SimulationWorld
         InvisiblePlatform invisiblePlatform17 = new InvisiblePlatform();
         addObject(invisiblePlatform17,899,32);
 
-        
+        Torch torch = new Torch();
+        addObject(torch,749,273);
+        Torch torch2 = new Torch();
+        addObject(torch2,142,104);
+        Torch torch3 = new Torch();
+        addObject(torch3,148,584);
+        torch.setLocation(750,254);
+        Aura aura = new Aura();
+        addObject(aura,750,254);
+        torch2.setLocation(144,86);
+        Aura aura2 = new Aura();
+        addObject(aura2,144,86);
+        torch3.setLocation(149,567);
+        Aura aura3 = new Aura();
+        addObject(aura3,149,567);
+        torch.setLocation(753,264);
+        Flame flame = new Flame();
+        addObject(flame,753,264);
+        torch2.setLocation(144,95);
+        Flame flame2 = new Flame();
+        addObject(flame2,144,95);
+        torch3.setLocation(151,576);
+        Flame flame3 = new Flame();
+        addObject(flame3,151,576);
+        torch.setLocation(753,272);
     }
 }
