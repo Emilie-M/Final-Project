@@ -14,6 +14,15 @@ public class Gate extends Door
      */
     public void act() 
     {
-        // Add your action code here.
-    }    
+        super.act();
+    }   
+    
+    public void transitionEnd()
+    {
+        if (isDoorTouchingFlynn()) 
+        {
+            SimulationWorld world = (SimulationWorld) getWorld();
+            world.transitionToWorld(new GameWinScreen());
+        }
+    }
 }

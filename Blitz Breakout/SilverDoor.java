@@ -19,9 +19,10 @@ public class SilverDoor extends Door
         {
             if (getSilverKey() == true)
             {
-                //SimulationWorld world = (SimulationWorld) getWorld();
-                //world.transitionToWorld(new Room2());
-                return;
+                SimulationWorld world = (SimulationWorld) getWorld();
+                world.transitionToWorld(new LastRoom(Flynn.getHearts(), 0, true, 
+                world.getGoldKey(), world.getGreenKey(), world.getOrangeKey(), 
+                world.getPinkKey(), world.getRedKey(), world.getSilverKey()));
             }
         }
     }

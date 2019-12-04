@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Stair extends SimulationActor
+public class Stair extends Platform
 {
     /**
      * Act - do whatever the Stair wants to do. This method is called whenever
@@ -14,6 +14,6 @@ public class Stair extends SimulationActor
      */
     public void act() 
     {
-        // Add your action code here.
+        super.act();
     }    
 }
