@@ -15,5 +15,28 @@ public class Stair extends Platform
     public void act() 
     {
         super.act();
-    }    
+    }  
+    
+    public int getHeight()
+    {
+        if (getImage() != null)
+        {
+            return getImage().getHeight() - 150;
+        }
+        else
+        {
+            return 0;
+        }      
+    }
+    public int getWidth()
+    {
+        if (getImage() != null)
+        {
+            return getImage().getWidth();
+        }
+        else
+        {
+            return 0;
+        }            
+    }
 }
