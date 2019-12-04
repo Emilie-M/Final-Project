@@ -15,6 +15,7 @@ public class Gate extends Door
     public void act() 
     {
         super.act();
+        transitionEnd();
     }   
     
     public void transitionEnd()
