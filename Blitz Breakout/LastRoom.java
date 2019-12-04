@@ -56,13 +56,6 @@ public class LastRoom extends SimulationWorld
     {
         super.act();
         
-        if ((isBlueKeyAcquired2 == false) && j < 1) 
-        {
-            addObject(new BlueKey(),547,563);
-            //isBlueKeyAcquired2 = true;
-            j++;
-        }
-        
         // Copy all 7 below for new Room #3
         if (isBlueKeyAcquired2 && a < 1) 
         {
@@ -122,9 +115,9 @@ public class LastRoom extends SimulationWorld
         Stairs stairs = new Stairs();
         addObject(stairs,414, 584);
         Stair stair = new Stair();
-        addObject(stair,9,682);
+        addObject(stair,12,692);
         SilverDoor2 silverDoor2 = new SilverDoor2();
-        addObject(silverDoor2,58,477);
+        addObject(silverDoor2,58,486);
         Torch torch = new Torch();
         addObject(torch,131,490);
         Aura aura = new Aura();
@@ -132,12 +125,43 @@ public class LastRoom extends SimulationWorld
         Flame flame = new Flame();
         addObject(flame,133,481);
         Stair stair2 = new Stair();
-        addObject(stair2,836,682);
+        addObject(stair2,838,682);
         Stair stair3 = new Stair();
-        addObject(stair3,838,517);
+        addObject(stair3,820,517);
         Gate gate = new Gate();
         addObject(gate,820,311);
         Rays rays = new Rays();
-        addObject(rays, 502, 362);
+        addObject(rays, 371, 210);
+        
+        InvisiblePlatform invisiblePlatform = new InvisiblePlatform();
+        addObject(invisiblePlatform,0,717);
+        InvisiblePlatform invisiblePlatform2 = new InvisiblePlatform();
+        addObject(invisiblePlatform2,2,617);
+        InvisiblePlatform invisiblePlatform3 = new InvisiblePlatform();
+        addObject(invisiblePlatform3,0,518);
+        InvisiblePlatform invisiblePlatform4 = new InvisiblePlatform();
+        addObject(invisiblePlatform4,0,421);
+        InvisiblePlatform invisiblePlatform5 = new InvisiblePlatform();
+        addObject(invisiblePlatform5,0,320);
+        InvisiblePlatform invisiblePlatform6 = new InvisiblePlatform();
+        addObject(invisiblePlatform6,0,216);
+        InvisiblePlatform invisiblePlatform7 = new InvisiblePlatform();
+        addObject(invisiblePlatform7,1,114);
+        InvisiblePlatform invisiblePlatform8 = new InvisiblePlatform();
+        addObject(invisiblePlatform8,899,718);
+        InvisiblePlatform invisiblePlatform9 = new InvisiblePlatform();
+        addObject(invisiblePlatform9,898,618);
+        InvisiblePlatform invisiblePlatform10 = new InvisiblePlatform();
+        addObject(invisiblePlatform10,899,520);
+        InvisiblePlatform invisiblePlatform11 = new InvisiblePlatform();
+        addObject(invisiblePlatform11,897,412);
+        InvisiblePlatform invisiblePlatform12 = new InvisiblePlatform();
+        addObject(invisiblePlatform12,898,316);
+        InvisiblePlatform invisiblePlatform13 = new InvisiblePlatform();
+        addObject(invisiblePlatform13,898,218);
+        InvisiblePlatform invisiblePlatform14 = new InvisiblePlatform();
+        addObject(invisiblePlatform14,898,119);
+        InvisiblePlatform invisiblePlatform15 = new InvisiblePlatform();
+        addObject(invisiblePlatform15,899,32);
     }
 }
