@@ -211,7 +211,5 @@ public class Room2 extends SimulationWorld
         torch2.setLocation(762,527);
         Flame flame2 = new Flame();
         addObject(flame2,762,527);
-        FirstClue firstClue = new FirstClue();
-        addObject(firstClue,483,596);
     }
 }
