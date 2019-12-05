@@ -96,12 +96,7 @@ public class LastRoom extends SimulationWorld
         // Flynn Spawn
         if (positionNumber == 0 && i < 1)
         {
-            addObject(new Flynn(), 147, 497);
-            i++;
-        }
-        if(positionNumber == 1 && i < 1)
-        {
-            addObject(new Flynn(), 713, 360);
+            addObject(new Flynn(), 183, 602);
             i++;
         }
     }
@@ -112,27 +107,6 @@ public class LastRoom extends SimulationWorld
      */
     private void prepare()
     {
-        Stairs stairs = new Stairs();
-        addObject(stairs,414, 584);
-        Stair stair = new Stair();
-        addObject(stair,12,692);
-        SilverDoor2 silverDoor2 = new SilverDoor2();
-        addObject(silverDoor2,58,486);
-        Torch torch = new Torch();
-        addObject(torch,131,490);
-        Aura aura = new Aura();
-        addObject(aura,134,476);
-        Flame flame = new Flame();
-        addObject(flame,133,481);
-        Stair stair2 = new Stair();
-        addObject(stair2,838,682);
-        Stair stair3 = new Stair();
-        addObject(stair3,820,517);
-        Gate gate = new Gate();
-        addObject(gate,820,311);
-        Rays rays = new Rays();
-        addObject(rays, 371, 210);
-        
         InvisiblePlatform invisiblePlatform = new InvisiblePlatform();
         addObject(invisiblePlatform,0,717);
         InvisiblePlatform invisiblePlatform2 = new InvisiblePlatform();
@@ -163,5 +137,43 @@ public class LastRoom extends SimulationWorld
         addObject(invisiblePlatform14,898,119);
         InvisiblePlatform invisiblePlatform15 = new InvisiblePlatform();
         addObject(invisiblePlatform15,899,32);
+
+        Pedestal pedestal = new Pedestal();
+        addObject(pedestal,797,609);
+        Gate gate = new Gate();
+        addObject(gate,798,357);
+
+        Torch torch = new Torch();
+        addObject(torch,718,384);
+        Torch torch2 = new Torch();
+        addObject(torch2,875, 382);
+        Aura aura = new Aura();
+        addObject(aura,875,362);
+        Aura aura2 = new Aura();
+        addObject(aura2,718,363);
+        Flame flame = new Flame();
+        addObject(flame,877,374);
+        Flame flame2 = new Flame();
+        addObject(flame2,719,376);
+        Platform platform = new Platform();
+        addObject(platform,71,678);
+        Platform platform2 = new Platform();
+        addObject(platform2,152,678);
+        SilverDoor2 silverDoor2 = new SilverDoor2();
+        addObject(silverDoor2,74,579);
+        Torch torch3 = new Torch();
+        addObject(torch3,160, 593);
+        Aura aura3 = new Aura();
+        addObject(aura3,162,573);
+        Flame flame3 = new Flame();
+        addObject(flame3,161,584);
+        Platform platform3 = new Platform();
+        addObject(platform3,330,603);
+        Platform platform4 = new Platform();
+        addObject(platform4,498,544);
+        Platform platform5 = new Platform();
+        addObject(platform5,623,466);
+        Rays rays = new Rays();
+        addObject(rays,520,354);
     }
 }
