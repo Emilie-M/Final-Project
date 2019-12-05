@@ -138,6 +138,11 @@ public class LastRoom extends SimulationWorld
         InvisiblePlatform invisiblePlatform15 = new InvisiblePlatform();
         addObject(invisiblePlatform15,899,32);
 
+        Platform platform6 = new Platform();
+        addObject(platform6,767,466);
+        Platform platform7 = new Platform();
+        addObject(platform7,830,465);
+        
         Pedestal pedestal = new Pedestal();
         addObject(pedestal,797,609);
         Gate gate = new Gate();

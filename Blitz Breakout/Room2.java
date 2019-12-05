@@ -195,7 +195,6 @@ public class Room2 extends SimulationWorld
         InvisiblePlatform invisiblePlatform19 = new InvisiblePlatform();
         addObject(invisiblePlatform19,0,520);
 
-        
         Torch torch = new Torch();
         addObject(torch,146,104);
         Torch torch2 = new Torch();
@@ -212,5 +211,7 @@ public class Room2 extends SimulationWorld
         torch2.setLocation(762,527);
         Flame flame2 = new Flame();
         addObject(flame2,762,527);
+        FirstClue firstClue = new FirstClue();
+        addObject(firstClue,483,596);
     }
 }
