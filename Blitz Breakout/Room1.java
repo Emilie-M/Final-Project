@@ -237,5 +237,8 @@ public class Room1 extends SimulationWorld
         addObject(invisiblePlatform19,0,631);
         InvisiblePlatform invisiblePlatform20 = new InvisiblePlatform();
         addObject(invisiblePlatform20,899,414);
+        
+        Inventory inventory = new Inventory();
+        addObject(inventory, 242, 729);
     }
 }

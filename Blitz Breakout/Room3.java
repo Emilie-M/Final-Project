@@ -248,5 +248,7 @@ public class Room3 extends SimulationWorld
         Flame flame3 = new Flame();
         addObject(flame3,151,576);
         torch.setLocation(753,272);
+        Inventory inventory = new Inventory();
+        addObject(inventory, 242, 729);
     }
 }

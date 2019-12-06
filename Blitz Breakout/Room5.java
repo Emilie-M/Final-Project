@@ -209,5 +209,7 @@ public class Room5 extends SimulationWorld
         torch2.setLocation(145,228);
         Flame flame2 = new Flame();
         addObject(flame2,145,228);
+        Inventory inventory = new Inventory();
+        addObject(inventory, 242, 729);
     }
 }

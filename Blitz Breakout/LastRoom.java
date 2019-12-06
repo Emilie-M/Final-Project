@@ -180,5 +180,7 @@ public class LastRoom extends SimulationWorld
         addObject(platform5,623,466);
         Rays rays = new Rays();
         addObject(rays,520,354);
+        Inventory inventory = new Inventory();
+        addObject(inventory, 242, 729);
     }
 }
