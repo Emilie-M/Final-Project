@@ -8,14 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Key extends Actor
 {
-    public void act() 
-    {
-        //Actor flynn = getOneObjectAtOffset(0, 0, Flynn.class);
-        //if (isTouching(Flynn.class)) 
-        //{
-            //Greenfoot.playSound("keyPick.wav");
-        //}
-    }  
     protected SimulationWorld getSimulationWorld()
     {
         return (SimulationWorld) getWorld();

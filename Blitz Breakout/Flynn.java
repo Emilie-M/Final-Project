@@ -111,6 +111,12 @@ public class Flynn extends PlatformActor
         hitRatDetection();
         fallen();
         
+        Actor key = getOneObjectAtOffset(0, 0, Key.class);
+        if (isTouching(Key.class)) 
+        {
+            Greenfoot.playSound("keys.wav");
+        }
+        
         Actor door = getOneObjectAtOffset(0, 0, Door.class);
         if (isTouching(Door.class) && invincibilityTimeRemaining2 < 0) 
         {
@@ -337,6 +343,7 @@ public class Flynn extends PlatformActor
         {
             invincibilityTimeRemaining = 3.0;
             lives--;
+            Greenfoot.playSound("oof.wav");
             getWorld().addObject(new Dialog("OUCH", "These spiders sure as hell sting hard!", "", ""), 449, 666);
         } 
     }
@@ -350,6 +357,7 @@ public class Flynn extends PlatformActor
         {
             invincibilityTimeRemaining = 3.0;
             lives--;
+            Greenfoot.playSound("oof.wav");
             getWorld().addObject(new Dialog("ARGH", "Those pesky rats!", "", ""), 449, 666);
         } 
     }

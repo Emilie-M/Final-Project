@@ -184,6 +184,7 @@ public class SimulationWorld extends World
         if (music != null)
         {
             music.playLoop();
+            music.setVolume(50);
         }
         
         lastFrameTimeMS = System.currentTimeMillis();
